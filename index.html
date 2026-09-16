@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezzaluna Azzafira ✦ Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bloom: {
+                            pink: '#EAA9A9',      /* Dusty Pink / Soft Blush */
+                            lightpink: '#F7E6E5', /* Accent Light Pink */
+                            teal: '#1F5E6B',      /* Deep Teal / Navy Accent */
+                            cream: '#FAF6F0',     /* Warm Off-White Body */
+                            dark: '#2C2223',      /* Editorial Dark Text */
+                            redcheck: '#BD3933'   /* Red Vintage Accent */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Bodoni Moda"', 'serif'],
+                        italic: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'spin-slow': 'spin 16s linear infinite',
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Pattern Catur Merah-Putih Vintage (Aksen Gambar Kedua) */
+        .checkered-pattern {
+            background-color: #FAF6F0;
+            background-image:
+                linear-gradient(45deg, #BD3933 25%, transparent 25%),
+                linear-gradient(-45deg, #BD3933 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #BD3933 75%),
+                linear-gradient(-45deg, transparent 75%, #BD3933 75%);
+            background-size: 24px 24px;
+            background-position: 0 0, 0 12px, 12px -12px, -12px 0px;
+        }
+
+        /* Ambient Glow Gradient ala Gambar Pertama tapi Warna Bloom Teal & Pink */
+        .hero-glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(31, 94, 107, 0.15) 0%, rgba(234, 169, 169, 0.2) 40%, rgba(250, 246, 240, 1) 75%);
+        }
+
+        /* Custom class untuk crop status bar video */
+        .video-cropped {
+            width: 100%;
+            height: 105%;
+            margin-top: -5%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+    </style>
+</head>
+
+<body class="bg-bloom-cream text-bloom-dark font-sans antialiased selection:bg-bloom-teal selection:text-white">
+
+    <!-- CONTAINER UTAMA -->
+    <div
+        class="max-w-5xl mx-auto min-h-screen shadow-2xl my-0 md:my-4 bg-bloom-cream overflow-hidden border border-bloom-dark/10">
+
+        <!-- ==========================================
+             [FITUR 1: TOP NAVBAR & CENTERED HERO SECTION]
+             ========================================== -->
+        <header id="hero" class="relative hero-glow-bg pb-16 pt-2 px-4 md:px-8 overflow-hidden">
+
+            <!-- 1. TOP TICKER / MARQUEE BAR -->
+            <div class="bg-bloom-pink py-1.5 -mx-8 mb-6 overflow-hidden border-b border-bloom-dark/10">
+                <div
+                    class="overflow-hidden whitespace-nowrap bg-rose-200 py-2.5 font-bold text-xs uppercase tracking-widest text-slate-800">
+                    <div class="inline-block animate-marquee">
+                        <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
+                        <span class="mx-4">✦ UI/UX & FULL-STACK DEVELOPER</span>
+                        <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
+                        <span class="mx-4">✦ LARAVEL & REST API</span>
+                        <span class="mx-4">✦ FIGMA & MOBILE APP</span>
+                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
+                    </div>
+                    <!-- Duplikat agar efek animasi berjalan terus mulus -->
+                    <div class="inline-block animate-marquee" aria-hidden="true">
+                        <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
+                        <span class="mx-4">✦ UI/UX & FULL-STACK & MOBILE DEVELOPER</span>
+                        <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
+                        <span class="mx-4">✦ LARAVEL & REST API</span>
+                        <span class="mx-4">✦ FIGMA & MOBILE APP</span>
+                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. TOP NAVBAR (LAYOUT PERSIS GAMBAR PERTAMA) -->
+            <nav
+                class="flex justify-between items-center max-w-5xl mx-auto py-3 px-6 bg-white/70 backdrop-blur-md rounded-full border border-bloom-dark/10 shadow-sm mb-12">
+                <!-- Brand / Logo -->
+                <a href="#"
+                    class="font-serif italic font-bold text-lg tracking-tight text-bloom-dark flex items-center gap-2 shrink-0">
+                    <span class="w-2.5 h-2.5 rounded-full bg-bloom-teal"></span> Mezzaluna
+                </a>
+
+                <!-- Nav Links (Bisa discroll halus di HP, tampil rapi di Desktop) -->
+                <div
+                    class="flex items-center gap-4 md:gap-6 text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-bloom-dark/80 overflow-x-auto no-scrollbar px-2">
+                    <a href="#about" class="hover:text-bloom-teal transition whitespace-nowrap">About</a>
+                    <a href="#skills" class="hover:text-bloom-teal transition whitespace-nowrap">Skills</a>
+                    <a href="#projects" class="hover:text-bloom-teal transition whitespace-nowrap">Projects</a>
+                    <a href="#certificates" class="hover:text-bloom-teal transition whitespace-nowrap">Certificates</a>
+                    <a href="#experience" class="hover:text-bloom-teal transition whitespace-nowrap">Journey</a>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#contact"
+                    class="bg-bloom-pink text-bloom-dark px-4 py-2 md:px-5 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest hover:bg-bloom-teal hover:text-white transition shadow-sm border border-bloom-dark/10 shrink-0 hidden sm:inline-block">
+                    Contact
+                </a>
+            </nav>
+            <!-- 3. HERO CONTENT (CENTERED ALIGNMENT PERSIS GAMBAR PERTAMA) -->
+            <div class="max-w-3xl mx-auto text-center space-y-6 pt-4 relative z-10">
+
+                <!-- Sub-Greeting Tag -->
+                <div
+                    class="inline-flex items-center gap-2 bg-bloom-lightpink/80 border border-bloom-pink px-4 py-1.5 rounded-full text-xs font-medium text-bloom-dark">
+                    <span>Hi! I'm Mezzaluna</span>
+                    <span class="text-bloom-teal font-bold">• Based in Indonesia</span>
+                </div>
+
+                <!-- Giant Editorial Headline (Dua Baris dengan Warna Highlight Teal) -->
+                <h1 class="font-serif text-5xl md:text-7xl font-normal leading-[1.05] tracking-tight text-bloom-dark">
+                    Full-Stack Developer & <br>
+                    <span class="font-italic text-bloom-teal italic block md:inline font-semibold">UI/UX Specialist<span
+                            class="text-bloom-pink font-sans font-light">|</span></span>
+                </h1>
+
+                <!-- Sub-description -->
+                <p class="font-sans text-xs md:text-sm text-bloom-dark/80 max-w-md mx-auto font-light leading-relaxed">
+                    Crafting seamless web platforms with clean Laravel 12 logic, MySQL architecture, and user-centric
+                    designs.
+                </p>
+
+                <!-- 4. LAYERED PHOTO FRAMES + CIRCULAR STAMP (STACK AT BOTTOM PERSIS GAMBAR PERTAMA) -->
+                <div class="pt-8 flex justify-center relative max-w-xs mx-auto">
+
+                    <!-- Back Layer Frame (Checkered Pattern & Cream Accent) -->
+                    <div class="absolute inset-0 bg-bloom-pink rounded-3xl transform -rotate-6 scale-95 shadow-md">
+                        <div class="w-full h-full checkered-pattern rounded-3xl opacity-30"></div>
+                    </div>
+
+                    <!-- Middle Layer Frame (Deep Teal Accent) -->
+                    <div class="absolute inset-0 bg-bloom-teal rounded-3xl transform rotate-3 scale-98 shadow-md"></div>
+
+                    <!-- Main Top Photo Card -->
+                    <div
+                        class="relative bg-bloom-cream p-2.5 rounded-3xl border-2 border-white shadow-2xl overflow-hidden w-64 h-80 z-10">
+                        <img src="images/myprofille.png" alt="Mezzaluna Azzafira"
+                            class="w-full h-full object-cover rounded-2xl">
+                    </div>
+
+                    <!-- Circular Stamp Berputar (Bottom Right Sticker ala Gambar Pertama) -->
+                    <div class="absolute -bottom-4 -right-6 w-24 h-24 z-20 animate-spin-slow">
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-bloom-dark">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                fill="none" />
+                            <text font-size="8.5" font-family="Plus Jakarta Sans" font-weight="bold" letter-spacing="2">
+                                <textPath href="#circlePath">
+                                    ✦ EXPLORE MORE ✦ LET'S TALK
+                                </textPath>
+                            </text>
+                        </svg>
+                        <!-- Central Arrow Circle -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div
+                                class="w-9 h-9 bg-bloom-pink rounded-full flex items-center justify-center text-bloom-dark shadow-md border border-white">
+                                <i class="fa-solid fa-arrow-down text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Pembatas Kertas Sobek (Top/Atas Seksi Berikutnya) -->
+        <div class="w-full overflow-hidden leading-none rotate-180 -mb-1 select-none pointer-events-none">
+            <svg class="relative block w-full h-8 sm:h-12 md:h-16 text-bloom-cream" viewBox="0 0 1200 120"
+                preserveAspectRatio="none" fill="currentColor">
+                <path
+                    d="M0,0 L0,40 L35,55 L70,30 L110,65 L150,20 L190,50 L230,25 L280,60 L320,35 L370,70 L410,25 L460,55 L500,20 L550,65 L600,30 L640,60 L690,15 L730,50 L780,25 L820,65 L870,30 L910,55 L960,20 L1000,60 L1050,35 L1090,65 L1140,25 L1180,50 L1200,30 L1200,0 Z">
+                </path>
+            </svg>
+        </div>
+
+
+
+        <!-- PLACEHOLDER UNTUK FITUR 2 -->
+        <!-- ==========================================
+             [FITUR 2: ABOUT ME & CHECKERED HIGHLIGHT]
+             ========================================== -->
+        <section id="about" class="relative">
+
+            <!-- 1. ABOUT ME EDITORIAL SECTION -->
+            <div class="px-6 md:px-16 py-16 bg-bloom-cream border-t border-bloom-dark/10">
+                <div class="max-w-4xl mx-auto grid md:grid-cols-12 gap-10 items-center">
+
+                    <!-- Kiri: Floating Stacked Photos & Floral Accent -->
+                    <div class="md:col-span-5 relative flex justify-center">
+                        <div class="relative w-56 h-72">
+                            <!-- Background Layer Polaroid -->
+                            <div
+                                class="absolute -top-4 -left-4 w-44 h-56 bg-bloom-pink p-2 rounded-2xl shadow-md transform -rotate-6 border border-bloom-dark/10">
+                                <img src="images/myprofille.png" alt="Floral aesthetic"
+                                    class="w-full h-full object-cover rounded-xl opacity-80">
+                            </div>
+                            <!-- Foreground Profile Card -->
+                            <div
+                                class="relative w-48 h-64 bg-white p-2.5 rounded-2xl shadow-xl border border-bloom-dark/10 transform rotate-3 hover:rotate-0 transition duration-300">
+                                <img src="images/myprofille.png" alt="Mezzaluna profile"
+                                    class="w-full h-48 object-cover rounded-xl">
+                                <span
+                                    class="font-serif italic text-[11px] text-bloom-dark font-bold text-center block mt-2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Editorial Content Text -->
+                    <div class="md:col-span-7 space-y-4 text-center md:text-left">
+                        <span class="font-italic text-2xl text-bloom-teal italic block">A Little About Me...</span>
+
+                        <h2 class="font-serif text-3xl md:text-4xl font-normal leading-tight text-bloom-dark">
+                            Behind every seamless digital product is strong backend logic & user-centered design.
+                        </h2>
+
+                        <p class="text-xs text-bloom-dark/80 font-light leading-relaxed">
+                            I am a Software Engineering student at <strong>SMK Telkom Purwokerto</strong> specializing
+                            in full-stack web and mobile app development. I focus on building robust backend systems
+                            with <strong>Laravel</strong> & <strong>MySQL</strong>, crafting native mobile applications
+                            using <strong>Android Studio</strong>, and designing intuitive web interfaces for
+                            exceptional user experiences.
+                        </p>
+
+                        <div
+                            class="pt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-semibold text-bloom-dark/90">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-bloom-pink"></span>
+                                <span>Software Engineering Student</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                                <span>Open for Internship (PKL 2026)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. CHECKERED RED-WHITE HIGHLIGHT BANNER -->
+            <div class="checkered-pattern py-16 px-6 relative border-y border-bloom-dark/10">
+                <!-- Overlay Card di Tengah -->
+                <div
+                    class="max-w-2xl mx-auto bg-bloom-cream p-8 md:p-10 rounded-3xl border-2 border-bloom-dark/20 shadow-2xl text-center space-y-4">
+
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-bloom-teal block">✦ System
+                        Readiness ✦</span>
+
+                    <h3 class="font-serif text-2xl md:text-3xl font-normal leading-tight text-bloom-dark">
+                        Building scalable web backends & seamless mobile applications.
+                    </h3>
+
+                    <p class="text-xs text-bloom-dark/70 max-w-lg mx-auto font-light leading-relaxed">
+                        Great digital applications require robust database architecture, secure APIs, and responsive UI.
+                        I am ready to bring reliable code and technical solutions to your development team.
+                    </p>
+
+                    <div class="pt-2">
+                        <a href="#projects"
+                            class="inline-block bg-bloom-teal text-white px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-bloom-pink hover:text-bloom-dark transition shadow-md">
+                            Explore Projects ✦
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PLACEHOLDER UNTUK FITUR 3 -->
+        <!-- ==========================================
+             [FITUR 3: TECH STACK & CORE SERVICES]
+             ========================================== -->
+        <!-- ==========================================
+             [SECTION: TECH & EXPERTISE - 9 CARDS GRID]
+             ========================================== -->
+        <!-- TECH & EXPERTISE SECTION -->
+        <section id="skills"
+            class="bg-gradient-to-b from-bloom-cream/60 via-white to-bloom-cream/80 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+
+            <!-- Ambient Background Lighting -->
+            <div
+                class="absolute top-1/3 -right-24 w-80 h-80 bg-bloom-pink/15 rounded-full blur-[100px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-1/4 -left-24 w-80 h-80 bg-bloom-teal/15 rounded-full blur-[100px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Capabilities &
+                        Tech Stack</span>
+                </div>
+                <h2
+                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                    Tech & Expertise <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-xl mx-auto">
+                    Core technologies, system design practices, database architecture, and security protocols I utilize
+                    for modern web & mobile development.
+                </p>
+            </div>
+
+            <!-- 9 GRID TECH STACK CARDS -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+                <!-- 1. Laravel Core -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
+                                Laravel Core</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">BACKEND
+                                FRAMEWORK</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Building robust web applications with Laravel 12, focusing on MVC pattern, Eloquent ORM,
+                                clean routing, and modular code architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
+                            PHP 8.2+ & OOP
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 2. MySQL Database -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(14,165,233,0.12)] hover:-translate-y-2 hover:border-sky-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-sky-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-sky-50 border border-sky-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-sky-500 group-hover:border-sky-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-sky-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-sky-600 transition-colors">
+                                MySQL Database</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-sky-500 uppercase block mt-0.5">DATABASE
+                                ARCHITECTURE</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Designing normalized relational database schemas, managing table relationships (1:N,
+                                N:M), primary/foreign keys, and SQL queries.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-sky-50 text-sky-600 font-semibold text-[10px] rounded-full border border-sky-200/80 tracking-wider">
+                            RELATIONAL DATABASE
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 3. Android Studio -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)] hover:-translate-y-2 hover:border-emerald-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-emerald-50 border border-emerald-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-emerald-500 group-hover:border-emerald-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-emerald-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-emerald-600 transition-colors">
+                                Android Studio</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-emerald-500 uppercase block mt-0.5">MOBILE
+                                DEVELOPMENT</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Building native Android mobile applications with clean UI layouts, Activity lifecycle
+                                management, and RESTful API integration.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-emerald-50 text-emerald-600 font-semibold text-[10px] rounded-full border border-emerald-200/80 tracking-wider">
+                            ANDROID SDK & XML
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 4. UI/UX & Figma -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(249,115,22,0.12)] hover:-translate-y-2 hover:border-orange-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-orange-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-orange-50 border border-orange-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-orange-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-orange-600 transition-colors">
+                                UI/UX & Figma</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-orange-500 uppercase block mt-0.5">INTERFACE
+                                DESIGN</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Wireframing, prototyping interactive user interfaces, and converting Figma visual
+                                designs into clean frontend components.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-orange-50 text-orange-600 font-semibold text-[10px] rounded-full border border-orange-200/80 tracking-wider">
+                            FIGMA & WIREFRAMING
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 5. Postman Testing -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(239,68,68,0.12)] hover:-translate-y-2 hover:border-red-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-red-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-red-50 border border-red-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-red-500 group-hover:border-red-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-red-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-red-600 transition-colors">
+                                Postman Testing</h3>
+                            <span class="text-[9px] font-bold tracking-widest text-red-500 uppercase block mt-0.5">API
+                                VERIFICATION</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Testing backend API responses, request headers, authorization tokens, payload
+                                structures, and status code handling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-red-50 text-red-600 font-semibold text-[10px] rounded-full border border-red-200/80 tracking-wider">
+                            API QA & TESTING
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 6. Tailwind CSS -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(6,182,212,0.12)] hover:-translate-y-2 hover:border-cyan-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-cyan-50 border border-cyan-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-cyan-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-cyan-600 transition-colors">
+                                Tailwind CSS</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-cyan-500 uppercase block mt-0.5">FRONTEND
+                                STYLING</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Styling responsive, mobile-first user interfaces efficiently using utility-first CSS
+                                classes and custom color palettes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-cyan-50 text-cyan-600 font-semibold text-[10px] rounded-full border border-cyan-200/80 tracking-wider">
+                            RESPONSIVE UI
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 7. Modern JS (ES6+) -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(234,179,8,0.12)] hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:border-amber-500 transition-all duration-300">
+                            <span
+                                class="font-bold text-lg text-amber-500 group-hover:text-white transition-colors duration-300">JS</span>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-amber-600 transition-colors">
+                                Modern JS (ES6+)</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-amber-500 uppercase block mt-0.5">INTERACTIVITY</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Implementing dynamic DOM manipulation, async/await requests, event listeners, and
+                                interactive UI logic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-amber-50 text-amber-600 font-semibold text-[10px] rounded-full border border-amber-200/80 tracking-wider">
+                            ES6+ & FETCH API
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 8. Git & GitHub -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
+                                Git & GitHub</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">VERSION
+                                CONTROL</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Tracking code changes, managing commit histories, repository branching, and
+                                collaborating through GitHub.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
+                            VERSION CONTROL
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 9. Web Security -->
+                <div
+                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(20,184,166,0.12)] hover:-translate-y-2 hover:border-teal-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 w-28 h-28 bg-teal-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                    </div>
+
+                    <div class="space-y-4 flex flex-col items-center">
+                        <!-- Icon Frame -->
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-teal-500 group-hover:border-teal-500 transition-all duration-300">
+                            <svg class="w-8 h-8 text-teal-500 group-hover:text-white transition-colors duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-teal-600 transition-colors">
+                                Web Security</h3>
+                            <span class="text-[9px] font-bold tracking-widest text-teal-500 uppercase block mt-0.5">BEST
+                                PRACTICES</span>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Applying CSRF protection, password hashing (Bcrypt), input sanitization, and basic
+                                role-based authentication.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                        <span
+                            class="px-3.5 py-1.5 bg-teal-50 text-teal-600 font-semibold text-[10px] rounded-full border border-teal-200/80 tracking-wider">
+                            SECURITY PROTOCOLS
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- PLACEHOLDER UNTUK FITUR 4 -->
+        <!-- ==========================================
+             [FITUR 4: FEATURED PROJECTS SHOWCASE]
+             ========================================== -->
+        <!-- ==========================================
+             [FITUR 4: ALL 7 PROJECTS GALLERY SHOWCASE]
+             ========================================== -->
+        <!-- ==========================================
+             [FITUR 4: ALL 7 LIVE PROJECTS GALLERY]
+             ========================================== -->
+        <!-- FEATURED PROJECTS SECTION -->
+        <!-- FEATURED PROJECTS SECTION -->
+        <!-- FEATURED PROJECTS SECTION -->
+        <section id="projects"
+            class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+
+            <!-- Subtle Background Elements (Decorative Glow Orbs) -->
+            <div
+                class="absolute top-1/4 -left-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-10 -right-32 w-[500px] h-[500px] bg-bloom-teal/15 rounded-full blur-[140px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-20 max-w-2xl mx-auto relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Interactive
+                        Showcase</span>
+                </div>
+                <h2
+                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                    Featured Projects <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
+                    A curated collection of web applications, AI integrations, and interactive 2D games deployed live
+                    online with production-ready standards.
+                </p>
+            </div>
+
+            <!-- Container Projects -->
+            <div class="max-w-6xl mx-auto space-y-14 relative z-10">
+
+                <!-- 🌟 HERO FEATURED PROJECT: MotherChild.AI -->
+                <div
+                    class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_60px_rgba(45,106,108,0.15)] hover:border-bloom-teal/40 transition-all duration-500 group overflow-hidden">
+
+                    <!-- Dynamic Inner Glow -->
+                    <div
+                        class="absolute -top-32 -right-32 w-96 h-96 bg-bloom-teal/20 rounded-full blur-3xl pointer-events-none group-hover:bg-bloom-teal/30 transition-all duration-700">
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+
+                        <!-- Browser Mockup Window -->
+                        <a href="https://motherchild-ai.vercel.app/" target="_blank"
+                            class="lg:col-span-7 overflow-hidden rounded-2xl border border-slate-700/30 shadow-2xl bg-slate-900 block group-hover:border-bloom-teal/50 transition-all duration-500 group/screen">
+                            <!-- Mac-style Browser Header -->
+                            <div
+                                class="bg-slate-900/90 backdrop-blur-md px-4 py-3 flex items-center justify-between border-b border-slate-800">
+                                <div class="flex gap-2 items-center">
+                                    <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shadow-inner"></span>
+                                    <span class="w-3 h-3 rounded-full bg-amber-500 inline-block shadow-inner"></span>
+                                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shadow-inner"></span>
+                                </div>
+                                <div
+                                    class="bg-slate-950/80 px-4 py-1 rounded-full text-[10px] text-slate-400 font-mono text-center truncate border border-slate-800/80 flex items-center gap-2 max-w-[220px]">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                    <span class="truncate">motherchild-ai.vercel.app</span>
+                                </div>
+                                <div class="w-12 text-right">
+                                    <span class="text-slate-600 text-[10px] font-mono">🔒 HTTPS</span>
+                                </div>
+                            </div>
+                            <!-- App Screenshot -->
+                            <div class="overflow-hidden aspect-video bg-slate-950 relative">
+                                <img src="images/website-motherchildAI.png" alt="MotherChild.AI Interface"
+                                    class="w-full h-full object-cover group-hover/screen:scale-105 transition-transform duration-700 ease-out">
+                                <!-- Dark overlay on hover -->
+                                <div
+                                    class="absolute inset-0 bg-bloom-dark/10 opacity-0 group-hover/screen:opacity-100 transition-opacity duration-300">
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Content Details -->
+                        <div class="lg:col-span-5 space-y-5 text-left">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span
+                                    class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1 rounded-full uppercase tracking-widest shadow-md flex items-center gap-1.5">
+                                    <span>★</span> Featured Project
+                                </span>
+                                <span
+                                    class="text-[10px] text-bloom-teal font-bold uppercase tracking-wider bg-bloom-teal/10 px-3 py-1 rounded-full border border-bloom-teal/20">
+                                    AI & Healthcare
+                                </span>
+                            </div>
+
+                            <h3
+                                class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-bloom-teal transition-colors duration-300">
+                                MotherChild.AI — Predictive Health
+                            </h3>
+
+                            <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                Early stunting detection platform for toddlers and AI-based pregnancy risk analysis,
+                                fully integrated with clinical metrics, automated recommendations, and digital health
+                                records.
+                            </p>
+
+                            <!-- Tech Badges -->
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span
+                                    class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Machine
+                                    Learning</span>
+                                <span
+                                    class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Laravel
+                                    12</span>
+                                <span
+                                    class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Tailwind
+                                    CSS</span>
+                            </div>
+
+                            <div class="pt-3">
+                                <a href="https://motherchild-ai.vercel.app/" target="_blank"
+                                    class="inline-flex items-center justify-center bg-bloom-teal text-white text-xs font-bold px-7 py-3.5 rounded-full hover:bg-bloom-dark transition-all duration-300 shadow-lg hover:shadow-xl gap-2.5 uppercase tracking-widest group/btn">
+                                    <span>LAUNCH MOTHERCHILD.AI</span>
+                                    <span
+                                        class="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform duration-300">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 📦 6 GRID PROJECTS -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Card 1: Korean Romantic Wedding -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    WEDDING APP
+                                </span>
+                                <img src="images/website-weddinginvitation.png" alt="Korean Romantic Wedding"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Laravel
+                                    12 & MySQL</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    Korean Romantic Wedding</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    Digital invitation platform featuring real-time RSVP queries, dynamic URL routing,
+                                    and embedded music player.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Laravel</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tailwind</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">RSVP
+                                    System</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS"
+                                    target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>VISIT LIVE DEMO</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Lentera Edukasi -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    PUBLISHING
+                                </span>
+                                <img src="images/website-lenteraedukasi.png" alt="Lentera Edukasi"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Publishing
+                                    & ISBN</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    Lentera Edukasi</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    Academic publishing service platform equipped with print cost simulation calculators
+                                    and manuscript tracking.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Web
+                                    App</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Calculator</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>VISIT PUBLISHING WEB</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Luminaroma Store -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="https://luminaroma.vercel.app/" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    E-COMMERCE
+                                </span>
+                                <img src="images/website-luminaroma.png" alt="Luminaroma Store"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Commerce
+                                    Store</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    Luminaroma Store</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    E-commerce site for scented candles featuring interactive product catalogs and
+                                    seamless WhatsApp checkout.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Store
+                                    Front</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">WhatsApp
+                                    API</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="https://luminaroma.vercel.app/" target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>VISIT CANDLE STORE</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Taman Gumuk Trip -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="https://proto-1-ashen.vercel.app/" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    TOURISM & BOOKING
+                                </span>
+                                <img src="images/website-tamangumuk.png" alt="Taman Gumuk Trip"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Tourism
+                                    & Reservation</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    Taman Gumuk Trip</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    Tourism portal and activity reservation platform for outdoor adventures (ATV,
+                                    Sandboarding, Jeep Parangtritis).
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Booking
+                                    System</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tourism
+                                    Portal</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="https://proto-1-ashen.vercel.app/" target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>VISIT TOURISM WEB</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Blooger Magazine -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    CONTENT PORTAL
+                                </span>
+                                <img src="images/website-blooger.png" alt="Blooger Magazine"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Content
+                                    Portal</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    Blooger Magazine</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    Lifestyle article and news portal with dynamic weather widgets, trending tag
+                                    filters, and author profiles.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">REST
+                                    API</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Weather
+                                    API</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>VISIT NEWS PORTAL</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: CogniStep Game -->
+                    <div
+                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
+                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                                <span
+                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                    UNITY 2D GAME
+                                </span>
+                                <img src="images/game-cognistep.png" alt="CogniStep Platformer"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </a>
+                            <div>
+                                <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Unity
+                                    2D Game</span>
+                                <h4
+                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                    CogniStep Platformer</h4>
+                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                    Cyberpunk pixel art 2D game built in Unity, featuring 6 challenging levels with
+                                    robot enemies and obstacles.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-1.5 mt-5 flex-wrap">
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Unity
+                                    Engine</span>
+                                <span
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">C#
+                                    Scripting</span>
+                            </div>
+                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                                <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
+                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                    <span>PLAY GAME ON ITCH.IO</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==========================================
+     <!-- ==========================================
+     [FITUR TAMBAHAN: UI/UX DESIGN SHOWCASE]
+     ========================================== -->
+        <!-- ==========================================
+     [ADDITIONAL FEATURE: UI/UX DESIGN SHOWCASE]
+     ========================================== -->
+        <!-- Section Figma & Product Design -->
+        <!-- ==========================================
+     SECTION 1: FIGMA & UI/UX DESIGN CASE STUDY
+     ========================================== -->
+        <!-- FEATURED UI/UX CASE SECTION -->
+        <section id="uiux-case"
+            class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+
+            <!-- Ambient Background Glow & Gradient Mesh -->
+            <div
+                class="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-sky-400/15 rounded-full blur-[140px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-10 -right-40 w-[500px] h-[500px] bg-bloom-pink/20 rounded-full blur-[140px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Figma & Product
+                        Design</span>
+                </div>
+                <h2
+                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                    Featured UI/UX Case <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
+                    Exploring application user interfaces from wireframing to high-fidelity interactive prototypes.
+                </p>
+            </div>
+
+            <!-- MAIN SHOWCASE CONTAINER -->
+            <div class="max-w-5xl mx-auto relative z-10">
+                <div
+                    class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(14,165,233,0.15)] hover:border-sky-400/40 transition-all duration-500 group overflow-hidden">
+
+                    <!-- Dynamic Inner Radial Glow -->
+                    <div
+                        class="absolute -top-32 -right-32 w-96 h-96 bg-sky-400/15 rounded-full blur-3xl pointer-events-none group-hover:bg-sky-400/25 transition-all duration-700">
+                    </div>
+
+                    <!-- Figma Canvas Window Frame -->
+                    <div
+                        class="relative rounded-2xl border border-sky-100/80 shadow-xl bg-gradient-to-br from-sky-50/80 via-blue-50/40 to-indigo-50/60 overflow-hidden mb-8 group/canvas">
+
+                        <!-- Mockup Image Container -->
+                        <div
+                            class="overflow-hidden aspect-[16/10] md:aspect-[16/9] bg-slate-100 relative flex items-center justify-center">
+                            <img src="images/desainfigma-neatifylaundry.png" alt="Neatify Figma UI/UX Canvas"
+                                class="w-full h-full object-cover group-hover/canvas:scale-102 transition-transform duration-700 ease-out">
+
+                            <!-- Overlay Darkening on Hover -->
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover/canvas:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            </div>
+                        </div>
+
+                        <!-- Floating Canvas Pill Badge (Figma Style) -->
+                        <div
+                            class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-bloom-dark/10 shadow-lg flex items-center gap-3">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <div class="flex items-center gap-2 text-[10px] font-semibold text-bloom-dark/80">
+                                <span class="text-sky-600 font-bold">Auto Layout</span>
+                                <span>•</span>
+                                <span>Design System</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study Content & Details -->
+                    <div class="space-y-6 text-left relative z-10">
+
+                        <!-- Tags Row -->
+                        <div class="flex items-center gap-2.5 flex-wrap">
+                            <span
+                                class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest shadow-md">
+                                MOBILE APP DESIGN
+                            </span>
+                            <span
+                                class="text-[10px] font-bold text-rose-500 bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-200 uppercase tracking-wider">
+                                WIREFRAMING & HI-FI
+                            </span>
+                            <span
+                                class="text-[10px] font-semibold text-bloom-dark/70 bg-bloom-cream px-3.5 py-1.5 rounded-full border border-bloom-dark/10 uppercase tracking-wider">
+                                DESIGN SYSTEM
+                            </span>
+                        </div>
+
+                        <!-- Title & Description -->
+                        <div>
+                            <h3
+                                class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-sky-600 transition-colors duration-300">
+                                Neatify <span class="text-bloom-dark/30 font-light mx-1">—</span> On-Demand Laundry App
+                            </h3>
+                            <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed mt-3 max-w-3xl">
+                                Designed an end-to-end laundry booking app interface, covering initial wireframes, user
+                                flow mapping, and building an interactive design system with a modern blue theme.
+                            </p>
+                        </div>
+
+                        <!-- Footer Link & Tools Info -->
+                        <div
+                            class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <p class="text-[11px] text-bloom-dark/60 font-light">
+                                <span class="font-semibold text-bloom-dark">Tools:</span> Figma, Auto Layout, Component
+                                System
+                            </p>
+
+                            <a href="https://www.figma.com/design/bovElVMZGfP4j1tjLAfsh7/neatify-laundry?t=Kcf4Gev4ngdHjvGb-1"
+                                target="_blank"
+                                class="inline-flex items-center gap-2 text-xs font-bold text-bloom-dark group-hover:text-sky-600 tracking-widest uppercase transition-colors group/link">
+                                <span>VIEW FIGMA PROTOTYPE</span>
+                                <span
+                                    class="group-hover/link:translate-x-1 group-hover/link:-translate-y-0.5 transition-transform duration-300">↗</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     SECTION 2: LIVE MOBILE APP & VIDEO DEMO
+     ========================================== -->
+        <!-- ==========================================
+     SECTION 2: LIVE MOBILE APP & VIDEO DEMO
+     ========================================== -->
+        <section id="app-demo" class="py-24 px-6 md:px-12 max-w-6xl mx-auto relative overflow-hidden">
+
+            <!-- Ambient Background Lighting & Mesh Orbs -->
+            <div
+                class="absolute top-1/2 -left-32 w-96 h-96 bg-bloom-teal/15 rounded-full blur-[120px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-10 -right-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-3 relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Engineering &
+                        Code Implementation</span>
+                </div>
+                <h2
+                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight flex items-center justify-center gap-3">
+                    Live App Demo & API Integration <span class="text-2xl md:text-3xl">📱</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light max-w-lg mx-auto leading-relaxed">
+                    Realizing the design into a fully functional Android application connected via REST API.
+                </p>
+            </div>
+
+            <!-- Main Container Card (Glassmorphism + Subtle Hover Glow) -->
+            <div
+                class="bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_25px_60px_rgba(37,99,235,0.12)] transition-all duration-500 relative z-10 group overflow-hidden">
+
+                <!-- Soft Dynamic Background Glow Inside Card -->
+                <div
+                    class="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform duration-700">
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
+
+                    <!-- KOLOM KIRI: Real Mobile Device Frame -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <!-- Frame Luar Smartphone -->
+                        <div
+                            class="relative w-full max-w-[280px] bg-slate-900 rounded-[3rem] p-3 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] ring-1 ring-white/20 border-[5px] border-slate-800 group-hover:-translate-y-2 transition-transform duration-500">
+
+                            <!-- Notch / Dynamic Island -->
+                            <div
+                                class="absolute top-3.5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-b-2xl z-20 flex items-center justify-center gap-2 pt-0.5 pointer-events-none">
+                                <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
+                                <div class="w-1.5 h-1.5 bg-blue-950/80 rounded-full"></div>
+                            </div>
+
+                            <!-- Speaker Bar Atas -->
+                            <div
+                                class="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 bg-slate-700/60 rounded-full z-20 pointer-events-none">
+                            </div>
+
+                            <!-- Layar HP (Video utuh kamu tanpa diubah) -->
+                            <!-- Layar HP (Sudah disesuaikan agar Status Bar tertutup notch) -->
+                            <div
+                                class="w-full aspect-[9/19.5] rounded-[2.3rem] overflow-hidden bg-black relative z-10 border border-slate-700/50">
+                                <video autoplay loop muted playsinline
+                                    class="w-full h-full object-cover scale-110 -translate-y-2">
+                                    <source src="videos/neatify-demo.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <!-- Home Bar (Garis Bawah HP) -->
+                            <div
+                                class="absolute bottom-5 left-1/2 -translate-x-1/2 w-28 h-1 bg-slate-400/50 rounded-full z-20 pointer-events-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KOLOM KANAN: Detail & Features (7 Columns) -->
+                    <div class="lg:col-span-7 flex flex-col justify-between space-y-8 text-left">
+
+                        <!-- Tech Stack Badges -->
+                        <div>
+                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-3">TECH &
+                                API STACK</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
+                                    Android Architecture
+                                </span>
+                                <span
+                                    class="px-3.5 py-1.5 bg-blue-50/90 text-blue-600 text-xs font-semibold rounded-xl border border-blue-200/80 backdrop-blur-sm">
+                                    REST API Integration
+                                </span>
+                                <span
+                                    class="px-3.5 py-1.5 bg-emerald-50/90 text-emerald-600 text-xs font-semibold rounded-xl border border-emerald-200/80 backdrop-blur-sm">
+                                    WhatsApp Direct Chat API
+                                </span>
+                                <span
+                                    class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
+                                    VS Code Backend
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Key Features List -->
+                        <div class="space-y-3.5">
+                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-4">MOBILE
+                                APP FEATURES</h4>
+
+                            <ul class="space-y-2.5">
+                                <li
+                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                    <span
+                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                        <strong class="font-semibold text-bloom-dark">Auth System:</strong> User
+                                        Registration & Secure Login Account
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                    <span
+                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                        <strong class="font-semibold text-bloom-dark">Cost Estimation:</strong>
+                                        Automated calculation based on weight (Kg)
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                    <span
+                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                        <strong class="font-semibold text-bloom-dark">Wallet System:</strong> Real-time
+                                        balance top-up & transaction management
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                    <span
+                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                        <strong class="font-semibold text-bloom-dark">Order Tracking:</strong> Dynamic
+                                        laundry status tracking & history
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Footer Link / Action -->
+                        <div
+                            class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <span class="text-xs text-bloom-dark/50 italic font-light">
+                                Built with Android, REST API & VS Code
+                            </span>
+
+                            <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
+                                class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
+                                <span>View Source Code</span>
+                                <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- CERTIFICATES SECTION -->
+        <section id="certificates"
+            class="py-24 px-6 md:px-12 max-w-6xl mx-auto border-t border-bloom-dark/10 relative overflow-hidden">
+
+            <!-- Ambient Background Lighting -->
+            <div
+                class="absolute top-1/3 -left-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-1/4 -right-32 w-96 h-96 bg-bloom-teal/15 rounded-full blur-[120px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-3 relative z-10 max-w-2xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Achievements &
+                        Credentials</span>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight leading-tight">
+                    Certifications
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed">
+                    Verified professional credentials, tech bootcamps, and specialized skill certifications.
+                </p>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+
+                <!-- Certificate 1: AI Ignition -->
+                <div
+                    class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(168,85,247,0.12)] hover:border-purple-300 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <!-- Image Frame dengan Hover Zoom -->
+                        <div
+                            class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
+                            <img src="certificates/Sertifikat-AI Ignition Indonesia_page-0001.jpg"
+                                alt="AI Ignition Certificate"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between gap-2">
+                                <span
+                                    class="text-[10px] font-bold px-3.5 py-1.5 bg-purple-50 text-purple-700 border border-purple-200/80 rounded-full uppercase tracking-wider">
+                                    AI & Machine Learning
+                                </span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">August 2026</span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="font-serif font-bold text-xl text-bloom-dark group-hover:text-purple-700 transition-colors duration-300">
+                                    AI Ignition Training
+                                </h3>
+                                <p class="text-xs font-semibold text-bloom-teal mt-0.5">KUMPUL.ID × Google.org & ADB</p>
+                            </div>
+
+                            <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
+                                30-hour intensive program covering Generative AI, Large Language Models (LLMs), Prompt
+                                Engineering, and Responsible AI implementation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Link CTA -->
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
+                        <a href="certificates/Sertifikat-AI Ignition Indonesia.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-purple-700 group-hover:text-purple-800 tracking-wider uppercase transition-colors group/link">
+                            <span>View PDF Credential</span>
+                            <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Azure AI Fundamentals -->
+                <div
+                    class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(14,165,233,0.12)] hover:border-sky-300 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <!-- Image Frame -->
+                        <div
+                            class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
+                            <img src="certificates/sertificat mereka academy_page-0001.jpg" alt="Azure AI Certificate"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between gap-2">
+                                <span
+                                    class="text-[10px] font-bold px-3.5 py-1.5 bg-sky-50 text-sky-700 border border-sky-200/80 rounded-full uppercase tracking-wider">
+                                    Cloud & AI
+                                </span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">July 2025</span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="font-serif font-bold text-xl text-bloom-dark group-hover:text-sky-700 transition-colors duration-300">
+                                    Azure AI Fundamentals (AI-900)
+                                </h3>
+                                <p class="text-xs font-semibold text-bloom-teal mt-0.5">Microsoft × ElevAIte & KOMDIGI
+                                </p>
+                            </div>
+
+                            <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
+                                Preparation and fundamental certification for Artificial Intelligence concepts and cloud
+                                implementations using Microsoft Azure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Link CTA -->
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
+                        <a href="certificates/sertificat mereka academy.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-sky-700 group-hover:text-sky-800 tracking-wider uppercase transition-colors group/link">
+                            <span>View PDF Credential</span>
+                            <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: Telkom DigiUp -->
+                <div
+                    class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(16,185,129,0.12)] hover:border-emerald-300 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <!-- Image Frame -->
+                        <div
+                            class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
+                            <img src="certificates/sertifikat digiup_page-0001.jpg" alt="Telkom DigiUp Certificate"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between gap-2">
+                                <span
+                                    class="text-[10px] font-bold px-3.5 py-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200/80 rounded-full uppercase tracking-wider">
+                                    Digital Marketing
+                                </span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">December 2025</span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="font-serif font-bold text-xl text-bloom-dark group-hover:text-emerald-700 transition-colors duration-300">
+                                    Digital Marketing Certification
+                                </h3>
+                                <p class="text-xs font-semibold text-bloom-teal mt-0.5">Telkom Indonesia (DigiUp 2025)
+                                </p>
+                            </div>
+
+                            <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
+                                26-hour training covering content strategy, copywriting, Meta Business Suite, and
+                                campaign performance analytics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Link CTA -->
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
+                        <a href="certificates/sertifikat digiup.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 group-hover:text-emerald-800 tracking-wider uppercase transition-colors group/link">
+                            <span>View PDF Credential</span>
+                            <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 4: DevOps Hosting -->
+                <div
+                    class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(245,158,11,0.12)] hover:border-amber-300 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <!-- Image Frame -->
+                        <div
+                            class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
+                            <img src="certificates/MEZZALUNA AZZAFIRA_page-0001.jpg" alt="DevOps Certificate"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between gap-2">
+                                <span
+                                    class="text-[10px] font-bold px-3.5 py-1.5 bg-amber-50 text-amber-700 border border-amber-200/80 rounded-full uppercase tracking-wider">
+                                    DevOps & Cloud
+                                </span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">March 2026</span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="font-serif font-bold text-xl text-bloom-dark group-hover:text-amber-700 transition-colors duration-300">
+                                    DevOps: Practical Web Hosting
+                                </h3>
+                                <p class="text-xs font-semibold text-bloom-teal mt-0.5">Dilesin Academy</p>
+                            </div>
+
+                            <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
+                                Practical workshop covering fundamentals of DevOps workflows, server infrastructure, and
+                                web deployment strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Link CTA -->
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
+                        <a href="certificates/MEZZALUNA AZZAFIRA.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 group-hover:text-amber-800 tracking-wider uppercase transition-colors group/link">
+                            <span>View PDF Credential</span>
+                            <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ==========================================
+     FITUR 5: EXPERIENCE, EDUCATION & TARGET PKL
+     ========================================== -->
+        <!-- ==========================================
+     [FITUR 5: EXPERIENCE, EDUCATION & TARGET PKL]
+     ========================================== -->
+        <section id="experience" class="bg-bloom-cream px-6 md:px-16 py-20 relative border-b border-bloom-dark/10">
+
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-14 max-w-xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Journey & Milestones</span>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight">
+                    Experience & Education <span class="text-bloom-pink">✦</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-md mx-auto">
+                    My academic foundation, vocational journey, and hands-on technical achievements.
+                </p>
+            </div>
+
+            <!-- Cards Grid (3 Cards) -->
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+
+                <!-- Card 1: Internship Readiness (Kartu Teal - Teks Jelas & Kontras) -->
+                <div
+                    class="group bg-bloom-teal text-white p-7 rounded-3xl border border-bloom-dark/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <!-- Badge dibuat Terang (Pink Soft) -->
+                            <span
+                                class="bg-bloom-pink/30 text-white font-bold text-[9px] px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm border border-white/20">
+                                12TH GRADE / FINAL YEAR
+                            </span>
+                            <span class="text-[11px] text-white/90 font-medium">2025 – 2026</span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-serif text-2xl font-normal text-white">Internship Readiness</h3>
+                            <p class="text-xs text-white/90 font-light leading-relaxed mt-3">
+                                Developing production-ready Laravel REST APIs with optimized MySQL architecture,
+                                actively preparing for high-impact industry placement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/20 mt-6 flex items-center justify-between">
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-white/90 uppercase flex items-center gap-1.5">
+                            ✦ INDUSTRY READINESS
+                        </span>
+                        <a href="#contact"
+                            class="text-xs font-semibold text-white hover:underline flex items-center gap-1">
+                            <span>Details</span>
+                            <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Formal Education (Kartu Pink Soft) -->
+                <div
+                    class="group bg-[#FCEEEA] p-7 rounded-3xl border border-bloom-dark/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="bg-white text-bloom-dark text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-bloom-dark/10">
+                                FORMAL EDUCATION
+                            </span>
+                            <span class="text-[11px] text-bloom-dark/70 font-medium">2023 – Present</span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-serif text-2xl font-normal text-bloom-dark">SMK Telkom Purwokerto</h3>
+                            <p class="text-xs text-bloom-dark/80 font-light leading-relaxed mt-3">
+                                Majoring in Software Engineering (RPL). Focused on data structures, relational DB design
+                                (SQL), and Full-Stack web application engineering.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-bloom-dark/10 mt-6 flex items-center justify-between">
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-bloom-dark/80 uppercase flex items-center gap-1.5">
+                            🎓 SOFTWARE ENGINEERING
+                        </span>
+                        <a href="https://smktelkom-pwt.sch.id" target="_blank"
+                            class="text-xs font-semibold text-bloom-pink hover:underline flex items-center gap-1">
+                            <span>Website</span>
+                            <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Track Record / Projects (Kartu Putih Clean) -->
+                <div
+                    class="group bg-white p-7 rounded-3xl border border-bloom-dark/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="bg-sky-50 text-sky-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-200">
+                                TRACK RECORD
+                            </span>
+                            <span class="text-[11px] text-bloom-dark/70 font-medium">2025 – 2026</span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-serif text-2xl font-normal text-bloom-dark">Digital Product Build</h3>
+                            <p class="text-xs text-bloom-dark/80 font-light leading-relaxed mt-3">
+                                Building modern web products with Laravel 12 & Tailwind CSS, focusing on UI aesthetics,
+                                smooth user flows, and query optimization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-bloom-dark/10 mt-6 flex items-center justify-between">
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-bloom-dark/80 uppercase flex items-center gap-1.5">
+                            💻 FULL-STACK DEV
+                        </span>
+                        <a href="#projects"
+                            class="text-xs font-semibold text-sky-600 hover:underline flex items-center gap-1">
+                            <span>Projects</span>
+                            <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- ==========================================
+     [FITUR 6: GITHUB & LINKEDIN SOCIAL HUB]
+     ========================================== -->
+        <section id="connect"
+            class="bg-bloom-cream px-6 md:px-16 py-20 relative overflow-hidden border-b border-bloom-dark/10">
+
+            <!-- Subtle Background Glows -->
+            <div
+                class="absolute top-1/3 left-1/4 w-72 h-72 bg-bloom-teal/10 rounded-full blur-[100px] pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-10 right-1/4 w-72 h-72 bg-bloom-pink/15 rounded-full blur-[100px] pointer-events-none">
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-14 max-w-xl mx-auto relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Connect & Code</span>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight">
+                    GitHub & LinkedIn <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                </h2>
+                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-md mx-auto">
+                    Explore my Laravel source code repositories or connect with me professionally on LinkedIn.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 relative z-10">
+
+                <!-- Card 1: GitHub Profile (Clean Modern Light Card) -->
+                <div
+                    class="group bg-white p-7 md:p-8 rounded-[2rem] border border-bloom-dark/15 shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 transition-all duration-300 space-y-6 flex flex-col justify-between relative">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="w-12 h-12 bg-bloom-dark text-white rounded-2xl flex items-center justify-center text-2xl shadow-md group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <span
+                                class="bg-bloom-cream text-bloom-dark text-[9px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-bloom-dark/10">
+                                CODE REPOSITORY
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-bloom-teal transition-colors">
+                                GitHub Profile</h3>
+                            <p class="text-xs font-bold text-bloom-teal uppercase tracking-widest mt-1">
+                                @MEZZALUNA-AZZAFIRA
+                            </p>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                                Where I store web application source code, Laravel 12 architecture experiments, MySQL
+                                database schemas, and Software Engineering projects.
+                            </p>
+                        </div>
+
+                        <!-- Tech Badges -->
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div
+                                class="bg-bloom-cream/70 p-3 rounded-2xl border border-bloom-dark/10 text-center hover:bg-bloom-cream transition">
+                                <p class="font-serif font-bold text-bloom-dark text-sm">Laravel 12</p>
+                                <p class="text-[9px] text-bloom-dark/60 font-semibold tracking-wider uppercase mt-0.5">
+                                    PRIMARY STACK</p>
+                            </div>
+                            <div
+                                class="bg-bloom-cream/70 p-3 rounded-2xl border border-bloom-dark/10 text-center hover:bg-bloom-cream transition">
+                                <p class="font-serif font-bold text-bloom-dark text-sm">MySQL</p>
+                                <p class="text-[9px] text-bloom-dark/60 font-semibold tracking-wider uppercase mt-0.5">
+                                    DATABASE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Link Button -->
+                    <a href="https://github.com/MEZZALUNA-AZZAFIRA" target="_blank"
+                        class="w-full py-3.5 bg-bloom-dark text-white text-xs font-bold uppercase tracking-widest rounded-2xl hover:bg-bloom-teal shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                        <span>Visit My GitHub</span>
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2: LinkedIn Profile (Elegance Teal Featured Card) -->
+                <div
+                    class="group bg-bloom-teal text-white p-7 md:p-8 rounded-[2rem] border border-bloom-dark/15 shadow-sm hover:shadow-[0_20px_40px_rgba(20,83,90,0.25)] hover:-translate-y-1.5 transition-all duration-300 space-y-6 flex flex-col justify-between relative overflow-hidden">
+
+                    <!-- Subtle Hover Inner Glow -->
+                    <div
+                        class="absolute -right-16 -top-16 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none">
+                    </div>
+
+                    <div class="space-y-5 relative z-10">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="w-12 h-12 bg-white/15 text-white rounded-2xl flex items-center justify-center text-2xl border border-white/20 backdrop-blur-md shadow-inner group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <span
+                                class="bg-white/10 text-white text-[9px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-white/20 backdrop-blur-sm">
+                                PROFESSIONAL NETWORK
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-white">LinkedIn Profile</h3>
+                            <p class="text-xs font-bold text-bloom-pink uppercase tracking-widest mt-1">
+                                MEZZALUNA AZZAFIRA
+                            </p>
+                            <p class="text-xs text-white/90 font-light leading-relaxed mt-3">
+                                Let's connect professionally! Open for internship opportunities, full-stack web
+                                development projects, and software engineering collaborations.
+                            </p>
+                        </div>
+
+                        <!-- Status Pill -->
+                        <div
+                            class="bg-white/10 border border-white/20 p-3 rounded-2xl flex items-center gap-3 backdrop-blur-sm">
+                            <span
+                                class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
+                            <span class="text-xs font-medium text-white/90">Open for Internship & Project
+                                Collaboration</span>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Link Button -->
+                    <a href="https://www.linkedin.com/in/mezzaluna-azzafira-10907b397/" target="_blank"
+                        class="w-full py-3.5 bg-bloom-pink text-bloom-dark text-xs font-bold uppercase tracking-widest rounded-2xl hover:bg-white shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 relative z-10 group/btn">
+                        <span>Connect on LinkedIn</span>
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==========================================
+     [FITUR 7: CONTACT FORM, RESUME & FOOTER]
+     ========================================== -->
+        <section id="contact" class="bg-bloom-cream relative overflow-hidden">
+
+            <!-- 1. JOIN THE BLOOM / CONTACT & RESUME SECTION -->
+            <div
+                class="bg-bloom-teal text-bloom-cream px-6 md:px-16 py-20 text-center space-y-10 relative overflow-hidden border-b border-white/10">
+
+                <!-- Glowing Ambient Lighting Accent -->
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-bloom-pink/10 rounded-full blur-[120px] pointer-events-none">
+                </div>
+
+                <!-- Background Flower Accent Pattern -->
+                <div class="absolute -top-10 -left-10 text-white/5 text-9xl font-serif select-none pointer-events-none">
+                    ✦</div>
+                <div
+                    class="absolute -bottom-10 -right-10 text-white/5 text-9xl font-serif select-none pointer-events-none">
+                    🌸</div>
+
+                <!-- Header Content -->
+                <div class="max-w-xl mx-auto space-y-3 relative z-10">
+                    <span class="font-serif italic text-3xl md:text-4xl text-bloom-pink block drop-shadow-sm">Join the
+                        Bloom</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-normal leading-tight text-white tracking-tight">
+                        Let’s create something extraordinary together.
+                    </h2>
+                    <p class="text-xs md:text-sm text-bloom-cream/80 font-light leading-relaxed max-w-md mx-auto">
+                        Interested in collaborating or exploring my full portfolio? Drop me a message or download my CV
+                        below.
+                    </p>
+                </div>
+
+                <!-- Contact Form Card Container (Glassmorphism Effect) -->
+                <div class="max-w-lg mx-auto relative z-10">
+                    <div
+                        class="bg-white/5 backdrop-blur-xl border border-white/15 p-6 md:p-8 rounded-[2.5rem] shadow-2xl space-y-4">
+
+                        <form id="contactForm" class="space-y-4 text-left">
+                            <!-- Tempel Access Key kamu di sini -->
+                            <input type="hidden" name="access_key" value="ccdffec1-ea1f-4912-8784-a973ea6c5b50">
+                            <input type="hidden" name="subject" value="Pesan Baru dari Portfolio Mezzaluna">
+
+                            <div class="space-y-1.5">
+                                <label
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
+                                    Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required
+                                    class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
+                                    Email Address</label>
+                                <input type="email" name="email" placeholder="john@example.com" required
+                                    class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
+                                    Message</label>
+                                <textarea name="message" placeholder="Your Message or Internship Offer..." rows="4"
+                                    required
+                                    class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-bloom-pink text-bloom-dark font-bold py-4 rounded-2xl text-[11px] uppercase tracking-widest hover:bg-white hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 shadow-lg cursor-pointer flex items-center justify-center gap-2 mt-2">
+                                <span>Send Message</span>
+                                <span>✉️</span>
+                            </button>
+
+                            <!-- Status Pesan (Muncul setelah klik send) -->
+                            <p id="formResult" class="text-xs font-semibold mt-2 hidden text-center"></p>
+                        </form>
+
+                        <!-- SCRIPT UNTUK KIRIM OTOMATIS KE GMAIL (LOGIKA ASLI 100% UNTOUCHED) -->
+                        <script>
+                            const form = document.getElementById('contactForm');
+                            const result = document.getElementById('formResult');
+                            const submitBtn = document.getElementById('submitBtn');
+
+                            form.addEventListener('submit', function (e) {
+                                e.preventDefault();
+
+                                // Ubah teks tombol saat proses ngirim
+                                submitBtn.innerHTML = "Sending...";
+                                submitBtn.disabled = true;
+
+                                const formData = new FormData(form);
+                                const object = Object.fromEntries(formData);
+                                const json = JSON.stringify(object);
+
+                                fetch('https://api.web3forms.com/submit', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        'Accept': 'application/json'
+                                    },
+                                    body: json
+                                })
+                                    .then(async (response) => {
+                                        let json = await response.json();
+                                        if (response.status == 200) {
+                                            result.classList.remove('hidden', 'text-red-400');
+                                            result.classList.add('text-emerald-300');
+                                            result.innerHTML = "✨ Pesan berhasil terkirim ke Gmail Mezzaluna!";
+                                            form.reset();
+                                        } else {
+                                            result.classList.remove('hidden', 'text-emerald-300');
+                                            result.classList.add('text-red-400');
+                                            result.innerHTML = json.message;
+                                        }
+                                    })
+                                    .catch(error => {
+                                        result.classList.remove('hidden', 'text-emerald-300');
+                                        result.classList.add('text-red-400');
+                                        result.innerHTML = "Ada kesalahan koneksi, coba lagi!";
+                                    })
+                                    .then(function () {
+                                        submitBtn.innerHTML = "Send Message ✉️";
+                                        submitBtn.disabled = false;
+                                        setTimeout(() => {
+                                            result.classList.add('hidden');
+                                        }, 5000);
+                                    });
+                            });
+                        </script>
+
+                        <!-- Download CV Button Inside Glass Container -->
+                        <div class="pt-4 border-t border-white/10 text-center">
+                            <a href="#"
+                                onclick="alert('File Resume/CV Mezzaluna Azzafira siap diunduh!'); return false;"
+                                class="inline-flex items-center gap-2 text-bloom-pink hover:text-white border border-bloom-pink/50 hover:border-white px-7 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 transition-all duration-300 cursor-pointer">
+                                <span>Download Resume / CV</span>
+                                <i class="fa-solid fa-download text-[10px]"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. FAQ SECTION -->
+            <div class="px-6 md:px-16 py-20 border-b border-bloom-dark/10 bg-bloom-cream/50">
+                <div class="max-w-2xl mx-auto space-y-8">
+                    <div class="text-center space-y-1">
+                        <span class="font-serif italic text-2xl text-bloom-teal block">Instant Answers</span>
+                        <h3 class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark">Frequently Asked
+                            Questions</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- FAQ 1 -->
+                        <details
+                            class="group bg-white p-6 rounded-2xl border border-bloom-dark/10 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <summary
+                                class="font-serif text-base font-bold text-bloom-dark flex justify-between items-center list-none">
+                                <span>When are you available for the 2026 Internship Program?</span>
+                                <span
+                                    class="text-bloom-teal transition-transform duration-300 group-open:rotate-180">✦</span>
+                            </summary>
+                            <p
+                                class="text-xs text-bloom-dark/70 font-light mt-4 leading-relaxed border-t border-bloom-dark/5 pt-3">
+                                I am scheduled to join the internship program from <strong>December 7, 2026, to April
+                                    16, 2027</strong> (4 months of industry placement), specializing in Software
+                                Engineering under the Employment/Entrepreneurship track.
+                            </p>
+                        </details>
+
+                        <!-- FAQ 2 -->
+                        <details
+                            class="group bg-white p-6 rounded-2xl border border-bloom-dark/10 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <summary
+                                class="font-serif text-base font-bold text-bloom-dark flex justify-between items-center list-none">
+                                <span>What are your primary technical skills?</span>
+                                <span
+                                    class="text-bloom-teal transition-transform duration-300 group-open:rotate-180">✦</span>
+                            </summary>
+                            <p
+                                class="text-xs text-bloom-dark/70 font-light mt-4 leading-relaxed border-t border-bloom-dark/5 pt-3">
+                                My focus is on web development (Laravel backend & MySQL, RESTful APIs), Android mobile
+                                application development, and modern user interface design (UI/UX) using Tailwind CSS and
+                                Figma.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="py-14 bg-[#FAF7F2] font-sans border-t border-bloom-dark/10 text-center space-y-8">
+
+                <!-- Nama & Bio Singkat -->
+                <div class="space-y-2">
+                    <h2 class="font-serif italic text-3xl md:text-4xl font-bold text-bloom-dark">
+                        Mezzaluna Azzafira
+                    </h2>
+                    <p class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-bloom-teal">
+                        SOFTWARE ENGINEERING ✦ SMK TELKOM PURWOKERTO
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div
+                    class="flex items-center justify-center gap-8 text-xs font-bold tracking-widest text-bloom-dark/80">
+                    <a href="https://github.com/mezzaluna-azzafira" target="_blank"
+                        class="flex items-center gap-2 hover:text-bloom-teal transition-all duration-300 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-github text-sm"></i> GITHUB
+                    </a>
+                    <a href="https://www.linkedin.com/in/mezzaluna-azzafira-10907b397/" target="_blank"
+                        class="flex items-center gap-2 hover:text-bloom-teal transition-all duration-300 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-linkedin text-sm"></i> LINKEDIN
+                    </a>
+                    <a href="mailto:mezza23lunaazzafira@gmail.com"
+                        class="flex items-center gap-2 hover:text-bloom-teal transition-all duration-300 hover:-translate-y-0.5">
+                        <i class="fa-regular fa-envelope text-sm"></i> EMAIL
+                    </a>
+                </div>
+
+                <div class="w-12 h-[1px] bg-bloom-pink/40 mx-auto"></div>
+
+                <!-- Copyright -->
+                <p class="text-[10px] text-bloom-dark/40 font-light tracking-wider uppercase">
+                    © 2026 MEZZALUNA AZZAFIRA. DESIGNED WITH EDITORIAL AESTHETIC & PRECISION LOGIC.
+                </p>
+            </footer>
+        </section>
