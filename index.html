@@ -15,6 +15,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -89,1373 +94,1290 @@
     <div
         class="max-w-5xl mx-auto min-h-screen shadow-2xl my-0 md:my-4 bg-bloom-cream overflow-hidden border border-bloom-dark/10">
 
-        <!-- ==========================================
-             [FITUR 1: TOP NAVBAR & CENTERED HERO SECTION]
-             ========================================== -->
-        <header id="hero" class="relative hero-glow-bg pb-16 pt-2 px-4 md:px-8 overflow-hidden">
+        <!-- 3. HERO CONTENT (CENTERED ALIGNMENT) -->
+        <div class="max-w-4xl mx-auto text-center space-y-4 pt-4 relative z-10">
 
-            <!-- 1. TOP TICKER / MARQUEE BAR -->
-            <div class="bg-bloom-pink py-1.5 -mx-8 mb-6 overflow-hidden border-b border-bloom-dark/10">
-                <div
-                    class="overflow-hidden whitespace-nowrap bg-rose-200 py-2.5 font-bold text-xs uppercase tracking-widest text-slate-800">
-                    <div class="inline-block animate-marquee">
-                        <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
-                        <span class="mx-4">✦ FULL-STACK & SECURE APP DEVELOPER</span>
-                        <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
-                        <span class="mx-4">✦ OWASP TOP 10 & API SECURITY</span>
-                        <span class="mx-4">✦ LARAVEL 12 & REST API</span>
-                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
-                    </div>
-                    <!-- Duplikat agar efek animasi berjalan terus mulus -->
-                    <div class="inline-block animate-marquee" aria-hidden="true">
-                        <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
-                        <span class="mx-4">✦ UI/UX & FULL-STACK & MOBILE DEVELOPER</span>
-                        <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
-                        <span class="mx-4">✦ LARAVEL & REST API</span>
-                        <span class="mx-4">✦ FIGMA & MOBILE APP</span>
-                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
-                    </div>
-                </div>
+            <!-- Sub-Greeting Tag -->
+            <div
+                class="inline-flex items-center gap-2 bg-bloom-lightpink/80 border border-bloom-pink px-4 py-1.5 rounded-full text-xs font-medium text-bloom-dark">
+                <span>Hi! I'm Mezzaluna</span>
+                <span class="text-bloom-teal font-bold">• Based in Indonesia</span>
             </div>
 
-            <!-- 2. TOP NAVBAR (LAYOUT PERSIS GAMBAR PERTAMA) -->
-            <nav
-                class="flex justify-between items-center max-w-5xl mx-auto py-3 px-6 bg-white/70 backdrop-blur-md rounded-full border border-bloom-dark/10 shadow-sm mb-12">
-                <!-- Brand / Logo -->
-                <a href="#"
-                    class="font-serif italic font-bold text-lg tracking-tight text-bloom-dark flex items-center gap-2 shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-bloom-teal"></span> Mezzaluna
-                </a>
+            <!-- Giant Editorial Headline (Kembali ke Style Gambar 3 + Cyber Security) -->
+            <h1 class="flex flex-col items-center justify-center tracking-tight leading-none my-3">
+                <span class="text-4xl md:text-6xl font-bold text-slate-900" style="font-family: 'Bodoni Moda', serif;">
+                    Full-Stack Developer &
+                </span>
+                <span class="text-4xl md:text-6xl font-semibold italic text-[#1f6268] relative inline-block pr-4"
+                    style="font-family: 'Bodoni Moda', serif;">
+                    Cyber Security Specialist
+                    <!-- Garis Merah Muda / Pink Cursor Accent -->
+                    <span class="absolute right-0 top-[15%] h-[70%] w-1.5 bg-[#eb9f9f] rounded-full"></span>
+                </span>
+            </h1>
 
-                <!-- Nav Links (Bisa discroll halus di HP, tampil rapi di Desktop) -->
-                <div
-                    class="flex items-center gap-4 md:gap-6 text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-bloom-dark/80 overflow-x-auto no-scrollbar px-2">
-                    <a href="#about" class="hover:text-bloom-teal transition whitespace-nowrap">About</a>
-                    <a href="#skills" class="hover:text-bloom-teal transition whitespace-nowrap">Skills</a>
-                    <a href="#projects" class="hover:text-bloom-teal transition whitespace-nowrap">Projects</a>
-                    <a href="#certificates" class="hover:text-bloom-teal transition whitespace-nowrap">Certificates</a>
-                    <a href="#experience" class="hover:text-bloom-teal transition whitespace-nowrap">Journey</a>
-                </div>
+            <!-- Sub-description (Dirapikan jadi 1 kalimat ringkas & estetik) -->
+            <p class="font-sans text-xs md:text-sm text-bloom-dark/80 max-w-lg mx-auto font-light leading-relaxed">
+                Crafting seamless web platforms with clean Laravel 12 logic, secure REST APIs, and OWASP Top 10 security
+                standards.
+            </p>
 
-                <!-- CTA Button -->
-                <a href="#contact"
-                    class="bg-bloom-pink text-bloom-dark px-4 py-2 md:px-5 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest hover:bg-bloom-teal hover:text-white transition shadow-sm border border-bloom-dark/10 shrink-0 hidden sm:inline-block">
-                    Contact
-                </a>
-            </nav>
-            <!-- 3. HERO CONTENT (CENTERED ALIGNMENT PERSIS GAMBAR PERTAMA) -->
-            <div class="max-w-3xl mx-auto text-center space-y-6 pt-4 relative z-10">
-
-                <!-- Sub-Greeting Tag -->
-                <div
-                    class="inline-flex items-center gap-2 bg-bloom-lightpink/80 border border-bloom-pink px-4 py-1.5 rounded-full text-xs font-medium text-bloom-dark">
-                    <span>Hi! I'm Mezzaluna</span>
-                    <span class="text-bloom-teal font-bold">• Based in Indonesia</span>
-                </div>
-
-                <!-- Giant Editorial Headline (Dua Baris dengan Warna Highlight Teal) -->
-                <p class="font-sans text-xs md:text-sm text-bloom-dark/80 max-w-md mx-auto font-light leading-relaxed">
-                    Crafting seamless web platforms with clean Laravel 12 logic, secure REST APIs, and OWASP Top 10
-                    security standards.
-                </p>
-
-                <!-- Sub-description -->
-                <p class="font-sans text-xs md:text-sm text-bloom-dark/80 max-w-md mx-auto font-light leading-relaxed">
-                    Crafting seamless web platforms with clean Laravel 12 logic, MySQL architecture, and user-centric
-                    designs.
-                </p>
-
-                <!-- 4. LAYERED PHOTO FRAMES + CIRCULAR STAMP (STACK AT BOTTOM PERSIS GAMBAR PERTAMA) -->
-                <div class="pt-8 flex justify-center relative max-w-xs mx-auto">
-
-                    <!-- Back Layer Frame (Checkered Pattern & Cream Accent) -->
-                    <div class="absolute inset-0 bg-bloom-pink rounded-3xl transform -rotate-6 scale-95 shadow-md">
-                        <div class="w-full h-full checkered-pattern rounded-3xl opacity-30"></div>
-                    </div>
-
-                    <!-- Middle Layer Frame (Deep Teal Accent) -->
-                    <div class="absolute inset-0 bg-bloom-teal rounded-3xl transform rotate-3 scale-98 shadow-md"></div>
-
-                    <!-- Main Top Photo Card -->
-                    <div
-                        class="relative bg-bloom-cream p-2.5 rounded-3xl border-2 border-white shadow-2xl overflow-hidden w-64 h-80 z-10">
-                        <img src="images/myprofille.png" alt="Mezzaluna Azzafira"
-                            class="w-full h-full object-cover rounded-2xl">
-                    </div>
-
-                    <!-- Circular Stamp Berputar (Bottom Right Sticker ala Gambar Pertama) -->
-                    <div class="absolute -bottom-4 -right-6 w-24 h-24 z-20 animate-spin-slow">
-                        <svg viewBox="0 0 100 100" class="w-full h-full fill-bloom-dark">
-                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                                fill="none" />
-                            <text font-size="8.5" font-family="Plus Jakarta Sans" font-weight="bold" letter-spacing="2">
-                                <textPath href="#circlePath">
-                                    ✦ EXPLORE MORE ✦ LET'S TALK
-                                </textPath>
-                            </text>
-                        </svg>
-                        <!-- Central Arrow Circle -->
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-9 h-9 bg-bloom-pink rounded-full flex items-center justify-center text-bloom-dark shadow-md border border-white">
-                                <i class="fa-solid fa-arrow-down text-xs"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </header>
-
-        <!-- Pembatas Kertas Sobek (Top/Atas Seksi Berikutnya) -->
-        <div class="w-full overflow-hidden leading-none rotate-180 -mb-1 select-none pointer-events-none">
-            <svg class="relative block w-full h-8 sm:h-12 md:h-16 text-bloom-cream" viewBox="0 0 1200 120"
-                preserveAspectRatio="none" fill="currentColor">
-                <path
-                    d="M0,0 L0,40 L35,55 L70,30 L110,65 L150,20 L190,50 L230,25 L280,60 L320,35 L370,70 L410,25 L460,55 L500,20 L550,65 L600,30 L640,60 L690,15 L730,50 L780,25 L820,65 L870,30 L910,55 L960,20 L1000,60 L1050,35 L1090,65 L1140,25 L1180,50 L1200,30 L1200,0 Z">
-                </path>
-            </svg>
         </div>
 
+        <!-- Circular Stamp Berputar (Bottom Right Sticker ala Gambar Pertama) -->
+        <div class="absolute -bottom-4 -right-6 w-24 h-24 z-20 animate-spin-slow">
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-bloom-dark">
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                <text font-size="8.5" font-family="Plus Jakarta Sans" font-weight="bold" letter-spacing="2">
+                    <textPath href="#circlePath">
+                        ✦ EXPLORE MORE ✦ LET'S TALK
+                    </textPath>
+                </text>
+            </svg>
+            <!-- Central Arrow Circle -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                    class="w-9 h-9 bg-bloom-pink rounded-full flex items-center justify-center text-bloom-dark shadow-md border border-white">
+                    <i class="fa-solid fa-arrow-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    </header>
+
+    <!-- Pembatas Kertas Sobek (Top/Atas Seksi Berikutnya) -->
+    <div class="w-full overflow-hidden leading-none rotate-180 -mb-1 select-none pointer-events-none">
+        <svg class="relative block w-full h-8 sm:h-12 md:h-16 text-bloom-cream" viewBox="0 0 1200 120"
+            preserveAspectRatio="none" fill="currentColor">
+            <path
+                d="M0,0 L0,40 L35,55 L70,30 L110,65 L150,20 L190,50 L230,25 L280,60 L320,35 L370,70 L410,25 L460,55 L500,20 L550,65 L600,30 L640,60 L690,15 L730,50 L780,25 L820,65 L870,30 L910,55 L960,20 L1000,60 L1050,35 L1090,65 L1140,25 L1180,50 L1200,30 L1200,0 Z">
+            </path>
+        </svg>
+    </div>
 
 
-        <!-- PLACEHOLDER UNTUK FITUR 2 -->
-        <!-- ==========================================
+
+    <!-- PLACEHOLDER UNTUK FITUR 2 -->
+    <!-- ==========================================
              [FITUR 2: ABOUT ME & CHECKERED HIGHLIGHT]
              ========================================== -->
-        <section id="about" class="relative">
+    <section id="about" class="relative">
 
-            <!-- 1. ABOUT ME EDITORIAL SECTION -->
-            <div class="px-6 md:px-16 py-16 bg-bloom-cream border-t border-bloom-dark/10">
-                <div class="max-w-4xl mx-auto grid md:grid-cols-12 gap-10 items-center">
+        <!-- 1. ABOUT ME EDITORIAL SECTION -->
+        <div class="px-6 md:px-16 py-16 bg-bloom-cream border-t border-bloom-dark/10">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-12 gap-10 items-center">
 
-                    <!-- Kiri: Floating Stacked Photos & Floral Accent -->
-                    <div class="md:col-span-5 relative flex justify-center">
-                        <div class="relative w-56 h-72">
-                            <!-- Background Layer Polaroid -->
-                            <div
-                                class="absolute -top-4 -left-4 w-44 h-56 bg-bloom-pink p-2 rounded-2xl shadow-md transform -rotate-6 border border-bloom-dark/10">
-                                <img src="images/myprofille.png" alt="Floral aesthetic"
-                                    class="w-full h-full object-cover rounded-xl opacity-80">
-                            </div>
-                            <!-- Foreground Profile Card -->
-                            <div
-                                class="relative w-48 h-64 bg-white p-2.5 rounded-2xl shadow-xl border border-bloom-dark/10 transform rotate-3 hover:rotate-0 transition duration-300">
-                                <img src="images/myprofille.png" alt="Mezzaluna profile"
-                                    class="w-full h-48 object-cover rounded-xl">
-                                <span
-                                    class="font-serif italic text-[11px] text-bloom-dark font-bold text-center block mt-2"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kanan: Editorial Content Text -->
-                    <div class="md:col-span-7 space-y-4 text-center md:text-left">
-                        <span class="font-italic text-2xl text-bloom-teal italic block">A Little About Me...</span>
-
-                        <h2 class="font-serif text-3xl md:text-4xl font-normal leading-tight text-bloom-dark">
-                            Behind every seamless digital product is strong backend logic & user-centered design.
-                        </h2>
-
-                        <p class="text-xs text-bloom-dark/80 font-light leading-relaxed">
-                            I am a Software Engineering student at <strong>SMK Telkom Purwokerto</strong> specializing
-                            in full-stack web and mobile app development. I focus on building robust backend systems
-                            with <strong>Laravel</strong> & <strong>MySQL</strong>, crafting native mobile applications
-                            using <strong>Android Studio</strong>, and designing intuitive web interfaces for
-                            exceptional user experiences.
-                        </p>
-
+                <!-- Kiri: Floating Stacked Photos & Floral Accent -->
+                <div class="md:col-span-5 relative flex justify-center">
+                    <div class="relative w-56 h-72">
+                        <!-- Background Layer Polaroid -->
                         <div
-                            class="pt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-semibold text-bloom-dark/90">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-bloom-pink"></span>
-                                <span>Software Engineering Student</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                                <span>Open for Internship (PKL 2026)</span>
-                            </div>
+                            class="absolute -top-4 -left-4 w-44 h-56 bg-bloom-pink p-2 rounded-2xl shadow-md transform -rotate-6 border border-bloom-dark/10">
+                            <img src="images/myprofille.png" alt="Floral aesthetic"
+                                class="w-full h-full object-cover rounded-xl opacity-80">
+                        </div>
+                        <!-- Foreground Profile Card -->
+                        <div
+                            class="relative w-48 h-64 bg-white p-2.5 rounded-2xl shadow-xl border border-bloom-dark/10 transform rotate-3 hover:rotate-0 transition duration-300">
+                            <img src="images/myprofille.png" alt="Mezzaluna profile"
+                                class="w-full h-48 object-cover rounded-xl">
+                            <span
+                                class="font-serif italic text-[11px] text-bloom-dark font-bold text-center block mt-2"></span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 2. CHECKERED RED-WHITE HIGHLIGHT BANNER -->
-            <div class="checkered-pattern py-16 px-6 relative border-y border-bloom-dark/10">
-                <!-- Overlay Card di Tengah -->
-                <div
-                    class="max-w-2xl mx-auto bg-bloom-cream p-8 md:p-10 rounded-3xl border-2 border-bloom-dark/20 shadow-2xl text-center space-y-4">
+                <!-- Kanan: Editorial Content Text -->
+                <div class="md:col-span-7 space-y-4 text-center md:text-left">
+                    <span class="font-italic text-2xl text-bloom-teal italic block">A Little About Me...</span>
 
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-bloom-teal block">✦ System
-                        Readiness ✦</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-normal leading-tight text-bloom-dark">
+                        Behind every seamless digital product is strong backend logic & user-centered design.
+                    </h2>
 
-                    <h3 class="font-serif text-2xl md:text-3xl font-normal leading-tight text-bloom-dark">
-                        Building scalable web backends & seamless mobile applications.
-                    </h3>
-
-                    <p class="text-xs text-bloom-dark/70 max-w-lg mx-auto font-light leading-relaxed">
-                        Great digital applications require robust database architecture, secure APIs, and responsive UI.
-                        I am ready to bring reliable code and technical solutions to your development team.
+                    <p class="text-xs text-bloom-dark/80 font-light leading-relaxed">
+                        I am a Software Engineering student at <strong>SMK Telkom Purwokerto</strong> specializing
+                        in full-stack web and mobile app development. I focus on building robust backend systems
+                        with <strong>Laravel</strong> & <strong>MySQL</strong>, crafting native mobile applications
+                        using <strong>Android Studio</strong>, and designing intuitive web interfaces for
+                        exceptional user experiences.
                     </p>
 
-                    <div class="pt-2">
-                        <a href="#projects"
-                            class="inline-block bg-bloom-teal text-white px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-bloom-pink hover:text-bloom-dark transition shadow-md">
-                            Explore Projects ✦
-                        </a>
+                    <div
+                        class="pt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-semibold text-bloom-dark/90">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-bloom-pink"></span>
+                            <span>Software Engineering Student</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                            <span>Open for Internship (PKL 2026)</span>
+                        </div>
                     </div>
-
                 </div>
             </div>
+        </div>
 
-        </section>
+        <!-- 2. CHECKERED RED-WHITE HIGHLIGHT BANNER -->
+        <div class="checkered-pattern py-16 px-6 relative border-y border-bloom-dark/10">
+            <!-- Overlay Card di Tengah -->
+            <div
+                class="max-w-2xl mx-auto bg-bloom-cream p-8 md:p-10 rounded-3xl border-2 border-bloom-dark/20 shadow-2xl text-center space-y-4">
 
-        <!-- PLACEHOLDER UNTUK FITUR 3 -->
-        <!-- ==========================================
+                <span class="text-[10px] uppercase font-bold tracking-widest text-bloom-teal block">✦ System
+                    Readiness ✦</span>
+
+                <h3 class="font-serif text-2xl md:text-3xl font-normal leading-tight text-bloom-dark">
+                    Building scalable web backends & seamless mobile applications.
+                </h3>
+
+                <p class="text-xs text-bloom-dark/70 max-w-lg mx-auto font-light leading-relaxed">
+                    Great digital applications require robust database architecture, secure APIs, and responsive UI.
+                    I am ready to bring reliable code and technical solutions to your development team.
+                </p>
+
+                <div class="pt-2">
+                    <a href="#projects"
+                        class="inline-block bg-bloom-teal text-white px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-bloom-pink hover:text-bloom-dark transition shadow-md">
+                        Explore Projects ✦
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PLACEHOLDER UNTUK FITUR 3 -->
+    <!-- ==========================================
              [FITUR 3: TECH STACK & CORE SERVICES]
              ========================================== -->
-        <!-- ==========================================
+    <!-- ==========================================
              [SECTION: TECH & EXPERTISE - 9 CARDS GRID]
              ========================================== -->
-        <!-- TECH & EXPERTISE SECTION -->
-        <section id="skills"
-            class="bg-gradient-to-b from-bloom-cream/60 via-white to-bloom-cream/80 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+    <!-- TECH & EXPERTISE SECTION -->
+    <section id="skills"
+        class="bg-gradient-to-b from-bloom-cream/60 via-white to-bloom-cream/80 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
 
-            <!-- Ambient Background Lighting -->
+        <!-- Ambient Background Lighting -->
+        <div
+            class="absolute top-1/3 -right-24 w-80 h-80 bg-bloom-pink/15 rounded-full blur-[100px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-1/4 -left-24 w-80 h-80 bg-bloom-teal/15 rounded-full blur-[100px] pointer-events-none">
+        </div>
+
+        <!-- Section Header -->
+        <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
             <div
-                class="absolute top-1/3 -right-24 w-80 h-80 bg-bloom-pink/15 rounded-full blur-[100px] pointer-events-none">
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Capabilities &
+                    Tech Stack</span>
             </div>
+            <h2
+                class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                Tech & Expertise <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+            </h2>
+            <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-xl mx-auto">
+                Core technologies, system design practices, database architecture, and security protocols I utilize
+                for modern web & mobile development.
+            </p>
+        </div>
+
+        <!-- 9 GRID TECH STACK CARDS -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+            <!-- 1. App & Web Security (UTAMA - DIATAS) -->
             <div
-                class="absolute bottom-1/4 -left-24 w-80 h-80 bg-bloom-teal/15 rounded-full blur-[100px] pointer-events-none">
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(20,184,166,0.12)] hover:-translate-y-2 hover:border-teal-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-teal-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-teal-500 group-hover:border-teal-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-teal-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-teal-600 transition-colors">
+                            App & Web Security</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-teal-500 uppercase block mt-0.5">SECURE
+                            CODING & OWASP</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Applying OWASP Top 10 principles, CSRF protection, Bcrypt password hashing, input
+                            sanitization, and secure authentication flows.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-teal-50 text-teal-600 font-semibold text-[10px] rounded-full border border-teal-200/80 tracking-wider">
+                        OWASP TOP 10 & PROTOCOLS
+                    </span>
+                </div>
             </div>
 
-            <!-- Section Header -->
-            <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
+            <!-- 2. Postman Testing & API Security (DIPINDAH KE ATAS) -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(239,68,68,0.12)] hover:-translate-y-2 hover:border-red-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
                 <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
-                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Capabilities &
-                        Tech Stack</span>
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-red-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
                 </div>
-                <h2
-                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Tech & Expertise <span class="text-bloom-pink animate-pulse inline-block">✦</span>
-                </h2>
-                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-xl mx-auto">
-                    Core technologies, system design practices, database architecture, and security protocols I utilize
-                    for modern web & mobile development.
-                </p>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-red-50 border border-red-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-red-500 group-hover:border-red-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-red-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-red-600 transition-colors">
+                            Postman API Testing</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-red-500 uppercase block mt-0.5">API
+                            SECURITY & QA</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Testing REST API endpoints, verifying Bearer tokens, request headers, payload security,
+                            and status code error handling.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-red-50 text-red-600 font-semibold text-[10px] rounded-full border border-red-200/80 tracking-wider">
+                        API QA & TOKEN AUTH
+                    </span>
+                </div>
             </div>
 
-            <!-- 9 GRID TECH STACK CARDS -->
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-
-                <!-- 1. App & Web Security (UTAMA - DIATAS) -->
+            <!-- 3. Laravel Core -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
                 <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(20,184,166,0.12)] hover:-translate-y-2 hover:border-teal-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
                     <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-teal-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                        class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
                     </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-teal-500 group-hover:border-teal-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-teal-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-teal-600 transition-colors">
-                                App & Web Security</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-teal-500 uppercase block mt-0.5">SECURE
-                                CODING & OWASP</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Applying OWASP Top 10 principles, CSRF protection, Bcrypt password hashing, input
-                                sanitization, and secure authentication flows.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-teal-50 text-teal-600 font-semibold text-[10px] rounded-full border border-teal-200/80 tracking-wider">
-                            OWASP TOP 10 & PROTOCOLS
-                        </span>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
+                            Laravel Core</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">BACKEND
+                            FRAMEWORK</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Building robust web applications with Laravel 12, focusing on MVC pattern, Eloquent ORM,
+                            clean routing, and secure backend logic.
+                        </p>
                     </div>
                 </div>
 
-                <!-- 2. Postman Testing & API Security (DIPINDAH KE ATAS) -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(239,68,68,0.12)] hover:-translate-y-2 hover:border-red-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-red-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-red-50 border border-red-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-red-500 group-hover:border-red-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-red-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-red-600 transition-colors">
-                                Postman API Testing</h3>
-                            <span class="text-[9px] font-bold tracking-widest text-red-500 uppercase block mt-0.5">API
-                                SECURITY & QA</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Testing REST API endpoints, verifying Bearer tokens, request headers, payload security,
-                                and status code error handling.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-red-50 text-red-600 font-semibold text-[10px] rounded-full border border-red-200/80 tracking-wider">
-                            API QA & TOKEN AUTH
-                        </span>
-                    </div>
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
+                        PHP 8.2+ & OOP
+                    </span>
                 </div>
-
-                <!-- 3. Laravel Core -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
-                                Laravel Core</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">BACKEND
-                                FRAMEWORK</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Building robust web applications with Laravel 12, focusing on MVC pattern, Eloquent ORM,
-                                clean routing, and secure backend logic.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
-                            PHP 8.2+ & OOP
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 4. MySQL Database -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(14,165,233,0.12)] hover:-translate-y-2 hover:border-sky-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-sky-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-sky-50 border border-sky-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-sky-500 group-hover:border-sky-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-sky-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s-8-1.79-8-4">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-sky-600 transition-colors">
-                                MySQL Database</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-sky-500 uppercase block mt-0.5">DATABASE
-                                ARCHITECTURE</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Designing normalized relational database schemas, managing table relationships, and
-                                optimizing SQL queries to prevent injections.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-sky-50 text-sky-600 font-semibold text-[10px] rounded-full border border-sky-200/80 tracking-wider">
-                            RELATIONAL DATABASE
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 5. Android Studio -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)] hover:-translate-y-2 hover:border-emerald-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-emerald-50 border border-emerald-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-emerald-500 group-hover:border-emerald-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-emerald-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-emerald-600 transition-colors">
-                                Android Studio</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-emerald-500 uppercase block mt-0.5">MOBILE
-                                DEVELOPMENT</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Building native Android mobile applications with clean UI layouts, Activity lifecycle
-                                management, and RESTful API integration.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-emerald-50 text-emerald-600 font-semibold text-[10px] rounded-full border border-emerald-200/80 tracking-wider">
-                            ANDROID SDK & XML
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 6. UI/UX & Figma -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(249,115,22,0.12)] hover:-translate-y-2 hover:border-orange-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-orange-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-orange-50 border border-orange-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-orange-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-orange-600 transition-colors">
-                                UI/UX & Figma</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-orange-500 uppercase block mt-0.5">INTERFACE
-                                DESIGN</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Wireframing, prototyping interactive user interfaces, and converting Figma visual
-                                designs into clean frontend components.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-orange-50 text-orange-600 font-semibold text-[10px] rounded-full border border-orange-200/80 tracking-wider">
-                            FIGMA & WIREFRAMING
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 7. Tailwind CSS -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(6,182,212,0.12)] hover:-translate-y-2 hover:border-cyan-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-cyan-50 border border-cyan-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-cyan-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-cyan-600 transition-colors">
-                                Tailwind CSS</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-cyan-500 uppercase block mt-0.5">FRONTEND
-                                STYLING</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Styling responsive, mobile-first user interfaces efficiently using utility-first CSS
-                                classes and custom color palettes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-cyan-50 text-cyan-600 font-semibold text-[10px] rounded-full border border-cyan-200/80 tracking-wider">
-                            RESPONSIVE UI
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 8. Modern JS (ES6+) -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(234,179,8,0.12)] hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:border-amber-500 transition-all duration-300">
-                            <span
-                                class="font-bold text-lg text-amber-500 group-hover:text-white transition-colors duration-300">JS</span>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-amber-600 transition-colors">
-                                Modern JS (ES6+)</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-amber-500 uppercase block mt-0.5">INTERACTIVITY</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Implementing dynamic DOM manipulation, async/await requests, event listeners, and
-                                interactive UI logic.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-amber-50 text-amber-600 font-semibold text-[10px] rounded-full border border-amber-200/80 tracking-wider">
-                            ES6+ & FETCH API
-                        </span>
-                    </div>
-                </div>
-
-                <!-- 9. Git & GitHub -->
-                <div
-                    class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
-                    <div
-                        class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
-                    </div>
-
-                    <div class="space-y-4 flex flex-col items-center">
-                        <!-- Icon Frame -->
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
-                            <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3
-                                class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
-                                Git & GitHub</h3>
-                            <span
-                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">VERSION
-                                CONTROL</span>
-                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Tracking code changes, managing commit histories, repository branching, and
-                                collaborating through GitHub.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
-                        <span
-                            class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
-                            VERSION CONTROL
-                        </span>
-                    </div>
-                </div>
-
             </div>
-        </section>
-        <!-- PLACEHOLDER UNTUK FITUR 4 -->
-        <!-- ==========================================
+
+            <!-- 4. MySQL Database -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(14,165,233,0.12)] hover:-translate-y-2 hover:border-sky-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-sky-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-sky-50 border border-sky-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-sky-500 group-hover:border-sky-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-sky-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s-8-1.79-8-4">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-sky-600 transition-colors">
+                            MySQL Database</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-sky-500 uppercase block mt-0.5">DATABASE
+                            ARCHITECTURE</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Designing normalized relational database schemas, managing table relationships, and
+                            optimizing SQL queries to prevent injections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-sky-50 text-sky-600 font-semibold text-[10px] rounded-full border border-sky-200/80 tracking-wider">
+                        RELATIONAL DATABASE
+                    </span>
+                </div>
+            </div>
+
+            <!-- 5. Android Studio -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)] hover:-translate-y-2 hover:border-emerald-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-emerald-50 border border-emerald-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-emerald-500 group-hover:border-emerald-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-emerald-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-emerald-600 transition-colors">
+                            Android Studio</h3>
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-emerald-500 uppercase block mt-0.5">MOBILE
+                            DEVELOPMENT</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Building native Android mobile applications with clean UI layouts, Activity lifecycle
+                            management, and RESTful API integration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-emerald-50 text-emerald-600 font-semibold text-[10px] rounded-full border border-emerald-200/80 tracking-wider">
+                        ANDROID SDK & XML
+                    </span>
+                </div>
+            </div>
+
+            <!-- 6. UI/UX & Figma -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(249,115,22,0.12)] hover:-translate-y-2 hover:border-orange-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-orange-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-orange-50 border border-orange-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-orange-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-orange-600 transition-colors">
+                            UI/UX & Figma</h3>
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-orange-500 uppercase block mt-0.5">INTERFACE
+                            DESIGN</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Wireframing, prototyping interactive user interfaces, and converting Figma visual
+                            designs into clean frontend components.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-orange-50 text-orange-600 font-semibold text-[10px] rounded-full border border-orange-200/80 tracking-wider">
+                        FIGMA & WIREFRAMING
+                    </span>
+                </div>
+            </div>
+
+            <!-- 7. Tailwind CSS -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(6,182,212,0.12)] hover:-translate-y-2 hover:border-cyan-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-cyan-50 border border-cyan-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-cyan-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-cyan-600 transition-colors">
+                            Tailwind CSS</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-cyan-500 uppercase block mt-0.5">FRONTEND
+                            STYLING</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Styling responsive, mobile-first user interfaces efficiently using utility-first CSS
+                            classes and custom color palettes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-cyan-50 text-cyan-600 font-semibold text-[10px] rounded-full border border-cyan-200/80 tracking-wider">
+                        RESPONSIVE UI
+                    </span>
+                </div>
+            </div>
+
+            <!-- 8. Modern JS (ES6+) -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(234,179,8,0.12)] hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:border-amber-500 transition-all duration-300">
+                        <span
+                            class="font-bold text-lg text-amber-500 group-hover:text-white transition-colors duration-300">JS</span>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-amber-600 transition-colors">
+                            Modern JS (ES6+)</h3>
+                        <span
+                            class="text-[9px] font-bold tracking-widest text-amber-500 uppercase block mt-0.5">INTERACTIVITY</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Implementing dynamic DOM manipulation, async/await requests, event listeners, and
+                            interactive UI logic.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-amber-50 text-amber-600 font-semibold text-[10px] rounded-full border border-amber-200/80 tracking-wider">
+                        ES6+ & FETCH API
+                    </span>
+                </div>
+            </div>
+
+            <!-- 9. Git & GitHub -->
+            <div
+                class="group bg-white/90 backdrop-blur-xl rounded-[2rem] p-7 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(244,63,94,0.12)] hover:-translate-y-2 hover:border-rose-300 transition-all duration-300 flex flex-col items-center text-center justify-between relative overflow-hidden">
+                <div
+                    class="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500">
+                </div>
+
+                <div class="space-y-4 flex flex-col items-center">
+                    <!-- Icon Frame -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200/60 flex items-center justify-center shadow-inner group-hover:scale-110 group-hover:bg-rose-500 group-hover:border-rose-500 transition-all duration-300">
+                        <svg class="w-8 h-8 text-rose-500 group-hover:text-white transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
+                            Git & GitHub</h3>
+                        <span class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">VERSION
+                            CONTROL</span>
+                        <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
+                            Tracking code changes, managing commit histories, repository branching, and
+                            collaborating through GitHub.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
+                    <span
+                        class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
+                        VERSION CONTROL
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- PLACEHOLDER UNTUK FITUR 4 -->
+    <!-- ==========================================
              [FITUR 4: FEATURED PROJECTS SHOWCASE]
              ========================================== -->
-        <!-- ==========================================
+    <!-- ==========================================
              [FITUR 4: ALL 7 PROJECTS GALLERY SHOWCASE]
              ========================================== -->
-        <!-- ==========================================
+    <!-- ==========================================
              [FITUR 4: ALL 7 LIVE PROJECTS GALLERY]
              ========================================== -->
-        <!-- FEATURED PROJECTS SECTION -->
-        <!-- FEATURED PROJECTS SECTION -->
-        <!-- FEATURED PROJECTS SECTION -->
-        <section id="projects"
-            class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+    <!-- FEATURED PROJECTS SECTION -->
+    <!-- FEATURED PROJECTS SECTION -->
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects"
+        class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
 
-            <!-- Subtle Background Elements (Decorative Glow Orbs) -->
-            <div
-                class="absolute top-1/4 -left-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
-            </div>
-            <div
-                class="absolute bottom-10 -right-32 w-[500px] h-[500px] bg-bloom-teal/15 rounded-full blur-[140px] pointer-events-none">
-            </div>
+        <!-- Subtle Background Elements (Decorative Glow Orbs) -->
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-10 -right-32 w-[500px] h-[500px] bg-bloom-teal/15 rounded-full blur-[140px] pointer-events-none">
+        </div>
 
-            <!-- Section Header -->
-            <div class="text-center space-y-3 mb-20 max-w-2xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div class="text-center space-y-3 mb-20 max-w-2xl mx-auto relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
+                <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Interactive
+                    Showcase</span>
+            </div>
+            <h2
+                class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                Featured Projects <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+            </h2>
+            <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
+                A curated collection of web applications, AI integrations, and interactive 2D games deployed live
+                online with production-ready standards.
+            </p>
+        </div>
+
+        <!-- Container Projects -->
+        <div class="max-w-6xl mx-auto space-y-14 relative z-10">
+
+            <!-- 🌟 HERO FEATURED PROJECT: MotherChild.AI -->
+            <div
+                class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_60px_rgba(45,106,108,0.15)] hover:border-bloom-teal/40 transition-all duration-500 group overflow-hidden">
+
+                <!-- Dynamic Inner Glow -->
                 <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
-                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Interactive
-                        Showcase</span>
+                    class="absolute -top-32 -right-32 w-96 h-96 bg-bloom-teal/20 rounded-full blur-3xl pointer-events-none group-hover:bg-bloom-teal/30 transition-all duration-700">
                 </div>
-                <h2
-                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Featured Projects <span class="text-bloom-pink animate-pulse inline-block">✦</span>
-                </h2>
-                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
-                    A curated collection of web applications, AI integrations, and interactive 2D games deployed live
-                    online with production-ready standards.
-                </p>
-            </div>
 
-            <!-- Container Projects -->
-            <div class="max-w-6xl mx-auto space-y-14 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
 
-                <!-- 🌟 HERO FEATURED PROJECT: MotherChild.AI -->
-                <div
-                    class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_60px_rgba(45,106,108,0.15)] hover:border-bloom-teal/40 transition-all duration-500 group overflow-hidden">
-
-                    <!-- Dynamic Inner Glow -->
-                    <div
-                        class="absolute -top-32 -right-32 w-96 h-96 bg-bloom-teal/20 rounded-full blur-3xl pointer-events-none group-hover:bg-bloom-teal/30 transition-all duration-700">
-                    </div>
-
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
-
-                        <!-- Browser Mockup Window -->
-                        <a href="https://motherchild-ai.vercel.app/" target="_blank"
-                            class="lg:col-span-7 overflow-hidden rounded-2xl border border-slate-700/30 shadow-2xl bg-slate-900 block group-hover:border-bloom-teal/50 transition-all duration-500 group/screen">
-                            <!-- Mac-style Browser Header -->
+                    <!-- Browser Mockup Window -->
+                    <a href="https://motherchild-ai.vercel.app/" target="_blank"
+                        class="lg:col-span-7 overflow-hidden rounded-2xl border border-slate-700/30 shadow-2xl bg-slate-900 block group-hover:border-bloom-teal/50 transition-all duration-500 group/screen">
+                        <!-- Mac-style Browser Header -->
+                        <div
+                            class="bg-slate-900/90 backdrop-blur-md px-4 py-3 flex items-center justify-between border-b border-slate-800">
+                            <div class="flex gap-2 items-center">
+                                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shadow-inner"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block shadow-inner"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shadow-inner"></span>
+                            </div>
                             <div
-                                class="bg-slate-900/90 backdrop-blur-md px-4 py-3 flex items-center justify-between border-b border-slate-800">
-                                <div class="flex gap-2 items-center">
-                                    <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shadow-inner"></span>
-                                    <span class="w-3 h-3 rounded-full bg-amber-500 inline-block shadow-inner"></span>
-                                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shadow-inner"></span>
-                                </div>
-                                <div
-                                    class="bg-slate-950/80 px-4 py-1 rounded-full text-[10px] text-slate-400 font-mono text-center truncate border border-slate-800/80 flex items-center gap-2 max-w-[220px]">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                                    <span class="truncate">motherchild-ai.vercel.app</span>
-                                </div>
-                                <div class="w-12 text-right">
-                                    <span class="text-slate-600 text-[10px] font-mono">🔒 HTTPS</span>
-                                </div>
+                                class="bg-slate-950/80 px-4 py-1 rounded-full text-[10px] text-slate-400 font-mono text-center truncate border border-slate-800/80 flex items-center gap-2 max-w-[220px]">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                <span class="truncate">motherchild-ai.vercel.app</span>
                             </div>
-                            <!-- App Screenshot -->
-                            <div class="overflow-hidden aspect-video bg-slate-950 relative">
-                                <img src="images/website-motherchildAI.png" alt="MotherChild.AI Interface"
-                                    class="w-full h-full object-cover group-hover/screen:scale-105 transition-transform duration-700 ease-out">
-                                <!-- Dark overlay on hover -->
-                                <div
-                                    class="absolute inset-0 bg-bloom-dark/10 opacity-0 group-hover/screen:opacity-100 transition-opacity duration-300">
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Content Details -->
-                        <div class="lg:col-span-5 space-y-5 text-left">
-                            <div class="flex items-center gap-2 flex-wrap">
-                                <span
-                                    class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1 rounded-full uppercase tracking-widest shadow-md flex items-center gap-1.5">
-                                    <span>★</span> Featured Project
-                                </span>
-                                <span
-                                    class="text-[10px] text-bloom-teal font-bold uppercase tracking-wider bg-bloom-teal/10 px-3 py-1 rounded-full border border-bloom-teal/20">
-                                    AI & Healthcare Security
-                                </span>
-                            </div>
-
-                            <h3
-                                class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-bloom-teal transition-colors duration-300">
-                                MotherChild.AI — Predictive Health
-                            </h3>
-
-                            <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                Early stunting detection platform for toddlers and AI-based pregnancy risk analysis,
-                                integrated with clinical metrics, secure authentication (Bcrypt & CSRF protection), and
-                                encrypted patient records.
-                            </p>
-
-                            <!-- Tech Badges -->
-                            <div class="flex flex-wrap gap-2 pt-1">
-                                <span
-                                    class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Machine
-                                    Learning</span>
-                                <span
-                                    class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Laravel
-                                    12 Backend</span>
-                                <span
-                                    class="text-[10px] bg-teal-50 text-teal-700 font-semibold px-3 py-1 rounded-lg border border-teal-200 shadow-2xs">🔒
-                                    Bcrypt & CSRF Protected</span>
-                            </div>
-
-                            <div class="pt-3">
-                                <a href="https://motherchild-ai.vercel.app/" target="_blank"
-                                    class="inline-flex items-center justify-center bg-bloom-teal text-white text-xs font-bold px-7 py-3.5 rounded-full hover:bg-bloom-dark transition-all duration-300 shadow-lg hover:shadow-xl gap-2.5 uppercase tracking-widest group/btn">
-                                    <span>LAUNCH MOTHERCHILD.AI</span>
-                                    <span
-                                        class="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform duration-300">↗</span>
-                                </a>
+                            <div class="w-12 text-right">
+                                <span class="text-slate-600 text-[10px] font-mono">🔒 HTTPS</span>
                             </div>
                         </div>
+                        <!-- App Screenshot -->
+                        <div class="overflow-hidden aspect-video bg-slate-950 relative">
+                            <img src="images/website-motherchildAI.png" alt="MotherChild.AI Interface"
+                                class="w-full h-full object-cover group-hover/screen:scale-105 transition-transform duration-700 ease-out">
+                            <!-- Dark overlay on hover -->
+                            <div
+                                class="absolute inset-0 bg-bloom-dark/10 opacity-0 group-hover/screen:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+                    </a>
 
+                    <!-- Content Details -->
+                    <div class="lg:col-span-5 space-y-5 text-left">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span
+                                class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1 rounded-full uppercase tracking-widest shadow-md flex items-center gap-1.5">
+                                <span>★</span> Featured Project
+                            </span>
+                            <span
+                                class="text-[10px] text-bloom-teal font-bold uppercase tracking-wider bg-bloom-teal/10 px-3 py-1 rounded-full border border-bloom-teal/20">
+                                AI & Healthcare Security
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-bloom-teal transition-colors duration-300">
+                            MotherChild.AI — Predictive Health
+                        </h3>
+
+                        <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                            Early stunting detection platform for toddlers and AI-based pregnancy risk analysis,
+                            integrated with clinical metrics, secure authentication (Bcrypt & CSRF protection), and
+                            encrypted patient records.
+                        </p>
+
+                        <!-- Tech Badges -->
+                        <div class="flex flex-wrap gap-2 pt-1">
+                            <span
+                                class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Machine
+                                Learning</span>
+                            <span
+                                class="text-[10px] bg-bloom-cream text-bloom-dark font-medium px-3 py-1 rounded-lg border border-bloom-dark/10 shadow-2xs">Laravel
+                                12 Backend</span>
+                            <span
+                                class="text-[10px] bg-teal-50 text-teal-700 font-semibold px-3 py-1 rounded-lg border border-teal-200 shadow-2xs">🔒
+                                Bcrypt & CSRF Protected</span>
+                        </div>
+
+                        <div class="pt-3">
+                            <a href="https://motherchild-ai.vercel.app/" target="_blank"
+                                class="inline-flex items-center justify-center bg-bloom-teal text-white text-xs font-bold px-7 py-3.5 rounded-full hover:bg-bloom-dark transition-all duration-300 shadow-lg hover:shadow-xl gap-2.5 uppercase tracking-widest group/btn">
+                                <span>LAUNCH MOTHERCHILD.AI</span>
+                                <span
+                                    class="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform duration-300">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 📦 6 GRID PROJECTS -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: Korean Romantic Wedding -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                WEDDING APP
+                            </span>
+                            <img src="images/website-weddinginvitation.png" alt="Korean Romantic Wedding"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div>
+                            <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Laravel
+                                12 & MySQL</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                Korean Romantic Wedding</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                Digital invitation platform featuring real-time RSVP queries, dynamic URL routing,
+                                and embedded music player.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Laravel</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tailwind</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">RSVP
+                                System</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
+                            <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS" target="_blank"
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>VISIT LIVE DEMO</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 📦 6 GRID PROJECTS -->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Card 1: Korean Romantic Wedding -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
-                            <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    WEDDING APP
-                                </span>
-                                <img src="images/website-weddinginvitation.png" alt="Korean Romantic Wedding"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </a>
-                            <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Laravel
-                                    12 & MySQL</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    Korean Romantic Wedding</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Digital invitation platform featuring real-time RSVP queries, dynamic URL routing,
-                                    and embedded music player.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 2: Lentera Edukasi -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                PUBLISHING
+                            </span>
+                            <img src="images/website-lenteraedukasi.png" alt="Lentera Edukasi"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
                         <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Laravel</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tailwind</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">RSVP
-                                    System</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS"
-                                    target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT LIVE DEMO</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Publishing
+                                & ISBN</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                Lentera Edukasi</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                Academic publishing service platform equipped with print cost simulation calculators
+                                and manuscript tracking.
+                            </p>
                         </div>
                     </div>
-
-                    <!-- Card 2: Lentera Edukasi -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Web
+                                App</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Calculator</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                             <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    PUBLISHING
-                                </span>
-                                <img src="images/website-lenteraedukasi.png" alt="Lentera Edukasi"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>VISIT PUBLISHING WEB</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
                             </a>
-                            <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Publishing
-                                    & ISBN</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    Lentera Edukasi</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Academic publishing service platform equipped with print cost simulation calculators
-                                    and manuscript tracking.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Web
-                                    App</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Calculator</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT PUBLISHING WEB</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 3: Luminaroma Store -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
+                <!-- Card 3: Luminaroma Store -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="https://luminaroma.vercel.app/" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                E-COMMERCE
+                            </span>
+                            <img src="images/website-luminaroma.png" alt="Luminaroma Store"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Commerce
+                                Store</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                Luminaroma Store</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                E-commerce site for scented candles featuring interactive product catalogs and
+                                seamless WhatsApp checkout.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Store
+                                Front</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">WhatsApp
+                                API</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                             <a href="https://luminaroma.vercel.app/" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    E-COMMERCE
-                                </span>
-                                <img src="images/website-luminaroma.png" alt="Luminaroma Store"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>VISIT CANDLE STORE</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
                             </a>
-                            <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Commerce
-                                    Store</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    Luminaroma Store</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    E-commerce site for scented candles featuring interactive product catalogs and
-                                    seamless WhatsApp checkout.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Store
-                                    Front</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">WhatsApp
-                                    API</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="https://luminaroma.vercel.app/" target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT CANDLE STORE</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 4: Taman Gumuk Trip -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
+                <!-- Card 4: Taman Gumuk Trip -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="https://proto-1-ashen.vercel.app/" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                TOURISM & BOOKING
+                            </span>
+                            <img src="images/website-tamangumuk.png" alt="Taman Gumuk Trip"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div>
+                            <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Tourism
+                                & Reservation</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                Taman Gumuk Trip</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                Tourism portal and activity reservation platform for outdoor adventures (ATV,
+                                Sandboarding, Jeep Parangtritis).
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Booking
+                                System</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tourism
+                                Portal</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                             <a href="https://proto-1-ashen.vercel.app/" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    TOURISM & BOOKING
-                                </span>
-                                <img src="images/website-tamangumuk.png" alt="Taman Gumuk Trip"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>VISIT TOURISM WEB</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
                             </a>
-                            <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Tourism
-                                    & Reservation</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    Taman Gumuk Trip</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Tourism portal and activity reservation platform for outdoor adventures (ATV,
-                                    Sandboarding, Jeep Parangtritis).
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Booking
-                                    System</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tourism
-                                    Portal</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="https://proto-1-ashen.vercel.app/" target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT TOURISM WEB</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 5: Blooger Magazine -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
+                <!-- Card 5: Blooger Magazine -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                CONTENT PORTAL
+                            </span>
+                            <img src="images/website-blooger.png" alt="Blooger Magazine"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div>
+                            <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Content
+                                Portal</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                Blooger Magazine</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                Lifestyle article and news portal with dynamic weather widgets, trending tag
+                                filters, and author profiles.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">REST
+                                API</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Weather
+                                API</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                             <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    CONTENT PORTAL
-                                </span>
-                                <img src="images/website-blooger.png" alt="Blooger Magazine"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>VISIT NEWS PORTAL</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
                             </a>
-                            <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Content
-                                    Portal</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    Blooger Magazine</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Lifestyle article and news portal with dynamic weather widgets, trending tag
-                                    filters, and author profiles.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">REST
-                                    API</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Weather
-                                    API</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT NEWS PORTAL</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 6: CogniStep Game -->
-                    <div
-                        class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
-                        <div class="space-y-4">
+                <!-- Card 6: CogniStep Game -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-bloom-dark/10 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:-translate-y-2 hover:border-bloom-teal/40 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
+                            class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
+                            <span
+                                class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
+                                UNITY 2D GAME
+                            </span>
+                            <img src="images/game-cognistep.png" alt="CogniStep Platformer"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </a>
+                        <div>
+                            <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Unity
+                                2D Game</span>
+                            <h4
+                                class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
+                                CogniStep Platformer</h4>
+                            <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
+                                Cyberpunk pixel art 2D game built in Unity, featuring 6 challenging levels with
+                                robot enemies and obstacles.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mt-5 flex-wrap">
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Unity
+                                Engine</span>
+                            <span
+                                class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">C#
+                                Scripting</span>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                             <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
-                                class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
-                                <span
-                                    class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    UNITY 2D GAME
-                                </span>
-                                <img src="images/game-cognistep.png" alt="CogniStep Platformer"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
+                                <span>PLAY GAME ON ITCH.IO</span>
+                                <span class="group-hover:translate-x-1 transition-transform">↗</span>
                             </a>
-                            <div>
-                                <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Unity
-                                    2D Game</span>
-                                <h4
-                                    class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
-                                    CogniStep Platformer</h4>
-                                <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Cyberpunk pixel art 2D game built in Unity, featuring 6 challenging levels with
-                                    robot enemies and obstacles.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1.5 mt-5 flex-wrap">
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Unity
-                                    Engine</span>
-                                <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">C#
-                                    Scripting</span>
-                            </div>
-                            <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
-                                <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
-                                    class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>PLAY GAME ON ITCH.IO</span>
-                                    <span class="group-hover:translate-x-1 transition-transform">↗</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
-        </section>
-        <!-- ==========================================
+        </div>
+
+    </section>
+    <!-- ==========================================
      <!-- ==========================================
      [FITUR TAMBAHAN: UI/UX DESIGN SHOWCASE]
      ========================================== -->
-        <!-- ==========================================
+    <!-- ==========================================
      [ADDITIONAL FEATURE: UI/UX DESIGN SHOWCASE]
      ========================================== -->
-        <!-- Section Figma & Product Design -->
-        <!-- ==========================================
+    <!-- Section Figma & Product Design -->
+    <!-- ==========================================
      SECTION 1: FIGMA & UI/UX DESIGN CASE STUDY
      ========================================== -->
-        <!-- FEATURED UI/UX CASE SECTION -->
-        <section id="uiux-case"
-            class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
+    <!-- FEATURED UI/UX CASE SECTION -->
+    <section id="uiux-case"
+        class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
 
-            <!-- Ambient Background Glow & Gradient Mesh -->
-            <div
-                class="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-sky-400/15 rounded-full blur-[140px] pointer-events-none">
-            </div>
-            <div
-                class="absolute bottom-10 -right-40 w-[500px] h-[500px] bg-bloom-pink/20 rounded-full blur-[140px] pointer-events-none">
-            </div>
+        <!-- Ambient Background Glow & Gradient Mesh -->
+        <div
+            class="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-sky-400/15 rounded-full blur-[140px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-10 -right-40 w-[500px] h-[500px] bg-bloom-pink/20 rounded-full blur-[140px] pointer-events-none">
+        </div>
 
-            <!-- Section Header -->
-            <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
+                <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Figma & Product
+                    Design</span>
+            </div>
+            <h2
+                class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
+                Featured UI/UX Case <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+            </h2>
+            <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
+                Exploring application user interfaces from wireframing to high-fidelity interactive prototypes.
+            </p>
+        </div>
+
+        <!-- MAIN SHOWCASE CONTAINER -->
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div
+                class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(14,165,233,0.15)] hover:border-sky-400/40 transition-all duration-500 group overflow-hidden">
+
+                <!-- Dynamic Inner Radial Glow -->
                 <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
-                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Figma & Product
-                        Design</span>
+                    class="absolute -top-32 -right-32 w-96 h-96 bg-sky-400/15 rounded-full blur-3xl pointer-events-none group-hover:bg-sky-400/25 transition-all duration-700">
                 </div>
-                <h2
-                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Featured UI/UX Case <span class="text-bloom-pink animate-pulse inline-block">✦</span>
-                </h2>
-                <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
-                    Exploring application user interfaces from wireframing to high-fidelity interactive prototypes.
-                </p>
-            </div>
 
-            <!-- MAIN SHOWCASE CONTAINER -->
-            <div class="max-w-5xl mx-auto relative z-10">
+                <!-- Figma Canvas Window Frame -->
                 <div
-                    class="relative bg-white/90 backdrop-blur-xl rounded-[2.5rem] p-6 md:p-10 border border-bloom-dark/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(14,165,233,0.15)] hover:border-sky-400/40 transition-all duration-500 group overflow-hidden">
+                    class="relative rounded-2xl border border-sky-100/80 shadow-xl bg-gradient-to-br from-sky-50/80 via-blue-50/40 to-indigo-50/60 overflow-hidden mb-8 group/canvas">
 
-                    <!-- Dynamic Inner Radial Glow -->
+                    <!-- Mockup Image Container -->
                     <div
-                        class="absolute -top-32 -right-32 w-96 h-96 bg-sky-400/15 rounded-full blur-3xl pointer-events-none group-hover:bg-sky-400/25 transition-all duration-700">
-                    </div>
+                        class="overflow-hidden aspect-[16/10] md:aspect-[16/9] bg-slate-100 relative flex items-center justify-center">
+                        <img src="images/desainfigma-neatifylaundry.png" alt="Neatify Figma UI/UX Canvas"
+                            class="w-full h-full object-cover group-hover/canvas:scale-102 transition-transform duration-700 ease-out">
 
-                    <!-- Figma Canvas Window Frame -->
-                    <div
-                        class="relative rounded-2xl border border-sky-100/80 shadow-xl bg-gradient-to-br from-sky-50/80 via-blue-50/40 to-indigo-50/60 overflow-hidden mb-8 group/canvas">
-
-                        <!-- Mockup Image Container -->
+                        <!-- Overlay Darkening on Hover -->
                         <div
-                            class="overflow-hidden aspect-[16/10] md:aspect-[16/9] bg-slate-100 relative flex items-center justify-center">
-                            <img src="images/desainfigma-neatifylaundry.png" alt="Neatify Figma UI/UX Canvas"
-                                class="w-full h-full object-cover group-hover/canvas:scale-102 transition-transform duration-700 ease-out">
-
-                            <!-- Overlay Darkening on Hover -->
-                            <div
-                                class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover/canvas:opacity-100 transition-opacity duration-300 pointer-events-none">
-                            </div>
-                        </div>
-
-                        <!-- Floating Canvas Pill Badge (Figma Style) -->
-                        <div
-                            class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-bloom-dark/10 shadow-lg flex items-center gap-3">
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <div class="flex items-center gap-2 text-[10px] font-semibold text-bloom-dark/80">
-                                <span class="text-sky-600 font-bold">Auto Layout</span>
-                                <span>•</span>
-                                <span>Design System</span>
-                            </div>
+                            class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover/canvas:opacity-100 transition-opacity duration-300 pointer-events-none">
                         </div>
                     </div>
 
-                    <!-- Case Study Content & Details -->
-                    <div class="space-y-6 text-left relative z-10">
-
-                        <!-- Tags Row -->
-                        <div class="flex items-center gap-2.5 flex-wrap">
-                            <span
-                                class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest shadow-md">
-                                MOBILE APP DESIGN
-                            </span>
-                            <span
-                                class="text-[10px] font-bold text-rose-500 bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-200 uppercase tracking-wider">
-                                WIREFRAMING & HI-FI
-                            </span>
-                            <span
-                                class="text-[10px] font-semibold text-bloom-dark/70 bg-bloom-cream px-3.5 py-1.5 rounded-full border border-bloom-dark/10 uppercase tracking-wider">
-                                DESIGN SYSTEM
-                            </span>
+                    <!-- Floating Canvas Pill Badge (Figma Style) -->
+                    <div
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-bloom-dark/10 shadow-lg flex items-center gap-3">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <div class="flex items-center gap-2 text-[10px] font-semibold text-bloom-dark/80">
+                            <span class="text-sky-600 font-bold">Auto Layout</span>
+                            <span>•</span>
+                            <span>Design System</span>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Title & Description -->
-                        <div>
-                            <h3
-                                class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-sky-600 transition-colors duration-300">
-                                Neatify <span class="text-bloom-dark/30 font-light mx-1">—</span> On-Demand Laundry App
-                            </h3>
-                            <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed mt-3 max-w-3xl">
-                                Designed an end-to-end laundry booking app interface, covering initial wireframes, user
-                                flow mapping, and building an interactive design system with a modern blue theme.
-                            </p>
-                        </div>
+                <!-- Case Study Content & Details -->
+                <div class="space-y-6 text-left relative z-10">
 
-                        <!-- Footer Link & Tools Info -->
-                        <div
-                            class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                            <p class="text-[11px] text-bloom-dark/60 font-light">
-                                <span class="font-semibold text-bloom-dark">Tools:</span> Figma, Auto Layout, Component
-                                System
-                            </p>
+                    <!-- Tags Row -->
+                    <div class="flex items-center gap-2.5 flex-wrap">
+                        <span
+                            class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest shadow-md">
+                            MOBILE APP DESIGN
+                        </span>
+                        <span
+                            class="text-[10px] font-bold text-rose-500 bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-200 uppercase tracking-wider">
+                            WIREFRAMING & HI-FI
+                        </span>
+                        <span
+                            class="text-[10px] font-semibold text-bloom-dark/70 bg-bloom-cream px-3.5 py-1.5 rounded-full border border-bloom-dark/10 uppercase tracking-wider">
+                            DESIGN SYSTEM
+                        </span>
+                    </div>
 
-                            <a href="https://www.figma.com/design/bovElVMZGfP4j1tjLAfsh7/neatify-laundry?t=Kcf4Gev4ngdHjvGb-1"
-                                target="_blank"
-                                class="inline-flex items-center gap-2 text-xs font-bold text-bloom-dark group-hover:text-sky-600 tracking-widest uppercase transition-colors group/link">
-                                <span>VIEW FIGMA PROTOTYPE</span>
-                                <span
-                                    class="group-hover/link:translate-x-1 group-hover/link:-translate-y-0.5 transition-transform duration-300">↗</span>
-                            </a>
-                        </div>
+                    <!-- Title & Description -->
+                    <div>
+                        <h3
+                            class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-sky-600 transition-colors duration-300">
+                            Neatify <span class="text-bloom-dark/30 font-light mx-1">—</span> On-Demand Laundry App
+                        </h3>
+                        <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed mt-3 max-w-3xl">
+                            Designed an end-to-end laundry booking app interface, covering initial wireframes, user
+                            flow mapping, and building an interactive design system with a modern blue theme.
+                        </p>
+                    </div>
 
+                    <!-- Footer Link & Tools Info -->
+                    <div
+                        class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <p class="text-[11px] text-bloom-dark/60 font-light">
+                            <span class="font-semibold text-bloom-dark">Tools:</span> Figma, Auto Layout, Component
+                            System
+                        </p>
+
+                        <a href="https://www.figma.com/design/bovElVMZGfP4j1tjLAfsh7/neatify-laundry?t=Kcf4Gev4ngdHjvGb-1"
+                            target="_blank"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-bloom-dark group-hover:text-sky-600 tracking-widest uppercase transition-colors group/link">
+                            <span>VIEW FIGMA PROTOTYPE</span>
+                            <span
+                                class="group-hover/link:translate-x-1 group-hover/link:-translate-y-0.5 transition-transform duration-300">↗</span>
+                        </a>
                     </div>
 
                 </div>
+
             </div>
+        </div>
 
-        </section>
+    </section>
 
 
-        <!-- ==========================================
+    <!-- ==========================================
      SECTION 2: LIVE MOBILE APP & VIDEO DEMO
      ========================================== -->
-        <!-- ==========================================
+    <!-- ==========================================
      <!-- ==========================================
 SECTION 2: LIVE MOBILE APP & VIDEO DEMO
 ========================================== -->
-        <section id="app-demo" class="py-24 px-6 md:px-12 max-w-6xl mx-auto relative overflow-hidden">
+    <section id="app-demo" class="py-24 px-6 md:px-12 max-w-6xl mx-auto relative overflow-hidden">
 
-            <!-- Ambient Background Lighting & Mesh Orbs -->
-            <div
-                class="absolute top-1/2 -left-32 w-96 h-96 bg-bloom-teal/15 rounded-full blur-[120px] pointer-events-none">
-            </div>
-            <div
-                class="absolute bottom-10 -right-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
-            </div>
-
-            <!-- Section Header -->
-            <div class="text-center mb-16 space-y-3 relative z-10">
-                <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
-                    <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Engineering &
-                        Code Implementation</span>
-                </div>
-                <h2
-                    class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight flex items-center justify-center gap-3">
-                    Live App Demo & API Integration <span class="text-2xl md:text-3xl">📱</span>
-                </h2>
-                <p class="text-xs md:text-sm text-bloom-dark/70 font-light max-w-lg mx-auto leading-relaxed">
-                    Realizing the design into a fully functional Android application connected via REST API.
-                </p>
-            </div>
-
-            <!-- Main Container Card (Glassmorphism + Subtle Hover Glow) -->
-            <div
-                class="bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_25px_60px_rgba(37,99,235,0.12)] transition-all duration-500 relative z-10 group overflow-hidden">
-
-                <!-- Soft Dynamic Background Glow Inside Card -->
-                <div
-                    class="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform duration-700">
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
-
-                    <!-- KOLOM KIRI: Real Mobile Device Frame -->
-                    <div class="lg:col-span-5 flex justify-center">
-                        <!-- Frame Luar Smartphone -->
-                        <div
-                            class="relative w-full max-w-[280px] bg-slate-900 rounded-[3rem] p-3 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] ring-1 ring-white/20 border-[5px] border-slate-800 group-hover:-translate-y-2 transition-transform duration-500">
-
-                            <!-- Notch / Dynamic Island -->
-                            <div
-                                class="absolute top-3.5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-b-2xl z-20 flex items-center justify-center gap-2 pt-0.5 pointer-events-none">
-                                <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
-                                <div class="w-1.5 h-1.5 bg-blue-950/80 rounded-full"></div>
-                            </div>
-
-                            <!-- Speaker Bar Atas -->
-                            <div
-                                class="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 bg-slate-700/60 rounded-full z-20 pointer-events-none">
-                            </div>
-
-                            <!-- Layar HP -->
-                            <div
-                                class="w-full aspect-[9/19.5] rounded-[2.3rem] overflow-hidden bg-black relative z-10 border border-slate-700/50">
-                                <video autoplay loop muted playsinline
-                                    class="w-full h-full object-cover scale-110 -translate-y-2">
-                                    <source src="videos/neatify-demo.mp4" type="video/mp4">
-                                </video>
-                            </div>
-
-                            <!-- Home Bar -->
-                            <div
-                                class="absolute bottom-5 left-1/2 -translate-x-1/2 w-28 h-1 bg-slate-400/50 rounded-full z-20 pointer-events-none">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- KOLOM KANAN: Detail & Features (7 Columns) -->
-                    <div class="lg:col-span-7 flex flex-col justify-between space-y-8 text-left">
-
-                        <!-- Tech Stack Badges (DENGAN BADGE KEAMANAN NEATIFY) -->
-                        <div>
-                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-3">TECH &
-                                API STACK</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
-                                    Android Architecture
-                                </span>
-                                <span
-                                    class="px-3.5 py-1.5 bg-blue-50/90 text-blue-600 text-xs font-semibold rounded-xl border border-blue-200/80 backdrop-blur-sm">
-                                    REST API Integration
-                                </span>
-                                <!-- BADGE BARU UNTUK SECURITY -->
-                                <span
-                                    class="px-3.5 py-1.5 bg-teal-50/90 text-teal-700 text-xs font-semibold rounded-xl border border-teal-200/80 backdrop-blur-sm flex items-center gap-1">
-                                    🔒 Token-Based Auth API
-                                </span>
-                                <span
-                                    class="px-3.5 py-1.5 bg-emerald-50/90 text-emerald-600 text-xs font-semibold rounded-xl border border-emerald-200/80 backdrop-blur-sm">
-                                    WhatsApp Direct Chat API
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Key Features List -->
-                        <div class="space-y-3.5">
-                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-4">MOBILE
-                                APP FEATURES</h4>
-
-                            <ul class="space-y-2.5">
-                                <li
-                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
-                                    <span
-                                        class="w-7 h-7 rounded-xl bg-teal-100/80 border border-teal-300/60 flex items-center justify-center shrink-0 mt-0.5 text-teal-700 text-xs">🛡️</span>
-                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Secure Auth System:</strong> User
-                                        Registration & Encrypted Login Authentication
-                                    </span>
-                                </li>
-                                <li
-                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
-                                    <span
-                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
-                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Cost Estimation:</strong>
-                                        Automated calculation based on weight (Kg)
-                                    </span>
-                                </li>
-                                <li
-                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
-                                    <span
-                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
-                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Wallet System:</strong> Real-time
-                                        balance top-up & transaction management
-                                    </span>
-                                </li>
-                                <li
-                                    class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
-                                    <span
-                                        class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
-                                    <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Order Tracking:</strong> Dynamic
-                                        laundry status tracking & history
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Footer Link / Action -->
-                        <div
-                            class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                            <span class="text-xs text-bloom-dark/50 italic font-light">
-                                Built with Android, REST API & VS Code Backend
-                            </span>
-
-                            <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
-                                class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
-                                <span>View Source Code</span>
-                                <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Footer Link / Action -->
-        <div class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <span class="text-xs text-bloom-dark/50 italic font-light">
-                Built with Android, REST API & VS Code
-            </span>
-
-            <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
-                class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
-                <span>View Source Code</span>
-                <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
-                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
-                    </path>
-                </svg>
-            </a>
+        <!-- Ambient Background Lighting & Mesh Orbs -->
+        <div class="absolute top-1/2 -left-32 w-96 h-96 bg-bloom-teal/15 rounded-full blur-[120px] pointer-events-none">
         </div>
+        <div
+            class="absolute bottom-10 -right-32 w-96 h-96 bg-bloom-pink/15 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <!-- Section Header -->
+        <div class="text-center mb-16 space-y-3 relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
+                <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
+                <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Engineering &
+                    Code Implementation</span>
+            </div>
+            <h2
+                class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight flex items-center justify-center gap-3">
+                Live App Demo & API Integration <span class="text-2xl md:text-3xl">📱</span>
+            </h2>
+            <p class="text-xs md:text-sm text-bloom-dark/70 font-light max-w-lg mx-auto leading-relaxed">
+                Realizing the design into a fully functional Android application connected via REST API.
+            </p>
+        </div>
+
+        <!-- Main Container Card (Glassmorphism + Subtle Hover Glow) -->
+        <div
+            class="bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_25px_60px_rgba(37,99,235,0.12)] transition-all duration-500 relative z-10 group overflow-hidden">
+
+            <!-- Soft Dynamic Background Glow Inside Card -->
+            <div
+                class="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform duration-700">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
+
+                <!-- KOLOM KIRI: Real Mobile Device Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <!-- Frame Luar Smartphone -->
+                    <div
+                        class="relative w-full max-w-[280px] bg-slate-900 rounded-[3rem] p-3 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] ring-1 ring-white/20 border-[5px] border-slate-800 group-hover:-translate-y-2 transition-transform duration-500">
+
+                        <!-- Notch / Dynamic Island -->
+                        <div
+                            class="absolute top-3.5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-b-2xl z-20 flex items-center justify-center gap-2 pt-0.5 pointer-events-none">
+                            <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
+                            <div class="w-1.5 h-1.5 bg-blue-950/80 rounded-full"></div>
+                        </div>
+
+                        <!-- Speaker Bar Atas -->
+                        <div
+                            class="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 bg-slate-700/60 rounded-full z-20 pointer-events-none">
+                        </div>
+
+                        <!-- Layar HP -->
+                        <div
+                            class="w-full aspect-[9/19.5] rounded-[2.3rem] overflow-hidden bg-black relative z-10 border border-slate-700/50">
+                            <video autoplay loop muted playsinline
+                                class="w-full h-full object-cover scale-110 -translate-y-2">
+                                <source src="videos/neatify-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <!-- Home Bar -->
+                        <div
+                            class="absolute bottom-5 left-1/2 -translate-x-1/2 w-28 h-1 bg-slate-400/50 rounded-full z-20 pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN: Detail & Features (7 Columns) -->
+                <div class="lg:col-span-7 flex flex-col justify-between space-y-8 text-left">
+
+                    <!-- Tech Stack Badges (DENGAN BADGE KEAMANAN NEATIFY) -->
+                    <div>
+                        <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-3">TECH &
+                            API STACK</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
+                                Android Architecture
+                            </span>
+                            <span
+                                class="px-3.5 py-1.5 bg-blue-50/90 text-blue-600 text-xs font-semibold rounded-xl border border-blue-200/80 backdrop-blur-sm">
+                                REST API Integration
+                            </span>
+                            <!-- BADGE BARU UNTUK SECURITY -->
+                            <span
+                                class="px-3.5 py-1.5 bg-teal-50/90 text-teal-700 text-xs font-semibold rounded-xl border border-teal-200/80 backdrop-blur-sm flex items-center gap-1">
+                                🔒 Token-Based Auth API
+                            </span>
+                            <span
+                                class="px-3.5 py-1.5 bg-emerald-50/90 text-emerald-600 text-xs font-semibold rounded-xl border border-emerald-200/80 backdrop-blur-sm">
+                                WhatsApp Direct Chat API
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features List -->
+                    <div class="space-y-3.5">
+                        <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-4">MOBILE
+                            APP FEATURES</h4>
+
+                        <ul class="space-y-2.5">
+                            <li
+                                class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                <span
+                                    class="w-7 h-7 rounded-xl bg-teal-100/80 border border-teal-300/60 flex items-center justify-center shrink-0 mt-0.5 text-teal-700 text-xs">🛡️</span>
+                                <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                    <strong class="font-semibold text-bloom-dark">Secure Auth System:</strong> User
+                                    Registration & Encrypted Login Authentication
+                                </span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                <span
+                                    class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                    <strong class="font-semibold text-bloom-dark">Cost Estimation:</strong>
+                                    Automated calculation based on weight (Kg)
+                                </span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                <span
+                                    class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                    <strong class="font-semibold text-bloom-dark">Wallet System:</strong> Real-time
+                                    balance top-up & transaction management
+                                </span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3.5 p-2.5 rounded-2xl hover:bg-slate-50/80 border border-transparent hover:border-slate-200/60 transition-colors">
+                                <span
+                                    class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
+                                <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
+                                    <strong class="font-semibold text-bloom-dark">Order Tracking:</strong> Dynamic
+                                    laundry status tracking & history
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Link / Action -->
+                    <div
+                        class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <span class="text-xs text-bloom-dark/50 italic font-light">
+                            Built with Android, REST API & VS Code Backend
+                        </span>
+
+                        <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
+                            class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
+                            <span>View Source Code</span>
+                            <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer Link / Action -->
+    <div class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <span class="text-xs text-bloom-dark/50 italic font-light">
+            Built with Android, REST API & VS Code
+        </span>
+
+        <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
+            class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
+            <span>View Source Code</span>
+            <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                </path>
+            </svg>
+        </a>
+    </div>
 
     </div>
 
