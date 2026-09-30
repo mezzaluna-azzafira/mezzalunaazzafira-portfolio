@@ -21,6 +21,12 @@
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,600&display=swap"
+        rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -84,6 +90,68 @@
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 90px;
+        }
+
+        /* Container Utama Judul */
+        .hero-title-wrapper {
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Base Styles untuk Judul */
+        .hero-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 16px 0;
+            line-height: 1.1;
+        }
+
+        /* Baris Pertama: "Full-Stack Developer &" */
+        .title-serif {
+            font-family: 'Bodoni Moda', 'Didot', serif;
+            font-size: 3.5rem;
+            /* Ukuran disesuaikan agar pas di layar */
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+
+        /* Baris Kedua: "Cyber Security Specialist" (Italic Teal + Aksesori Pink) */
+        .title-italic {
+            font-family: 'Bodoni Moda', 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 3.8rem;
+            font-weight: 600;
+            color: #1f6268;
+            /* Warna teal persis gambar 3 */
+            position: relative;
+            display: inline-block;
+            padding-right: 12px;
+        }
+
+        /* Garis Pink Cursor di akhir tulisan */
+        .title-italic::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            width: 4px;
+            background-color: #eb9f9f;
+            border-radius: 2px;
+        }
+
+        /* Deskripsi Bawah Judul */
+        .hero-description {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            color: #666666;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
