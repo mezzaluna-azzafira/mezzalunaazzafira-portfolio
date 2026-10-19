@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mezzaluna Azzafira ✦ Portfolio</title>
+    <title>Mezzaluna Azzafira ✦ Portofolio</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts & Icons -->
@@ -13,7 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script>
@@ -76,6 +75,15 @@
             pointer-events: none;
         }
 
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 90px;
@@ -100,20 +108,20 @@
                     class="overflow-hidden whitespace-nowrap bg-rose-200 py-2.5 font-bold text-xs uppercase tracking-widest text-slate-800">
                     <div class="inline-block animate-marquee">
                         <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
-                        <span class="mx-4">✦ UI/UX & FULL-STACK DEVELOPER</span>
+                        <span class="mx-4">✦ UI/UX & PENGEMBANG FULL-STACK</span>
                         <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
                         <span class="mx-4">✦ LARAVEL & REST API</span>
-                        <span class="mx-4">✦ FIGMA & MOBILE APP</span>
-                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
+                        <span class="mx-4">✦ FIGMA & APLIKASI MOBILE</span>
+                        <span class="mx-4">✦ TERSEDIA UNTUK PKL & MAGANG</span>
                     </div>
                     <!-- Duplikat agar efek animasi berjalan terus mulus -->
                     <div class="inline-block animate-marquee" aria-hidden="true">
                         <span class="mx-4">✦ MEZZALUNA AZZAFIRA</span>
-                        <span class="mx-4">✦ UI/UX & FULL-STACK & MOBILE DEVELOPER</span>
+                        <span class="mx-4">✦ UI/UX & PENGEMBANG FULL-STACK</span>
                         <span class="mx-4">✦ SMK TELKOM PURWOKERTO</span>
                         <span class="mx-4">✦ LARAVEL & REST API</span>
-                        <span class="mx-4">✦ FIGMA & MOBILE APP</span>
-                        <span class="mx-4">✦ AVAILABLE FOR PKL & INTERNSHIP</span>
+                        <span class="mx-4">✦ FIGMA & APLIKASI MOBILE</span>
+                        <span class="mx-4">✦ TERSEDIA UNTUK PKL & MAGANG</span>
                     </div>
                 </div>
             </div>
@@ -130,17 +138,17 @@
                 <!-- Nav Links (Bisa discroll halus di HP, tampil rapi di Desktop) -->
                 <div
                     class="flex items-center gap-4 md:gap-6 text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-bloom-dark/80 overflow-x-auto no-scrollbar px-2">
-                    <a href="#about" class="hover:text-bloom-teal transition whitespace-nowrap">About</a>
-                    <a href="#skills" class="hover:text-bloom-teal transition whitespace-nowrap">Skills</a>
-                    <a href="#projects" class="hover:text-bloom-teal transition whitespace-nowrap">Projects</a>
-                    <a href="#certificates" class="hover:text-bloom-teal transition whitespace-nowrap">Certificates</a>
-                    <a href="#experience" class="hover:text-bloom-teal transition whitespace-nowrap">Journey</a>
+                    <a href="#about" class="hover:text-bloom-teal transition whitespace-nowrap">Tentang</a>
+                    <a href="#skills" class="hover:text-bloom-teal transition whitespace-nowrap">Keahlian</a>
+                    <a href="#projects" class="hover:text-bloom-teal transition whitespace-nowrap">Proyek</a>
+                    <a href="#certificates" class="hover:text-bloom-teal transition whitespace-nowrap">Sertifikat</a>
+                    <a href="#experience" class="hover:text-bloom-teal transition whitespace-nowrap">Perjalanan</a>
                 </div>
 
                 <!-- CTA Button -->
                 <a href="#contact"
                     class="bg-bloom-pink text-bloom-dark px-4 py-2 md:px-5 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest hover:bg-bloom-teal hover:text-white transition shadow-sm border border-bloom-dark/10 shrink-0 hidden sm:inline-block">
-                    Contact
+                    Kontak
                 </a>
             </nav>
             <!-- 3. HERO CONTENT (CENTERED ALIGNMENT PERSIS GAMBAR PERTAMA) -->
@@ -149,21 +157,21 @@
                 <!-- Sub-Greeting Tag -->
                 <div
                     class="inline-flex items-center gap-2 bg-bloom-lightpink/80 border border-bloom-pink px-4 py-1.5 rounded-full text-xs font-medium text-bloom-dark">
-                    <span>Hi! I'm Mezzaluna</span>
-                    <span class="text-bloom-teal font-bold">• Based in Indonesia</span>
+                    <span>Hai! Saya Mezzaluna</span>
+                    <span class="text-bloom-teal font-bold">• Berdomisili di Indonesia</span>
                 </div>
 
                 <!-- Giant Editorial Headline (Dua Baris dengan Warna Highlight Teal) -->
                 <h1 class="font-serif text-5xl md:text-7xl font-normal leading-[1.05] tracking-tight text-bloom-dark">
-                    Full-Stack Developer & <br>
-                    <span class="font-italic text-bloom-teal italic block md:inline font-semibold">UI/UX Specialist<span
+                    Pengembang Full-Stack & <br>
+                    <span class="font-italic text-bloom-teal italic block md:inline font-semibold">Penggiat UI/UX<span
                             class="text-bloom-pink font-sans font-light">|</span></span>
                 </h1>
 
                 <!-- Sub-description -->
                 <p class="font-sans text-xs md:text-sm text-bloom-dark/80 max-w-md mx-auto font-light leading-relaxed">
-                    Crafting seamless web platforms with clean Laravel 12 logic, MySQL architecture, and user-centric
-                    designs.
+                    Membangun platform web yang mulus dengan logika Laravel 12 yang rapi, arsitektur MySQL, dan desain
+                    yang berpusat pada pengguna.
                 </p>
 
                 <!-- 4. LAYERED PHOTO FRAMES + CIRCULAR STAMP (STACK AT BOTTOM PERSIS GAMBAR PERTAMA) -->
@@ -175,7 +183,8 @@
                     </div>
 
                     <!-- Middle Layer Frame (Deep Teal Accent) -->
-                    <div class="absolute inset-0 bg-bloom-teal rounded-3xl transform rotate-3 scale-98 shadow-md"></div>
+                    <div class="absolute inset-0 bg-bloom-teal rounded-3xl transform rotate-3 scale-[0.98] shadow-md">
+                    </div>
 
                     <!-- Main Top Photo Card -->
                     <div
@@ -191,7 +200,7 @@
                                 fill="none" />
                             <text font-size="8.5" font-family="Plus Jakarta Sans" font-weight="bold" letter-spacing="2">
                                 <textPath href="#circlePath">
-                                    ✦ EXPLORE MORE ✦ LET'S TALK
+                                    ✦ JELAJAHI ✦ MARI BERBINCANG
                                 </textPath>
                             </text>
                         </svg>
@@ -220,11 +229,8 @@
             </svg>
         </div>
 
-
-
-        <!-- PLACEHOLDER UNTUK FITUR 2 -->
         <!-- ==========================================
-             [FITUR 2: ABOUT ME & CHECKERED HIGHLIGHT]
+             [FITUR 2: TENTANG SAYA & BANNER CATUR]
              ========================================== -->
         <section id="about" class="relative">
 
@@ -238,13 +244,13 @@
                             <!-- Background Layer Polaroid -->
                             <div
                                 class="absolute -top-4 -left-4 w-44 h-56 bg-bloom-pink p-2 rounded-2xl shadow-md transform -rotate-6 border border-bloom-dark/10">
-                                <img src="images/myprofille.png" alt="Floral aesthetic"
+                                <img src="images/myprofille.png" alt="Estetika floral"
                                     class="w-full h-full object-cover rounded-xl opacity-80">
                             </div>
                             <!-- Foreground Profile Card -->
                             <div
                                 class="relative w-48 h-64 bg-white p-2.5 rounded-2xl shadow-xl border border-bloom-dark/10 transform rotate-3 hover:rotate-0 transition duration-300">
-                                <img src="images/myprofille.png" alt="Mezzaluna profile"
+                                <img src="images/myprofille.png" alt="Profil Mezzaluna"
                                     class="w-full h-48 object-cover rounded-xl">
                                 <span
                                     class="font-serif italic text-[11px] text-bloom-dark font-bold text-center block mt-2"></span>
@@ -254,29 +260,31 @@
 
                     <!-- Kanan: Editorial Content Text -->
                     <div class="md:col-span-7 space-y-4 text-center md:text-left">
-                        <span class="font-italic text-2xl text-bloom-teal italic block">A Little About Me...</span>
+                        <span class="font-italic text-2xl text-bloom-teal italic block">Sedikit Tentang Saya...</span>
 
                         <h2 class="font-serif text-3xl md:text-4xl font-normal leading-tight text-bloom-dark">
-                            Behind every seamless digital product is strong backend logic & user-centered design.
+                            Di balik setiap produk digital yang mulus, ada logika backend yang kuat & desain yang
+                            berpusat pada pengguna.
                         </h2>
 
                         <p class="text-xs text-bloom-dark/80 font-light leading-relaxed">
-                            I am a Software Engineering student at <strong>SMK Telkom Purwokerto</strong> specializing
-                            in full-stack web and mobile app development. I focus on building robust backend systems
-                            with <strong>Laravel</strong> & <strong>MySQL</strong>, crafting native mobile applications
-                            using <strong>Android Studio</strong>, and designing intuitive web interfaces for
-                            exceptional user experiences.
+                            Saya adalah siswi Rekayasa Perangkat Lunak di <strong>SMK Telkom Purwokerto</strong> yang
+                            mendalami pengembangan web full-stack dan aplikasi mobile. Saya berfokus membangun sistem
+                            backend yang tangguh dengan <strong>Laravel</strong> & <strong>MySQL</strong>, membuat
+                            aplikasi mobile native menggunakan <strong>Android Studio</strong>, serta merancang
+                            antarmuka
+                            web yang intuitif demi pengalaman pengguna yang luar biasa.
                         </p>
 
                         <div
                             class="pt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-semibold text-bloom-dark/90">
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 rounded-full bg-bloom-pink"></span>
-                                <span>Software Engineering Student</span>
+                                <span>Siswi Rekayasa Perangkat Lunak</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                                <span>Open for Internship (PKL 2026)</span>
+                                <span>Terbuka untuk Magang (PKL 2026)</span>
                             </div>
                         </div>
                     </div>
@@ -289,22 +297,23 @@
                 <div
                     class="max-w-2xl mx-auto bg-bloom-cream p-8 md:p-10 rounded-3xl border-2 border-bloom-dark/20 shadow-2xl text-center space-y-4">
 
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-bloom-teal block">✦ System
-                        Readiness ✦</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-bloom-teal block">✦ Kesiapan
+                        Sistem ✦</span>
 
                     <h3 class="font-serif text-2xl md:text-3xl font-normal leading-tight text-bloom-dark">
-                        Building scalable web backends & seamless mobile applications.
+                        Membangun backend web yang terstruktur & aplikasi mobile yang mulus.
                     </h3>
 
                     <p class="text-xs text-bloom-dark/70 max-w-lg mx-auto font-light leading-relaxed">
-                        Great digital applications require robust database architecture, secure APIs, and responsive UI.
-                        I am ready to bring reliable code and technical solutions to your development team.
+                        Aplikasi digital yang hebat membutuhkan arsitektur database yang kokoh, API yang aman, dan UI
+                        yang responsif. Saya siap menghadirkan kode yang andal dan solusi teknis bagi tim pengembangan
+                        Anda.
                     </p>
 
                     <div class="pt-2">
                         <a href="#projects"
                             class="inline-block bg-bloom-teal text-white px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-bloom-pink hover:text-bloom-dark transition shadow-md">
-                            Explore Projects ✦
+                            Lihat Proyek ✦
                         </a>
                     </div>
 
@@ -313,13 +322,43 @@
 
         </section>
 
-        <!-- PLACEHOLDER UNTUK FITUR 3 -->
         <!-- ==========================================
              [FITUR 3: TECH STACK & CORE SERVICES]
              ========================================== -->
-        <!-- ==========================================
-             [SECTION: TECH & EXPERTISE - 9 CARDS GRID]
-             ========================================== -->
+        <!-- RELEVANSI UNTUK INDUSTRI IT & JARINGAN -->
+        <section id="relevansi" class="bg-white px-6 md:px-16 py-16 border-b border-bloom-dark/10">
+            <div class="max-w-5xl mx-auto text-center space-y-8">
+                <div class="space-y-2">
+                    <span class="font-serif italic text-2xl text-bloom-teal block">Siap Belajar di Dunia IT &
+                        Jaringan</span>
+                    <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-xl mx-auto">
+                        Selain pengembangan web dan mobile, saya tertarik mendalami infrastruktur, deployment, dan
+                        keamanan sistem, dan sudah mulai membangun dasarnya.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-5 text-left">
+                    <div class="bg-bloom-cream p-5 rounded-2xl border border-bloom-dark/10">
+                        <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase">Deployment</span>
+                        <h4 class="font-serif font-bold text-lg mt-1">DevOps: Web Hosting Praktis</h4>
+                        <p class="text-xs text-bloom-dark/70 font-light mt-2 leading-relaxed">Memahami dasar
+                            infrastruktur server dan strategi deployment web.</p>
+                    </div>
+                    <div class="bg-bloom-cream p-5 rounded-2xl border border-bloom-dark/10">
+                        <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase">Cloud</span>
+                        <h4 class="font-serif font-bold text-lg mt-1">Azure AI Fundamentals</h4>
+                        <p class="text-xs text-bloom-dark/70 font-light mt-2 leading-relaxed">Mengenal konsep cloud dan
+                            layanan AI pada Microsoft Azure.</p>
+                    </div>
+                    <div class="bg-bloom-cream p-5 rounded-2xl border border-bloom-dark/10">
+                        <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase">Keamanan</span>
+                        <h4 class="font-serif font-bold text-lg mt-1">Praktik Keamanan Web</h4>
+                        <p class="text-xs text-bloom-dark/70 font-light mt-2 leading-relaxed">Menerapkan proteksi CSRF,
+                            hashing password, dan sanitasi input di proyek saya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- TECH & EXPERTISE SECTION -->
         <section id="skills"
             class="bg-gradient-to-b from-bloom-cream/60 via-white to-bloom-cream/80 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
@@ -337,16 +376,16 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Capabilities &
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Kemampuan &
                         Tech Stack</span>
                 </div>
                 <h2
                     class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Tech & Expertise <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                    Teknologi & Keahlian <span class="text-bloom-pink animate-pulse inline-block">✦</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-xl mx-auto">
-                    Core technologies, system design practices, database architecture, and security protocols I utilize
-                    for modern web & mobile development.
+                    Teknologi inti, praktik perancangan sistem, arsitektur database, dan protokol keamanan yang saya
+                    gunakan dalam pengembangan web & mobile modern.
                 </p>
             </div>
 
@@ -376,11 +415,11 @@
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
                                 Laravel Core</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">BACKEND
-                                FRAMEWORK</span>
+                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">FRAMEWORK
+                                BACKEND</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Building robust web applications with Laravel 12, focusing on MVC pattern, Eloquent ORM,
-                                clean routing, and modular code architecture.
+                                Membangun aplikasi web yang tangguh dengan Laravel 12, berfokus pada pola MVC, Eloquent
+                                ORM, routing yang bersih, dan arsitektur kode yang modular.
                             </p>
                         </div>
                     </div>
@@ -415,13 +454,13 @@
                         <div>
                             <h3
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-sky-600 transition-colors">
-                                MySQL Database</h3>
+                                Database MySQL</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-sky-500 uppercase block mt-0.5">DATABASE
-                                ARCHITECTURE</span>
+                                class="text-[9px] font-bold tracking-widest text-sky-500 uppercase block mt-0.5">ARSITEKTUR
+                                DATABASE</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Designing normalized relational database schemas, managing table relationships (1:N,
-                                N:M), primary/foreign keys, and SQL queries.
+                                Merancang skema database relasional yang ternormalisasi, mengelola relasi antartabel
+                                (1:N, N:M), primary/foreign key, dan query SQL.
                             </p>
                         </div>
                     </div>
@@ -429,7 +468,7 @@
                     <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
                         <span
                             class="px-3.5 py-1.5 bg-sky-50 text-sky-600 font-semibold text-[10px] rounded-full border border-sky-200/80 tracking-wider">
-                            RELATIONAL DATABASE
+                            DATABASE RELASIONAL
                         </span>
                     </div>
                 </div>
@@ -458,11 +497,11 @@
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-emerald-600 transition-colors">
                                 Android Studio</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-emerald-500 uppercase block mt-0.5">MOBILE
-                                DEVELOPMENT</span>
+                                class="text-[9px] font-bold tracking-widest text-emerald-500 uppercase block mt-0.5">PENGEMBANGAN
+                                MOBILE</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Building native Android mobile applications with clean UI layouts, Activity lifecycle
-                                management, and RESTful API integration.
+                                Membangun aplikasi Android native dengan tata letak UI yang bersih, pengelolaan
+                                lifecycle Activity, dan integrasi RESTful API.
                             </p>
                         </div>
                     </div>
@@ -499,11 +538,11 @@
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-orange-600 transition-colors">
                                 UI/UX & Figma</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-orange-500 uppercase block mt-0.5">INTERFACE
-                                DESIGN</span>
+                                class="text-[9px] font-bold tracking-widest text-orange-500 uppercase block mt-0.5">DESAIN
+                                ANTARMUKA</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Wireframing, prototyping interactive user interfaces, and converting Figma visual
-                                designs into clean frontend components.
+                                Membuat wireframe, prototipe antarmuka interaktif, dan mengonversi desain visual Figma
+                                menjadi komponen frontend yang bersih.
                             </p>
                         </div>
                     </div>
@@ -537,12 +576,13 @@
                         <div>
                             <h3
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-red-600 transition-colors">
-                                Postman Testing</h3>
-                            <span class="text-[9px] font-bold tracking-widest text-red-500 uppercase block mt-0.5">API
-                                VERIFICATION</span>
+                                Pengujian Postman</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-red-500 uppercase block mt-0.5">VERIFIKASI
+                                API</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Testing backend API responses, request headers, authorization tokens, payload
-                                structures, and status code handling.
+                                Menguji respons API backend, request header, token otorisasi, struktur payload, dan
+                                penanganan status code.
                             </p>
                         </div>
                     </div>
@@ -550,7 +590,7 @@
                     <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
                         <span
                             class="px-3.5 py-1.5 bg-red-50 text-red-600 font-semibold text-[10px] rounded-full border border-red-200/80 tracking-wider">
-                            API QA & TESTING
+                            QA & PENGUJIAN API
                         </span>
                     </div>
                 </div>
@@ -579,11 +619,11 @@
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-cyan-600 transition-colors">
                                 Tailwind CSS</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-cyan-500 uppercase block mt-0.5">FRONTEND
-                                STYLING</span>
+                                class="text-[9px] font-bold tracking-widest text-cyan-500 uppercase block mt-0.5">STYLING
+                                FRONTEND</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Styling responsive, mobile-first user interfaces efficiently using utility-first CSS
-                                classes and custom color palettes.
+                                Menata antarmuka responsif yang mobile-first secara efisien menggunakan kelas CSS
+                                utility-first dan palet warna kustom.
                             </p>
                         </div>
                     </div>
@@ -591,7 +631,7 @@
                     <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
                         <span
                             class="px-3.5 py-1.5 bg-cyan-50 text-cyan-600 font-semibold text-[10px] rounded-full border border-cyan-200/80 tracking-wider">
-                            RESPONSIVE UI
+                            UI RESPONSIF
                         </span>
                     </div>
                 </div>
@@ -613,12 +653,12 @@
                         <div>
                             <h3
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-amber-600 transition-colors">
-                                Modern JS (ES6+)</h3>
+                                JS Modern (ES6+)</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-amber-500 uppercase block mt-0.5">INTERACTIVITY</span>
+                                class="text-[9px] font-bold tracking-widest text-amber-500 uppercase block mt-0.5">INTERAKTIVITAS</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Implementing dynamic DOM manipulation, async/await requests, event listeners, and
-                                interactive UI logic.
+                                Mengimplementasikan manipulasi DOM yang dinamis, request async/await, event listener,
+                                dan logika UI yang interaktif.
                             </p>
                         </div>
                     </div>
@@ -655,11 +695,11 @@
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-rose-600 transition-colors">
                                 Git & GitHub</h3>
                             <span
-                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">VERSION
-                                CONTROL</span>
+                                class="text-[9px] font-bold tracking-widest text-rose-500 uppercase block mt-0.5">KONTROL
+                                VERSI</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Tracking code changes, managing commit histories, repository branching, and
-                                collaborating through GitHub.
+                                Melacak perubahan kode, mengelola riwayat commit, percabangan repositori (branching),
+                                dan berkolaborasi melalui GitHub.
                             </p>
                         </div>
                     </div>
@@ -667,7 +707,7 @@
                     <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
                         <span
                             class="px-3.5 py-1.5 bg-rose-50 text-rose-600 font-semibold text-[10px] rounded-full border border-rose-200/80 tracking-wider">
-                            VERSION CONTROL
+                            KONTROL VERSI
                         </span>
                     </div>
                 </div>
@@ -694,12 +734,13 @@
                         <div>
                             <h3
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-teal-600 transition-colors">
-                                Web Security</h3>
-                            <span class="text-[9px] font-bold tracking-widest text-teal-500 uppercase block mt-0.5">BEST
-                                PRACTICES</span>
+                                Keamanan Web</h3>
+                            <span
+                                class="text-[9px] font-bold tracking-widest text-teal-500 uppercase block mt-0.5">PRAKTIK
+                                TERBAIK</span>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Applying CSRF protection, password hashing (Bcrypt), input sanitization, and basic
-                                role-based authentication.
+                                Menerapkan proteksi CSRF, hashing password (Bcrypt), sanitasi input, dan autentikasi
+                                berbasis peran (role) tingkat dasar.
                             </p>
                         </div>
                     </div>
@@ -707,7 +748,7 @@
                     <div class="mt-6 pt-4 border-t border-bloom-dark/10 w-full flex justify-center">
                         <span
                             class="px-3.5 py-1.5 bg-teal-50 text-teal-600 font-semibold text-[10px] rounded-full border border-teal-200/80 tracking-wider">
-                            SECURITY PROTOCOLS
+                            PROTOKOL KEAMANAN
                         </span>
                     </div>
                 </div>
@@ -715,18 +756,10 @@
             </div>
 
         </section>
-        <!-- PLACEHOLDER UNTUK FITUR 4 -->
+
         <!-- ==========================================
              [FITUR 4: FEATURED PROJECTS SHOWCASE]
              ========================================== -->
-        <!-- ==========================================
-             [FITUR 4: ALL 7 PROJECTS GALLERY SHOWCASE]
-             ========================================== -->
-        <!-- ==========================================
-             [FITUR 4: ALL 7 LIVE PROJECTS GALLERY]
-             ========================================== -->
-        <!-- FEATURED PROJECTS SECTION -->
-        <!-- FEATURED PROJECTS SECTION -->
         <!-- FEATURED PROJECTS SECTION -->
         <section id="projects"
             class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
@@ -744,16 +777,16 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Interactive
-                        Showcase</span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Showcase
+                        Interaktif</span>
                 </div>
                 <h2
                     class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Featured Projects <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                    Proyek Unggulan <span class="text-bloom-pink animate-pulse inline-block">✦</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
-                    A curated collection of web applications, AI integrations, and interactive 2D games deployed live
-                    online with production-ready standards.
+                    Kumpulan pilihan aplikasi web, integrasi AI, dan game 2D interaktif yang sudah dipublikasikan
+                    secara live dan dapat diakses publik.
                 </p>
             </div>
 
@@ -793,7 +826,7 @@
                             </div>
                             <!-- App Screenshot -->
                             <div class="overflow-hidden aspect-video bg-slate-950 relative">
-                                <img src="images/website-motherchildAI.png" alt="MotherChild.AI Interface"
+                                <img src="images/website-motherchildAI.png" alt="Antarmuka MotherChild.AI"
                                     class="w-full h-full object-cover group-hover/screen:scale-105 transition-transform duration-700 ease-out">
                                 <!-- Dark overlay on hover -->
                                 <div
@@ -807,23 +840,23 @@
                             <div class="flex items-center gap-2 flex-wrap">
                                 <span
                                     class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1 rounded-full uppercase tracking-widest shadow-md flex items-center gap-1.5">
-                                    <span>★</span> Featured Project
+                                    <span>★</span> Proyek Unggulan
                                 </span>
                                 <span
                                     class="text-[10px] text-bloom-teal font-bold uppercase tracking-wider bg-bloom-teal/10 px-3 py-1 rounded-full border border-bloom-teal/20">
-                                    AI & Healthcare
+                                    AI & Kesehatan
                                 </span>
                             </div>
 
                             <h3
                                 class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-bloom-teal transition-colors duration-300">
-                                MotherChild.AI — Predictive Health
+                                MotherChild.AI — Kesehatan Prediktif
                             </h3>
 
                             <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                Early stunting detection platform for toddlers and AI-based pregnancy risk analysis,
-                                fully integrated with clinical metrics, automated recommendations, and digital health
-                                records.
+                                Platform deteksi dini stunting pada balita dan analisis risiko kehamilan berbasis AI,
+                                terintegrasi penuh dengan metrik klinis, rekomendasi otomatis, dan rekam kesehatan
+                                digital.
                             </p>
 
                             <!-- Tech Badges -->
@@ -842,7 +875,7 @@
                             <div class="pt-3">
                                 <a href="https://motherchild-ai.vercel.app/" target="_blank"
                                     class="inline-flex items-center justify-center bg-bloom-teal text-white text-xs font-bold px-7 py-3.5 rounded-full hover:bg-bloom-dark transition-all duration-300 shadow-lg hover:shadow-xl gap-2.5 uppercase tracking-widest group/btn">
-                                    <span>LAUNCH MOTHERCHILD.AI</span>
+                                    <span>BUKA MOTHERCHILD.AI</span>
                                     <span
                                         class="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform duration-300">↗</span>
                                 </a>
@@ -863,7 +896,7 @@
                                 class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
                                 <span
                                     class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    WEDDING APP
+                                    APLIKASI PERNIKAHAN
                                 </span>
                                 <img src="images/website-weddinginvitation.png" alt="Korean Romantic Wedding"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -876,8 +909,8 @@
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     Korean Romantic Wedding</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Digital invitation platform featuring real-time RSVP queries, dynamic URL routing,
-                                    and embedded music player.
+                                    Platform undangan digital dengan query RSVP real-time, routing URL dinamis, dan
+                                    pemutar musik tersemat.
                                 </p>
                             </div>
                         </div>
@@ -888,14 +921,14 @@
                                 <span
                                     class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tailwind</span>
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">RSVP
-                                    System</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Sistem
+                                    RSVP</span>
                             </div>
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="http://wedding-invitation-app.great-site.net/invitation/vhr69JvS"
                                     target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT LIVE DEMO</span>
+                                    <span>LIHAT DEMO LIVE</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -910,7 +943,7 @@
                                 class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
                                 <span
                                     class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    PUBLISHING
+                                    PENERBITAN
                                 </span>
                                 <img src="images/website-lenteraedukasi.png" alt="Lentera Edukasi"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -923,23 +956,23 @@
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     Lentera Edukasi</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Academic publishing service platform equipped with print cost simulation calculators
-                                    and manuscript tracking.
+                                    Platform layanan penerbitan akademik yang dilengkapi kalkulator simulasi biaya cetak
+                                    dan pelacakan naskah.
                                 </p>
                             </div>
                         </div>
                         <div>
                             <div class="flex gap-1.5 mt-5 flex-wrap">
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Web
-                                    App</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Aplikasi
+                                    Web</span>
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Calculator</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Kalkulator</span>
                             </div>
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="https://publishing-bookstore-web.vercel.app/" target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT PUBLISHING WEB</span>
+                                    <span>LIHAT WEB PENERBITAN</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -960,23 +993,22 @@
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </a>
                             <div>
-                                <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">E-Commerce
-                                    Store</span>
+                                <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Toko
+                                    Online</span>
                                 <h4
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     Luminaroma Store</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    E-commerce site for scented candles featuring interactive product catalogs and
-                                    seamless WhatsApp checkout.
+                                    Situs e-commerce lilin aromaterapi dengan katalog produk interaktif dan checkout
+                                    WhatsApp yang mulus.
                                 </p>
                             </div>
                         </div>
                         <div>
                             <div class="flex gap-1.5 mt-5 flex-wrap">
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Store
-                                    Front</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Etalase
+                                    Toko</span>
                                 <span
                                     class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">WhatsApp
                                     API</span>
@@ -984,7 +1016,7 @@
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="https://luminaroma.vercel.app/" target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT CANDLE STORE</span>
+                                    <span>LIHAT TOKO LILIN</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -999,20 +1031,20 @@
                                 class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
                                 <span
                                     class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    TOURISM & BOOKING
+                                    WISATA & PEMESANAN
                                 </span>
                                 <img src="images/website-tamangumuk.png" alt="Taman Gumuk Trip"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </a>
                             <div>
                                 <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Tourism
-                                    & Reservation</span>
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Wisata
+                                    & Reservasi</span>
                                 <h4
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     Taman Gumuk Trip</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Tourism portal and activity reservation platform for outdoor adventures (ATV,
+                                    Portal wisata dan platform reservasi aktivitas petualangan outdoor (ATV,
                                     Sandboarding, Jeep Parangtritis).
                                 </p>
                             </div>
@@ -1020,16 +1052,16 @@
                         <div>
                             <div class="flex gap-1.5 mt-5 flex-wrap">
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Booking
-                                    System</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Sistem
+                                    Pemesanan</span>
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Tourism
-                                    Portal</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Portal
+                                    Wisata</span>
                             </div>
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="https://proto-1-ashen.vercel.app/" target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT TOURISM WEB</span>
+                                    <span>LIHAT WEB WISATA</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -1044,21 +1076,21 @@
                                 class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
                                 <span
                                     class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    CONTENT PORTAL
+                                    PORTAL KONTEN
                                 </span>
                                 <img src="images/website-blooger.png" alt="Blooger Magazine"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </a>
                             <div>
                                 <span
-                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Content
-                                    Portal</span>
+                                    class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Portal
+                                    Konten</span>
                                 <h4
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     Blooger Magazine</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Lifestyle article and news portal with dynamic weather widgets, trending tag
-                                    filters, and author profiles.
+                                    Portal artikel dan berita gaya hidup dengan widget cuaca dinamis, filter tag
+                                    trending, dan profil penulis.
                                 </p>
                             </div>
                         </div>
@@ -1068,13 +1100,13 @@
                                     class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">REST
                                     API</span>
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Weather
-                                    API</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">API
+                                    Cuaca</span>
                             </div>
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="https://mezzaluna-azzafira.github.io/blooger-web-app/" target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>VISIT NEWS PORTAL</span>
+                                    <span>LIHAT PORTAL BERITA</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -1089,20 +1121,20 @@
                                 class="overflow-hidden rounded-2xl border border-bloom-dark/10 aspect-video bg-bloom-cream/50 block relative">
                                 <span
                                     class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-white/90 backdrop-blur-md text-[9px] font-bold text-bloom-dark rounded-md border border-bloom-dark/10 shadow-xs uppercase tracking-wider">
-                                    UNITY 2D GAME
+                                    GAME 2D UNITY
                                 </span>
                                 <img src="images/game-cognistep.png" alt="CogniStep Platformer"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </a>
                             <div>
-                                <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Unity
-                                    2D Game</span>
+                                <span class="text-[9px] font-bold tracking-widest text-bloom-teal uppercase block">Game
+                                    2D Unity</span>
                                 <h4
                                     class="font-serif text-xl font-bold text-bloom-dark mt-1 group-hover:text-bloom-teal transition-colors">
                                     CogniStep Platformer</h4>
                                 <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-2">
-                                    Cyberpunk pixel art 2D game built in Unity, featuring 6 challenging levels with
-                                    robot enemies and obstacles.
+                                    Game 2D pixel art bertema cyberpunk yang dibuat dengan Unity, menampilkan 6 level
+                                    menantang dengan musuh robot dan rintangan.
                                 </p>
                             </div>
                         </div>
@@ -1112,13 +1144,13 @@
                                     class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Unity
                                     Engine</span>
                                 <span
-                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">C#
-                                    Scripting</span>
+                                    class="px-2.5 py-1 bg-bloom-cream text-[9px] font-medium rounded-md text-bloom-dark/80 border border-bloom-dark/10">Scripting
+                                    C#</span>
                             </div>
                             <div class="mt-5 pt-3 border-t border-bloom-dark/10 flex items-center justify-between">
                                 <a href="https://mezzalunaazzafira.itch.io/cognistep-platformer" target="_blank"
                                     class="text-[10px] font-bold text-bloom-dark group-hover:text-bloom-teal tracking-widest uppercase flex items-center gap-1 transition-colors">
-                                    <span>PLAY GAME ON ITCH.IO</span>
+                                    <span>MAINKAN DI ITCH.IO</span>
                                     <span class="group-hover:translate-x-1 transition-transform">↗</span>
                                 </a>
                             </div>
@@ -1130,17 +1162,10 @@
             </div>
 
         </section>
+
         <!-- ==========================================
-     <!-- ==========================================
-     [FITUR TAMBAHAN: UI/UX DESIGN SHOWCASE]
-     ========================================== -->
-        <!-- ==========================================
-     [ADDITIONAL FEATURE: UI/UX DESIGN SHOWCASE]
-     ========================================== -->
-        <!-- Section Figma & Product Design -->
-        <!-- ==========================================
-     SECTION 1: FIGMA & UI/UX DESIGN CASE STUDY
-     ========================================== -->
+             [FITUR TAMBAHAN: UI/UX DESIGN SHOWCASE]
+             ========================================== -->
         <!-- FEATURED UI/UX CASE SECTION -->
         <section id="uiux-case"
             class="bg-gradient-to-b from-bloom-cream/80 via-white to-bloom-cream/60 px-6 md:px-16 py-24 relative overflow-hidden border-b border-bloom-dark/10">
@@ -1158,15 +1183,15 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-ping"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Figma & Product
-                        Design</span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Figma & Desain
+                        Produk</span>
                 </div>
                 <h2
                     class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Featured UI/UX Case <span class="text-bloom-pink animate-pulse inline-block">✦</span>
+                    Studi Kasus UI/UX Unggulan <span class="text-bloom-pink animate-pulse inline-block">✦</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-lg mx-auto">
-                    Exploring application user interfaces from wireframing to high-fidelity interactive prototypes.
+                    Menjelajahi antarmuka pengguna aplikasi, dari wireframe hingga prototipe interaktif high-fidelity.
                 </p>
             </div>
 
@@ -1187,8 +1212,8 @@
                         <!-- Mockup Image Container -->
                         <div
                             class="overflow-hidden aspect-[16/10] md:aspect-[16/9] bg-slate-100 relative flex items-center justify-center">
-                            <img src="images/desainfigma-neatifylaundry.png" alt="Neatify Figma UI/UX Canvas"
-                                class="w-full h-full object-cover group-hover/canvas:scale-102 transition-transform duration-700 ease-out">
+                            <img src="images/desainfigma-neatifylaundry.png" alt="Kanvas UI/UX Figma Neatify"
+                                class="w-full h-full object-cover group-hover/canvas:scale-[1.02] transition-transform duration-700 ease-out">
 
                             <!-- Overlay Darkening on Hover -->
                             <div
@@ -1215,11 +1240,11 @@
                         <div class="flex items-center gap-2.5 flex-wrap">
                             <span
                                 class="bg-bloom-teal text-white text-[10px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest shadow-md">
-                                MOBILE APP DESIGN
+                                DESAIN APLIKASI MOBILE
                             </span>
                             <span
                                 class="text-[10px] font-bold text-rose-500 bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-200 uppercase tracking-wider">
-                                WIREFRAMING & HI-FI
+                                WIREFRAME & HI-FI
                             </span>
                             <span
                                 class="text-[10px] font-semibold text-bloom-dark/70 bg-bloom-cream px-3.5 py-1.5 rounded-full border border-bloom-dark/10 uppercase tracking-wider">
@@ -1231,11 +1256,13 @@
                         <div>
                             <h3
                                 class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark leading-tight group-hover:text-sky-600 transition-colors duration-300">
-                                Neatify <span class="text-bloom-dark/30 font-light mx-1">—</span> On-Demand Laundry App
+                                Neatify <span class="text-bloom-dark/30 font-light mx-1">—</span> Aplikasi Laundry
+                                On-Demand
                             </h3>
                             <p class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed mt-3 max-w-3xl">
-                                Designed an end-to-end laundry booking app interface, covering initial wireframes, user
-                                flow mapping, and building an interactive design system with a modern blue theme.
+                                Merancang antarmuka aplikasi pemesanan laundry secara menyeluruh, mencakup wireframe
+                                awal, pemetaan alur pengguna (user flow), dan pembuatan design system interaktif dengan
+                                tema biru modern.
                             </p>
                         </div>
 
@@ -1250,7 +1277,7 @@
                             <a href="https://www.figma.com/design/bovElVMZGfP4j1tjLAfsh7/neatify-laundry?t=Kcf4Gev4ngdHjvGb-1"
                                 target="_blank"
                                 class="inline-flex items-center gap-2 text-xs font-bold text-bloom-dark group-hover:text-sky-600 tracking-widest uppercase transition-colors group/link">
-                                <span>VIEW FIGMA PROTOTYPE</span>
+                                <span>LIHAT PROTOTIPE FIGMA</span>
                                 <span
                                     class="group-hover/link:translate-x-1 group-hover/link:-translate-y-0.5 transition-transform duration-300">↗</span>
                             </a>
@@ -1265,11 +1292,8 @@
 
 
         <!-- ==========================================
-     SECTION 2: LIVE MOBILE APP & VIDEO DEMO
-     ========================================== -->
-        <!-- ==========================================
-     SECTION 2: LIVE MOBILE APP & VIDEO DEMO
-     ========================================== -->
+             SECTION 2: LIVE MOBILE APP & VIDEO DEMO
+             ========================================== -->
         <section id="app-demo" class="py-24 px-6 md:px-12 max-w-6xl mx-auto relative overflow-hidden">
 
             <!-- Ambient Background Lighting & Mesh Orbs -->
@@ -1285,15 +1309,15 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Engineering &
-                        Code Implementation</span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Rekayasa &
+                        Implementasi Kode</span>
                 </div>
                 <h2
                     class="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-bloom-dark tracking-tight leading-tight flex items-center justify-center gap-3">
-                    Live App Demo & API Integration <span class="text-2xl md:text-3xl">📱</span>
+                    Demo Aplikasi Live & Integrasi API <span class="text-2xl md:text-3xl">📱</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light max-w-lg mx-auto leading-relaxed">
-                    Realizing the design into a fully functional Android application connected via REST API.
+                    Mewujudkan desain menjadi aplikasi Android yang berfungsi penuh dan terhubung melalui REST API.
                 </p>
             </div>
 
@@ -1326,7 +1350,6 @@
                                 class="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 bg-slate-700/60 rounded-full z-20 pointer-events-none">
                             </div>
 
-                            <!-- Layar HP (Video utuh kamu tanpa diubah) -->
                             <!-- Layar HP (Sudah disesuaikan agar Status Bar tertutup notch) -->
                             <div
                                 class="w-full aspect-[9/19.5] rounded-[2.3rem] overflow-hidden bg-black relative z-10 border border-slate-700/50">
@@ -1353,27 +1376,27 @@
                             <div class="flex flex-wrap gap-2">
                                 <span
                                     class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
-                                    Android Architecture
+                                    Arsitektur Android
                                 </span>
                                 <span
                                     class="px-3.5 py-1.5 bg-blue-50/90 text-blue-600 text-xs font-semibold rounded-xl border border-blue-200/80 backdrop-blur-sm">
-                                    REST API Integration
+                                    Integrasi REST API
                                 </span>
                                 <span
                                     class="px-3.5 py-1.5 bg-emerald-50/90 text-emerald-600 text-xs font-semibold rounded-xl border border-emerald-200/80 backdrop-blur-sm">
-                                    WhatsApp Direct Chat API
+                                    WhatsApp Click-to-Chat
                                 </span>
                                 <span
                                     class="px-3.5 py-1.5 bg-slate-100/90 text-slate-700 text-xs font-semibold rounded-xl border border-slate-200/80 backdrop-blur-sm">
-                                    VS Code Backend
+                                    Backend REST API
                                 </span>
                             </div>
                         </div>
 
                         <!-- Key Features List -->
                         <div class="space-y-3.5">
-                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-4">MOBILE
-                                APP FEATURES</h4>
+                            <h4 class="text-[10px] font-bold tracking-[0.2em] text-bloom-dark/40 uppercase mb-4">FITUR
+                                APLIKASI MOBILE</h4>
 
                             <ul class="space-y-2.5">
                                 <li
@@ -1381,8 +1404,8 @@
                                     <span
                                         class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
                                     <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Auth System:</strong> User
-                                        Registration & Secure Login Account
+                                        <strong class="font-semibold text-bloom-dark">Sistem Autentikasi:</strong>
+                                        Registrasi Pengguna & Login Akun yang Aman
                                     </span>
                                 </li>
                                 <li
@@ -1390,8 +1413,8 @@
                                     <span
                                         class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
                                     <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Cost Estimation:</strong>
-                                        Automated calculation based on weight (Kg)
+                                        <strong class="font-semibold text-bloom-dark">Estimasi Biaya:</strong>
+                                        Perhitungan otomatis berdasarkan berat (Kg)
                                     </span>
                                 </li>
                                 <li
@@ -1399,8 +1422,8 @@
                                     <span
                                         class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
                                     <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Wallet System:</strong> Real-time
-                                        balance top-up & transaction management
+                                        <strong class="font-semibold text-bloom-dark">Sistem Dompet:</strong> Top-up
+                                        saldo real-time & manajemen transaksi
                                     </span>
                                 </li>
                                 <li
@@ -1408,8 +1431,8 @@
                                     <span
                                         class="w-7 h-7 rounded-xl bg-amber-100/80 border border-amber-300/60 flex items-center justify-center shrink-0 mt-0.5 text-amber-600 text-xs">⚡</span>
                                     <span class="text-xs md:text-sm text-bloom-dark/80 font-light leading-relaxed">
-                                        <strong class="font-semibold text-bloom-dark">Order Tracking:</strong> Dynamic
-                                        laundry status tracking & history
+                                        <strong class="font-semibold text-bloom-dark">Pelacakan Pesanan:</strong>
+                                        Pelacakan status laundry yang dinamis & riwayat pesanan
                                     </span>
                                 </li>
                             </ul>
@@ -1419,12 +1442,12 @@
                         <div
                             class="pt-6 border-t border-bloom-dark/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                             <span class="text-xs text-bloom-dark/50 italic font-light">
-                                Built with Android, REST API & VS Code
+                                Dibangun dengan Android & REST API
                             </span>
 
                             <a href="https://github.com/mezzaluna-azzafira/Neatify-AndroidView.git" target="_blank"
                                 class="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group/btn">
-                                <span>View Source Code</span>
+                                <span>Lihat Source Code</span>
                                 <svg class="w-4 h-4 text-slate-400 group-hover/btn:text-white group-hover/btn:translate-x-0.5 transition-all"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1456,28 +1479,28 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md mb-2">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Achievements &
-                        Credentials</span>
+                    <span class="font-serif italic text-xs font-semibold text-bloom-teal tracking-wide">Pencapaian &
+                        Kredensial</span>
                 </div>
                 <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight leading-tight">
-                    Certifications
+                    Sertifikasi
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed">
-                    Verified professional credentials, tech bootcamps, and specialized skill certifications.
+                    Kredensial profesional terverifikasi, bootcamp teknologi, dan sertifikasi keahlian khusus.
                 </p>
             </div>
 
             <!-- Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
 
-                <!-- Certificate 1: AI Ready ASEAN (NEW) -->
+                <!-- Certificate 1: AI Ready ASEAN -->
                 <div
                     class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(59,130,246,0.12)] hover:border-blue-300 transition-all duration-500 flex flex-col justify-between">
                     <div>
                         <!-- Image Frame -->
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
-                            <img src="certificates/asean_sertifikat.jpg" alt="AI Ready ASEAN Certificate"
+                            <img src="certificates/asean_sertifikat.jpg" alt="Sertifikat AI Ready ASEAN"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1488,7 +1511,7 @@
                             <div class="flex items-center justify-between gap-2">
                                 <span
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-blue-50 text-blue-700 border border-blue-200/80 rounded-full uppercase tracking-wider">
-                                    AI & Global Certification
+                                    AI & Sertifikasi Global
                                 </span>
                                 <span class="text-[11px] text-bloom-dark/50 font-medium">September 2026</span>
                             </div>
@@ -1496,15 +1519,15 @@
                             <div>
                                 <h3
                                     class="font-serif font-bold text-xl text-bloom-dark group-hover:text-blue-700 transition-colors duration-300">
-                                    AI Ready ASEAN — Youth Program
+                                    AI Ready ASEAN — Program Pemuda
                                 </h3>
                                 <p class="text-xs font-semibold text-bloom-teal mt-0.5">ASEAN Foundation × Google.org
                                 </p>
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                12-hour intensive curriculum covering 15 AI modules: Generative AI, Prompting, AI
-                                Safety, Data Privacy, and AI Tool Development.
+                                Kurikulum intensif 12 jam yang mencakup 15 modul AI: Generative AI, Prompting, Keamanan
+                                AI, Privasi Data, dan Pengembangan Alat AI.
                             </p>
                         </div>
                     </div>
@@ -1513,7 +1536,7 @@
                     <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
                         <a href="certificates/certificate.pdf" target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-blue-700 group-hover:text-blue-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1524,7 +1547,7 @@
                     </div>
                 </div>
 
-                <!-- Certificate 2: Navigasi AI Pendidikan (NEW) -->
+                <!-- Certificate 2: Navigasi AI Pendidikan -->
                 <div
                     class="group bg-white/80 backdrop-blur-xl border border-bloom-dark/10 rounded-[2rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_rgba(236,72,153,0.12)] hover:border-pink-300 transition-all duration-500 flex flex-col justify-between">
                     <div>
@@ -1532,7 +1555,7 @@
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
                             <img src="certificates/Certificate_Navigasi_Kecerdasan_Artifisial_dalam_Pendidikan__Aman__Bijak__dan_Berpusat_pada_Manusia_page-0001 (1).jpg"
-                                alt="Navigasi AI Certificate"
+                                alt="Sertifikat Navigasi AI"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1543,7 +1566,7 @@
                             <div class="flex items-center justify-between gap-2">
                                 <span
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-pink-50 text-pink-700 border border-pink-200/80 rounded-full uppercase tracking-wider">
-                                    AI in Education
+                                    AI dalam Pendidikan
                                 </span>
                                 <span class="text-[11px] text-bloom-dark/50 font-medium">September 2026</span>
                             </div>
@@ -1558,8 +1581,8 @@
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                Specialized course on human-centered AI implementation, safe practices, and wise
-                                navigation in digital learning environments.
+                                Kursus khusus tentang penerapan AI yang berpusat pada manusia, praktik yang aman, dan
+                                navigasi yang bijak di lingkungan pembelajaran digital.
                             </p>
                         </div>
                     </div>
@@ -1569,7 +1592,7 @@
                         <a href="certificates/Certificate_Navigasi_Kecerdasan_Artifisial_dalam_Pendidikan__Aman__Bijak__dan_Berpusat_pada_Manusia.pdf"
                             target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-pink-700 group-hover:text-pink-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1588,7 +1611,7 @@
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
                             <img src="certificates/Sertifikat-AI Ignition Indonesia_page-0001.jpg"
-                                alt="AI Ignition Certificate"
+                                alt="Sertifikat AI Ignition"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1601,20 +1624,20 @@
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-purple-50 text-purple-700 border border-purple-200/80 rounded-full uppercase tracking-wider">
                                     AI & Machine Learning
                                 </span>
-                                <span class="text-[11px] text-bloom-dark/50 font-medium">August 2026</span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">Agustus 2026</span>
                             </div>
 
                             <div>
                                 <h3
                                     class="font-serif font-bold text-xl text-bloom-dark group-hover:text-purple-700 transition-colors duration-300">
-                                    AI Ignition Training
+                                    Pelatihan AI Ignition
                                 </h3>
                                 <p class="text-xs font-semibold text-bloom-teal mt-0.5">KUMPUL.ID × Google.org & ADB</p>
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                30-hour intensive program covering Generative AI, Large Language Models (LLMs), Prompt
-                                Engineering, and Responsible AI implementation.
+                                Program intensif 30 jam yang mencakup Generative AI, Large Language Model (LLM), Prompt
+                                Engineering, dan penerapan AI yang bertanggung jawab.
                             </p>
                         </div>
                     </div>
@@ -1623,7 +1646,7 @@
                     <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
                         <a href="certificates/Sertifikat-AI Ignition Indonesia.pdf" target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-purple-700 group-hover:text-purple-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1641,7 +1664,7 @@
                         <!-- Image Frame -->
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
-                            <img src="certificates/MEZZALUNA AZZAFIRA_page-0001.jpg" alt="DevOps Certificate"
+                            <img src="certificates/MEZZALUNA AZZAFIRA_page-0001.jpg" alt="Sertifikat DevOps"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1654,20 +1677,20 @@
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-amber-50 text-amber-700 border border-amber-200/80 rounded-full uppercase tracking-wider">
                                     DevOps & Cloud
                                 </span>
-                                <span class="text-[11px] text-bloom-dark/50 font-medium">March 2026</span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">Maret 2026</span>
                             </div>
 
                             <div>
                                 <h3
                                     class="font-serif font-bold text-xl text-bloom-dark group-hover:text-amber-700 transition-colors duration-300">
-                                    DevOps: Practical Web Hosting
+                                    DevOps: Web Hosting Praktis
                                 </h3>
                                 <p class="text-xs font-semibold text-bloom-teal mt-0.5">Dilesin Academy</p>
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                Practical workshop covering fundamentals of DevOps workflows, server infrastructure, and
-                                web deployment strategies.
+                                Workshop praktis yang mencakup dasar-dasar alur kerja DevOps, infrastruktur server, dan
+                                strategi deployment web.
                             </p>
                         </div>
                     </div>
@@ -1676,7 +1699,7 @@
                     <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
                         <a href="certificates/MEZZALUNA AZZAFIRA.pdf" target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 group-hover:text-amber-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1694,7 +1717,7 @@
                         <!-- Image Frame -->
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
-                            <img src="certificates/sertifikat digiup_page-0001.jpg" alt="Telkom DigiUp Certificate"
+                            <img src="certificates/sertifikat digiup_page-0001.jpg" alt="Sertifikat Telkom DigiUp"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1705,23 +1728,23 @@
                             <div class="flex items-center justify-between gap-2">
                                 <span
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200/80 rounded-full uppercase tracking-wider">
-                                    Digital Marketing
+                                    Pemasaran Digital
                                 </span>
-                                <span class="text-[11px] text-bloom-dark/50 font-medium">December 2025</span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">Desember 2025</span>
                             </div>
 
                             <div>
                                 <h3
                                     class="font-serif font-bold text-xl text-bloom-dark group-hover:text-emerald-700 transition-colors duration-300">
-                                    Digital Marketing Certification
+                                    Sertifikasi Pemasaran Digital
                                 </h3>
                                 <p class="text-xs font-semibold text-bloom-teal mt-0.5">Telkom Indonesia (DigiUp 2025)
                                 </p>
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                26-hour training covering content strategy, copywriting, Meta Business Suite, and
-                                campaign performance analytics.
+                                Pelatihan 26 jam yang mencakup strategi konten, copywriting, Meta Business Suite, dan
+                                analitik performa kampanye.
                             </p>
                         </div>
                     </div>
@@ -1730,7 +1753,7 @@
                     <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
                         <a href="certificates/sertifikat digiup.pdf" target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 group-hover:text-emerald-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1748,7 +1771,7 @@
                         <!-- Image Frame -->
                         <div
                             class="w-full aspect-[16/10] bg-slate-100 overflow-hidden relative border-b border-slate-100">
-                            <img src="certificates/sertificat mereka academy_page-0001.jpg" alt="Azure AI Certificate"
+                            <img src="certificates/sertificat mereka academy_page-0001.jpg" alt="Sertifikat Azure AI"
                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out">
                             <div
                                 class="absolute inset-0 bg-bloom-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -1761,7 +1784,7 @@
                                     class="text-[10px] font-bold px-3.5 py-1.5 bg-sky-50 text-sky-700 border border-sky-200/80 rounded-full uppercase tracking-wider">
                                     Cloud & AI
                                 </span>
-                                <span class="text-[11px] text-bloom-dark/50 font-medium">July 2025</span>
+                                <span class="text-[11px] text-bloom-dark/50 font-medium">Juli 2025</span>
                             </div>
 
                             <div>
@@ -1774,8 +1797,8 @@
                             </div>
 
                             <p class="text-xs text-bloom-dark/70 leading-relaxed font-light pt-1">
-                                Preparation and fundamental certification for Artificial Intelligence concepts and cloud
-                                implementations using Microsoft Azure.
+                                Persiapan dan sertifikasi dasar untuk konsep Kecerdasan Buatan serta implementasi cloud
+                                menggunakan Microsoft Azure.
                             </p>
                         </div>
                     </div>
@@ -1784,7 +1807,7 @@
                     <div class="px-6 pb-6 pt-2 border-t border-slate-100/80">
                         <a href="certificates/sertificat mereka academy.pdf" target="_blank"
                             class="inline-flex items-center gap-2 text-xs font-bold text-sky-700 group-hover:text-sky-800 tracking-wider uppercase transition-colors group/link">
-                            <span>View PDF Credential</span>
+                            <span>Lihat Kredensial PDF</span>
                             <svg class="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1798,11 +1821,8 @@
             </div>
         </section>
         <!-- ==========================================
-     FITUR 5: EXPERIENCE, EDUCATION & TARGET PKL
-     ========================================== -->
-        <!-- ==========================================
-     [FITUR 5: EXPERIENCE, EDUCATION & TARGET PKL]
-     ========================================== -->
+             [FITUR 5: EXPERIENCE, EDUCATION & TARGET PKL]
+             ========================================== -->
         <section id="experience" class="bg-bloom-cream px-6 md:px-16 py-20 relative border-b border-bloom-dark/10">
 
             <!-- Section Header -->
@@ -1810,13 +1830,14 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Journey & Milestones</span>
+                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Perjalanan & Tonggak
+                        Pencapaian</span>
                 </div>
                 <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight">
-                    Experience & Education <span class="text-bloom-pink">✦</span>
+                    Pengalaman & Pendidikan <span class="text-bloom-pink">✦</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-md mx-auto">
-                    My academic foundation, vocational journey, and hands-on technical achievements.
+                    Fondasi akademik, perjalanan vokasi, dan pencapaian teknis langsung yang telah saya raih.
                 </p>
             </div>
 
@@ -1831,16 +1852,16 @@
                             <!-- Badge dibuat Terang (Pink Soft) -->
                             <span
                                 class="bg-bloom-pink/30 text-white font-bold text-[9px] px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm border border-white/20">
-                                11TH GRADE
+                                KELAS 11
                             </span>
                             <span class="text-[11px] text-white/90 font-medium">2026 – 2027</span>
                         </div>
 
                         <div>
-                            <h3 class="font-serif text-2xl font-normal text-white">Internship Readiness</h3>
+                            <h3 class="font-serif text-2xl font-normal text-white">Kesiapan Magang</h3>
                             <p class="text-xs text-white/90 font-light leading-relaxed mt-3">
-                                Developing production-ready Laravel REST APIs with optimized MySQL architecture,
-                                actively preparing for high-impact industry placement.
+                                Mengembangkan REST API Laravel dengan arsitektur MySQL yang teroptimasi,
+                                sekaligus aktif mempersiapkan diri untuk penempatan di dunia industri.
                             </p>
                         </div>
                     </div>
@@ -1848,11 +1869,11 @@
                     <div class="pt-6 border-t border-white/20 mt-6 flex items-center justify-between">
                         <span
                             class="text-[9px] font-bold tracking-widest text-white/90 uppercase flex items-center gap-1.5">
-                            ✦ INDUSTRY READINESS
+                            ✦ KESIAPAN INDUSTRI
                         </span>
                         <a href="#contact"
                             class="text-xs font-semibold text-white hover:underline flex items-center gap-1">
-                            <span>Details</span>
+                            <span>Detail</span>
                             <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -1869,16 +1890,16 @@
                         <div class="flex items-center justify-between">
                             <span
                                 class="bg-white text-bloom-dark text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-bloom-dark/10">
-                                FORMAL EDUCATION
+                                PENDIDIKAN FORMAL
                             </span>
-                            <span class="text-[11px] text-bloom-dark/70 font-medium">2024 – Present</span>
+                            <span class="text-[11px] text-bloom-dark/70 font-medium">2024 – Sekarang</span>
                         </div>
 
                         <div>
                             <h3 class="font-serif text-2xl font-normal text-bloom-dark">SMK Telkom Purwokerto</h3>
                             <p class="text-xs text-bloom-dark/80 font-light leading-relaxed mt-3">
-                                Majoring in Software Engineering (RPL). Focused on data structures, relational DB design
-                                (SQL), and Full-Stack web application engineering.
+                                Mengambil jurusan Rekayasa Perangkat Lunak (RPL). Berfokus pada struktur data, desain
+                                database relasional (SQL), dan rekayasa aplikasi web Full-Stack.
                             </p>
                         </div>
                     </div>
@@ -1886,11 +1907,11 @@
                     <div class="pt-6 border-t border-bloom-dark/10 mt-6 flex items-center justify-between">
                         <span
                             class="text-[9px] font-bold tracking-widest text-bloom-dark/80 uppercase flex items-center gap-1.5">
-                            🎓 SOFTWARE ENGINEERING
+                            🎓 REKAYASA PERANGKAT LUNAK
                         </span>
                         <a href="https://smktelkom-pwt.sch.id" target="_blank"
                             class="text-xs font-semibold text-bloom-pink hover:underline flex items-center gap-1">
-                            <span>Website</span>
+                            <span>Situs Web</span>
                             <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1908,16 +1929,16 @@
                         <div class="flex items-center justify-between">
                             <span
                                 class="bg-sky-50 text-sky-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-200">
-                                TRACK RECORD
+                                RIWAYAT KARYA
                             </span>
                             <span class="text-[11px] text-bloom-dark/70 font-medium">2025 – 2026</span>
                         </div>
 
                         <div>
-                            <h3 class="font-serif text-2xl font-normal text-bloom-dark">Digital Product Build</h3>
+                            <h3 class="font-serif text-2xl font-normal text-bloom-dark">Pembuatan Produk Digital</h3>
                             <p class="text-xs text-bloom-dark/80 font-light leading-relaxed mt-3">
-                                Building modern web products with Laravel 12 & Tailwind CSS, focusing on UI aesthetics,
-                                smooth user flows, and query optimization.
+                                Membangun produk web modern dengan Laravel 12 & Tailwind CSS, berfokus pada estetika UI,
+                                alur pengguna yang mulus, dan optimasi query.
                             </p>
                         </div>
                     </div>
@@ -1925,11 +1946,11 @@
                     <div class="pt-6 border-t border-bloom-dark/10 mt-6 flex items-center justify-between">
                         <span
                             class="text-[9px] font-bold tracking-widest text-bloom-dark/80 uppercase flex items-center gap-1.5">
-                            💻 FULL-STACK DEV
+                            💻 PENGEMBANGAN FULL-STACK
                         </span>
                         <a href="#projects"
                             class="text-xs font-semibold text-sky-600 hover:underline flex items-center gap-1">
-                            <span>Projects</span>
+                            <span>Proyek</span>
                             <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -1945,8 +1966,8 @@
 
 
         <!-- ==========================================
-     [FITUR 6: GITHUB & LINKEDIN SOCIAL HUB]
-     ========================================== -->
+             [FITUR 6: GITHUB & LINKEDIN SOCIAL HUB]
+             ========================================== -->
         <section id="connect"
             class="bg-bloom-cream px-6 md:px-16 py-20 relative overflow-hidden border-b border-bloom-dark/10">
 
@@ -1963,13 +1984,14 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bloom-teal/10 border border-bloom-teal/20 backdrop-blur-md">
                     <span class="w-2 h-2 rounded-full bg-bloom-teal animate-pulse"></span>
-                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Connect & Code</span>
+                    <span class="font-serif italic text-sm text-bloom-teal font-medium">Terhubung & Berkode</span>
                 </div>
                 <h2 class="font-serif text-4xl md:text-5xl font-normal text-bloom-dark tracking-tight">
                     GitHub & LinkedIn <span class="text-bloom-pink animate-pulse inline-block">✦</span>
                 </h2>
                 <p class="text-xs md:text-sm text-bloom-dark/70 font-light leading-relaxed max-w-md mx-auto">
-                    Explore my Laravel source code repositories or connect with me professionally on LinkedIn.
+                    Jelajahi repositori source code Laravel saya atau terhubung dengan saya secara profesional di
+                    LinkedIn.
                 </p>
             </div>
 
@@ -1987,20 +2009,20 @@
                             </div>
                             <span
                                 class="bg-bloom-cream text-bloom-dark text-[9px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-bloom-dark/10">
-                                CODE REPOSITORY
+                                REPOSITORI KODE
                             </span>
                         </div>
 
                         <div>
                             <h3
                                 class="font-serif text-2xl font-bold text-bloom-dark group-hover:text-bloom-teal transition-colors">
-                                GitHub Profile</h3>
+                                Profil GitHub</h3>
                             <p class="text-xs font-bold text-bloom-teal uppercase tracking-widest mt-1">
                                 @MEZZALUNA-AZZAFIRA
                             </p>
                             <p class="text-xs text-bloom-dark/70 font-light leading-relaxed mt-3">
-                                Where I store web application source code, Laravel 12 architecture experiments, MySQL
-                                database schemas, and Software Engineering projects.
+                                Tempat saya menyimpan source code aplikasi web, eksperimen arsitektur Laravel 12, skema
+                                database MySQL, dan proyek-proyek Rekayasa Perangkat Lunak.
                             </p>
                         </div>
 
@@ -2010,7 +2032,7 @@
                                 class="bg-bloom-cream/70 p-3 rounded-2xl border border-bloom-dark/10 text-center hover:bg-bloom-cream transition">
                                 <p class="font-serif font-bold text-bloom-dark text-sm">Laravel 12</p>
                                 <p class="text-[9px] text-bloom-dark/60 font-semibold tracking-wider uppercase mt-0.5">
-                                    PRIMARY STACK</p>
+                                    STACK UTAMA</p>
                             </div>
                             <div
                                 class="bg-bloom-cream/70 p-3 rounded-2xl border border-bloom-dark/10 text-center hover:bg-bloom-cream transition">
@@ -2024,7 +2046,7 @@
                     <!-- GitHub Link Button -->
                     <a href="https://github.com/MEZZALUNA-AZZAFIRA" target="_blank"
                         class="w-full py-3.5 bg-bloom-dark text-white text-xs font-bold uppercase tracking-widest rounded-2xl hover:bg-bloom-teal shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn">
-                        <span>Visit My GitHub</span>
+                        <span>Kunjungi GitHub Saya</span>
                         <i
                             class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
                     </a>
@@ -2047,18 +2069,18 @@
                             </div>
                             <span
                                 class="bg-white/10 text-white text-[9px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-white/20 backdrop-blur-sm">
-                                PROFESSIONAL NETWORK
+                                JARINGAN PROFESIONAL
                             </span>
                         </div>
 
                         <div>
-                            <h3 class="font-serif text-2xl font-bold text-white">LinkedIn Profile</h3>
+                            <h3 class="font-serif text-2xl font-bold text-white">Profil LinkedIn</h3>
                             <p class="text-xs font-bold text-bloom-pink uppercase tracking-widest mt-1">
                                 MEZZALUNA AZZAFIRA
                             </p>
                             <p class="text-xs text-white/90 font-light leading-relaxed mt-3">
-                                Let's connect professionally! Open for internship opportunities, full-stack web
-                                development projects, and software engineering collaborations.
+                                Mari terhubung secara profesional! Terbuka untuk kesempatan magang, proyek
+                                pengembangan web full-stack, dan kolaborasi rekayasa perangkat lunak.
                             </p>
                         </div>
 
@@ -2067,15 +2089,15 @@
                             class="bg-white/10 border border-white/20 p-3 rounded-2xl flex items-center gap-3 backdrop-blur-sm">
                             <span
                                 class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
-                            <span class="text-xs font-medium text-white/90">Open for Internship & Project
-                                Collaboration</span>
+                            <span class="text-xs font-medium text-white/90">Terbuka untuk Magang & Kolaborasi
+                                Proyek</span>
                         </div>
                     </div>
 
                     <!-- LinkedIn Link Button -->
                     <a href="https://www.linkedin.com/in/mezzaluna-azzafira-10907b397/" target="_blank"
                         class="w-full py-3.5 bg-bloom-pink text-bloom-dark text-xs font-bold uppercase tracking-widest rounded-2xl hover:bg-white shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 relative z-10 group/btn">
-                        <span>Connect on LinkedIn</span>
+                        <span>Terhubung di LinkedIn</span>
                         <i
                             class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
                     </a>
@@ -2085,8 +2107,8 @@
 
         </section>
         <!-- ==========================================
-     [FITUR 7: CONTACT FORM, RESUME & FOOTER]
-     ========================================== -->
+             [FITUR 7: CONTACT FORM, RESUME & FOOTER]
+             ========================================== -->
         <section id="contact" class="bg-bloom-cream relative overflow-hidden">
 
             <!-- 1. JOIN THE BLOOM / CONTACT & RESUME SECTION -->
@@ -2107,14 +2129,14 @@
 
                 <!-- Header Content -->
                 <div class="max-w-xl mx-auto space-y-3 relative z-10">
-                    <span class="font-serif italic text-3xl md:text-4xl text-bloom-pink block drop-shadow-sm">Join the
-                        Bloom</span>
+                    <span class="font-serif italic text-3xl md:text-4xl text-bloom-pink block drop-shadow-sm">Bergabung
+                        dalam Bloom</span>
                     <h2 class="font-serif text-4xl md:text-5xl font-normal leading-tight text-white tracking-tight">
-                        Let’s create something extraordinary together.
+                        Mari menciptakan sesuatu yang luar biasa bersama.
                     </h2>
                     <p class="text-xs md:text-sm text-bloom-cream/80 font-light leading-relaxed max-w-md mx-auto">
-                        Interested in collaborating or exploring my full portfolio? Drop me a message or download my CV
-                        below.
+                        Tertarik berkolaborasi atau melihat portofolio lengkap saya? Kirimkan pesan atau unduh CV saya
+                        di bawah ini.
                     </p>
                 </div>
 
@@ -2130,32 +2152,32 @@
 
                             <div class="space-y-1.5">
                                 <label
-                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
-                                    Name</label>
-                                <input type="text" name="name" placeholder="John Doe" required
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Nama
+                                    Anda</label>
+                                <input type="text" name="name" placeholder="Budi Santoso" required
                                     class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300">
                             </div>
 
                             <div class="space-y-1.5">
                                 <label
-                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
-                                    Email Address</label>
-                                <input type="email" name="email" placeholder="john@example.com" required
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Alamat
+                                    Email Anda</label>
+                                <input type="email" name="email" placeholder="budi@contoh.com" required
                                     class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300">
                             </div>
 
                             <div class="space-y-1.5">
                                 <label
-                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Your
-                                    Message</label>
-                                <textarea name="message" placeholder="Your Message or Internship Offer..." rows="4"
+                                    class="text-[10px] uppercase font-semibold tracking-wider text-bloom-pink/90 ml-4">Pesan
+                                    Anda</label>
+                                <textarea name="message" placeholder="Pesan Anda atau Tawaran Magang..." rows="4"
                                     required
                                     class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-5 py-3.5 rounded-2xl text-xs focus:outline-none focus:border-bloom-pink focus:bg-white/15 focus:ring-2 focus:ring-bloom-pink/20 transition duration-300 resize-none"></textarea>
                             </div>
 
                             <button type="submit" id="submitBtn"
                                 class="w-full bg-bloom-pink text-bloom-dark font-bold py-4 rounded-2xl text-[11px] uppercase tracking-widest hover:bg-white hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 shadow-lg cursor-pointer flex items-center justify-center gap-2 mt-2">
-                                <span>Send Message</span>
+                                <span>Kirim Pesan</span>
                                 <span>✉️</span>
                             </button>
 
@@ -2173,7 +2195,7 @@
                                 e.preventDefault();
 
                                 // Ubah teks tombol saat proses ngirim
-                                submitBtn.innerHTML = "Sending...";
+                                submitBtn.innerHTML = "Mengirim...";
                                 submitBtn.disabled = true;
 
                                 const formData = new FormData(form);
@@ -2193,7 +2215,7 @@
                                         if (response.status == 200) {
                                             result.classList.remove('hidden', 'text-red-400');
                                             result.classList.add('text-emerald-300');
-                                            result.innerHTML = "✨ Pesan berhasil terkirim ke Gmail Mezzaluna!";
+                                            result.innerHTML = "✨ Pesan berhasil terkirim! Terima kasih sudah menghubungi saya.";
                                             form.reset();
                                         } else {
                                             result.classList.remove('hidden', 'text-emerald-300');
@@ -2207,7 +2229,7 @@
                                         result.innerHTML = "Ada kesalahan koneksi, coba lagi!";
                                     })
                                     .then(function () {
-                                        submitBtn.innerHTML = "Send Message ✉️";
+                                        submitBtn.innerHTML = "Kirim Pesan ✉️";
                                         submitBtn.disabled = false;
                                         setTimeout(() => {
                                             result.classList.add('hidden');
@@ -2220,7 +2242,7 @@
                         <div class="pt-4 border-t border-white/10 text-center">
                             <a href="./cvmezzaluna_azzafira.pdf" download="CV_Mezzaluna_Azzafira.pdf"
                                 class="inline-flex items-center gap-2 text-bloom-pink hover:text-white border border-bloom-pink/50 hover:border-white px-7 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 transition-all duration-300 cursor-pointer">
-                                <span>Download Resume / CV</span>
+                                <span>Unduh Resume / CV</span>
                                 <i class="fa-solid fa-download text-[10px]"></i>
                             </a>
                         </div>
@@ -2233,9 +2255,9 @@
             <div class="px-6 md:px-16 py-20 border-b border-bloom-dark/10 bg-bloom-cream/50">
                 <div class="max-w-2xl mx-auto space-y-8">
                     <div class="text-center space-y-1">
-                        <span class="font-serif italic text-2xl text-bloom-teal block">Instant Answers</span>
-                        <h3 class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark">Frequently Asked
-                            Questions</h3>
+                        <span class="font-serif italic text-2xl text-bloom-teal block">Jawaban Instan</span>
+                        <h3 class="font-serif text-3xl md:text-4xl font-normal text-bloom-dark">Pertanyaan yang Sering
+                            Diajukan</h3>
                     </div>
 
                     <div class="space-y-4">
@@ -2244,15 +2266,15 @@
                             class="group bg-white p-6 rounded-2xl border border-bloom-dark/10 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
                             <summary
                                 class="font-serif text-base font-bold text-bloom-dark flex justify-between items-center list-none">
-                                <span>When are you available for the 2026 Internship Program?</span>
+                                <span>Kapan Anda tersedia untuk Program Magang 2026?</span>
                                 <span
                                     class="text-bloom-teal transition-transform duration-300 group-open:rotate-180">✦</span>
                             </summary>
                             <p
                                 class="text-xs text-bloom-dark/70 font-light mt-4 leading-relaxed border-t border-bloom-dark/5 pt-3">
-                                I am scheduled to join the internship program from <strong>December 7, 2026, to April
-                                    16, 2027</strong> (4 months of industry placement), specializing in Software
-                                Engineering under the Employment/Entrepreneurship track.
+                                Saya dijadwalkan mengikuti program magang mulai <strong>7 Desember 2026 hingga 16 April
+                                    2027</strong> (4 bulan penempatan industri), dengan keahlian Rekayasa Perangkat
+                                Lunak melalui program PKL.
                             </p>
                         </details>
 
@@ -2261,15 +2283,15 @@
                             class="group bg-white p-6 rounded-2xl border border-bloom-dark/10 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
                             <summary
                                 class="font-serif text-base font-bold text-bloom-dark flex justify-between items-center list-none">
-                                <span>What are your primary technical skills?</span>
+                                <span>Apa saja keahlian teknis utama Anda?</span>
                                 <span
                                     class="text-bloom-teal transition-transform duration-300 group-open:rotate-180">✦</span>
                             </summary>
                             <p
                                 class="text-xs text-bloom-dark/70 font-light mt-4 leading-relaxed border-t border-bloom-dark/5 pt-3">
-                                My focus is on web development (Laravel backend & MySQL, RESTful APIs), Android mobile
-                                application development, and modern user interface design (UI/UX) using Tailwind CSS and
-                                Figma.
+                                Fokus saya adalah pengembangan web (backend Laravel & MySQL, RESTful API), pengembangan
+                                aplikasi mobile Android, dan desain antarmuka pengguna (UI/UX) modern menggunakan
+                                Tailwind CSS dan Figma.
                             </p>
                         </details>
                     </div>
@@ -2285,7 +2307,7 @@
                         Mezzaluna Azzafira
                     </h2>
                     <p class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-bloom-teal">
-                        SOFTWARE ENGINEERING ✦ SMK TELKOM PURWOKERTO
+                        REKAYASA PERANGKAT LUNAK ✦ SMK TELKOM PURWOKERTO
                     </p>
                 </div>
 
@@ -2310,7 +2332,13 @@
 
                 <!-- Copyright -->
                 <p class="text-[10px] text-bloom-dark/40 font-light tracking-wider uppercase">
-                    © 2026 MEZZALUNA AZZAFIRA. DESIGNED WITH EDITORIAL AESTHETIC & PRECISION LOGIC.
+                    © 2026 MEZZALUNA AZZAFIRA. DIRANCANG DENGAN ESTETIKA EDITORIAL & LOGIKA PRESISI.
                 </p>
             </footer>
         </section>
+
+    </div>
+
+</body>
+
+</html>
